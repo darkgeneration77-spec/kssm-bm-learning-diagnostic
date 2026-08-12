@@ -1,0 +1,60 @@
+{
+  "meta": {"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 1","version":"1.0.0","purpose":"Unified diagnostic taxonomy for mapping marked physical exercises, tests and writing to defensible learner weaknesses."},
+  "error_map": {
+    "reading": [
+      {"code":"RD_WORD_MEANING","label":"Makna perkataan/frasa","possible_causes":["vocabulary gap","context not used","dictionary/glossary skill weak"]},
+      {"code":"RD_INSTRUCTION","label":"Memahami arahan","possible_causes":["instruction vocabulary","sequence misunderstanding","key condition missed"]},
+      {"code":"RD_GLOBAL_MEANING","label":"Maksud keseluruhan","possible_causes":["fragmented comprehension","weak skimming","key information not integrated"]},
+      {"code":"RD_MAIN_IDEA","label":"Idea utama","possible_causes":["topic confused with main idea","supporting detail selected","weak information prioritisation"]},
+      {"code":"RD_SUPPORTING_IDEA","label":"Idea sampingan","possible_causes":["cannot distinguish supporting evidence","detail-main idea confusion"]},
+      {"code":"RD_SCAN_INFO","label":"Mengesan maklumat khusus","possible_causes":["weak scanning","keyword mismatch","detail overlooked"]}
+    ],
+    "writing": [
+      {"code":"WR_TASK","label":"Memenuhi kehendak tugasan","possible_causes":["stimulus misunderstood","required scope missed","format/task condition ignored"]},
+      {"code":"WR_IDEA","label":"Pemilihan isi/idea","possible_causes":["insufficient relevant ideas","off-topic content","weak planning"]},
+      {"code":"WR_ELAB","label":"Huraian","possible_causes":["idea not developed","no why/how explanation","example not linked to idea"]},
+      {"code":"WR_ORG","label":"Pengolahan dan organisasi","possible_causes":["weak paragraph structure","poor sequencing","weak cohesion"]},
+      {"code":"WR_SUMMARY_SELECT","label":"Pemilihan isi ringkasan","possible_causes":["main/supporting idea confusion","examples retained","important idea omitted"]},
+      {"code":"WR_SUMMARY_PRESERVE","label":"Mengekalkan maksud ringkasan","possible_causes":["meaning altered","over-compression","incorrect paraphrase"]},
+      {"code":"WR_EDIT","label":"Penyuntingan","possible_causes":["error not detected","rule not known","correction creates new error"]}
+    ],
+    "grammar": [
+      {"code":"GR_NOUN","label":"Kata nama","possible_causes":["word-class confusion","common/proper noun confusion","compound noun issue"]},
+      {"code":"GR_ADJ","label":"Kata adjektif","possible_causes":["word-class confusion","context selection error"]},
+      {"code":"GR_FUNCTION","label":"Kata tugas","possible_causes":["function-word type confusion","context misuse"]},
+      {"code":"GR_VERB_INTR","label":"Kata kerja tak transitif","possible_causes":["transitivity confusion","unnecessary object","verb context misuse"]},
+      {"code":"GR_REDUP","label":"Kata ganda","possible_causes":["form error","affix error","double plural marking"]},
+      {"code":"GR_AFFIX","label":"Kata terbitan/imbuhan","possible_causes":["wrong affix","wrong derived meaning","form/spelling issue"]},
+      {"code":"GR_PHRASE","label":"Frasa nama","possible_causes":["head-modifier confusion","phrase construction error"]},
+      {"code":"GR_SUBPRED","label":"Subjek dan predikat","possible_causes":["boundary confusion","incomplete clause"]},
+      {"code":"GR_PATTERN","label":"Pola ayat","possible_causes":["predicate type confusion","FN/FK/FA/FS classification weak"]},
+      {"code":"GR_SENTTYPE","label":"Jenis ayat","possible_causes":["statement/question/command/exclamation confusion","context-inappropriate form"]}
+    ],
+    "language_mechanics": [
+      {"code":"LM_SPELL","label":"Ejaan","possible_causes":["orthographic rule gap","affix spelling","copying/slip"]},
+      {"code":"LM_PUNCT","label":"Tanda baca","possible_causes":["punctuation rule gap","sentence boundary issue","careless omission"]},
+      {"code":"LM_GRAM_SENT","label":"Ayat gramatis","possible_causes":["sentence pattern weakness","agreement/structure issue","incomplete sentence"]}
+    ],
+    "seni_bahasa": [
+      {"code":"SB_THEME","label":"Tema","possible_causes":["central idea not identified","theme confused with event/detail"]},
+      {"code":"SB_ISSUE","label":"Persoalan","possible_causes":["issue not distinguished from theme","evidence mismatch"]},
+      {"code":"SB_MEANING","label":"Maksud karya/puisi","possible_causes":["literal-only interpretation","figurative meaning weak"]},
+      {"code":"SB_JUSTIFY","label":"Justifikasi","possible_causes":["claim without evidence","evidence not linked","requested element misunderstood"]},
+      {"code":"SB_CREATIVE","label":"Penghasilan kreatif","possible_causes":["form convention weak","idea development weak","language expression weak"]}
+    ],
+    "oral_listening": [
+      {"code":"OL_LEX","label":"Pemahaman ujaran/perkataan","requires":["audio evidence or direct teacher marking"]},
+      {"code":"OL_INFO","label":"Maklumat/fakta/idea daripada ujaran","requires":["audio/listening task evidence or teacher marking"]},
+      {"code":"OL_SPEAK","label":"Penyampaian lisan","requires":["audio/video/teacher observation"]},
+      {"code":"OL_INTERACT","label":"Interaksi/soal jawab/perbincangan","requires":["audio/video/teacher observation"]}
+    ]
+  },
+  "attribution_rules": [
+    "Map to the narrowest supported error code.",
+    "One response may carry a primary and one or more secondary error codes.",
+    "Do not infer oral-performance weaknesses from written paper alone.",
+    "Separate OCR uncertainty from learner error.",
+    "Teacher marking is evidence of correctness but not automatically evidence of root cause; inspect the question and learner response where available.",
+    "Repeated cross-task evidence increases confidence more than repeated items copied from one identical exercise pattern."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 5","domain_code":"MNL","domain_name":"Kemahiran Menulis","version":"1.0.0","status":"curriculum-brain-v1"},
+  "curriculum_structure":[
+    {"sk":"3.1","focus":"Menulis untuk menerangkan, menghuraikan dan menggunakan kata/istilah dengan tepat mengikut konteks dan laras","diagnostic_micro_skills":["TERM_EXPLANATION","CONTEXTUAL_USAGE","LEXICAL_PRECISION","REGISTER_CONTROL"]},
+    {"sk":"3.2","focus":"Menulis untuk mengemukakan maklumat, pandangan dan hujah secara relevan dan meyakinkan","diagnostic_micro_skills":["INFORMATION_PRESENTATION","CLAIM","REASON","EVIDENCE","REASONING","COUNTERPOINT","PERSUASIVE_FORCE","RELEVANCE"]},
+    {"sk":"3.3","focus":"Menulis dan melengkapkan maklumat berdasarkan pelbagai bahan/sumber dengan tepat","diagnostic_micro_skills":["SOURCE_EXTRACTION","SOURCE_MATCHING","ACCURACY","MULTISOURCE_INTEGRATION","CONTEXT_FIT"]},
+    {"sk":"3.4","focus":"Menghasilkan penulisan terancang, matang dan lengkap dalam pelbagai bentuk","diagnostic_micro_skills":["TASK_INTERPRETATION","SCOPE_CONTROL","IDEA_GENERATION","IDEA_SELECTION","OUTLINE","INTRODUCTION","FOCUS_OR_THESIS","TOPIC_SENTENCE","ELABORATION","EXAMPLE_EVIDENCE","CLAIM_REASON_EVIDENCE","COUNTERARGUMENT","PARAGRAPH_COHERENCE","INTERPARAGRAPH_COHESION","CONCLUSION","FULL_TEXT_ORGANISATION","CONTENT_DEPTH","STYLE"]},
+    {"sk":"3.5","focus":"Mengolah, merumus dan mensintesis maklumat daripada pelbagai bahan tanpa menyelewengkan maksud","diagnostic_micro_skills":["FOCUS_IDENTIFICATION","IMPORTANT_IDEA_SELECTION","FILTERING","PARAPHRASING","SYNTHESIS","MULTISOURCE_SYNTHESIS","MEANING_PRESERVATION","CONCISION","RUMUSAN_STRUCTURE"]},
+    {"sk":"3.6","focus":"Mengolah dan menukar maklumat antara bentuk teks, grafik atau bentuk penyampaian lain","diagnostic_micro_skills":["DATA_INTERPRETATION","GRAPHIC_TO_TEXT","TEXT_TO_GRAPHIC","FORM_TRANSFORMATION","CONTENT_PRESERVATION","REGISTER_ADAPTATION"]},
+    {"sk":"3.7","focus":"Mengedit dan memurnikan teks dari aspek bahasa, organisasi dan ketepatan maksud","diagnostic_micro_skills":["ERROR_DETECTION","SPELLING_EDIT","PUNCTUATION_EDIT","MORPHOLOGY_EDIT","SYNTAX_EDIT","LEXICAL_EDIT","REGISTER_EDIT","COHERENCE_EDIT","MEANING_PRESERVATION"]}
+  ],
+  "essay_diagnostic_model":{"task_fulfilment":["TASK_INTERPRETATION","SCOPE_CONTROL","RELEVANCE"],"content":["IDEA_GENERATION","IDEA_SELECTION","CONTENT_DEPTH"],"argument":["CLAIM","REASON","EVIDENCE","REASONING","COUNTERPOINT","CLAIM_EVIDENCE_LINK"],"development":["TOPIC_SENTENCE","ELABORATION","EXAMPLE_EVIDENCE"],"organisation":["INTRODUCTION","PARAGRAPH_COHERENCE","COHESION","CONCLUSION","FULL_TEXT_ORGANISATION"],"language":["GRAMMAR","VOCABULARY_RANGE","LEXICAL_PRECISION","REGISTER","SPELLING","PUNCTUATION","SENTENCE_VARIETY","STYLE"]},
+  "principle":"A total essay score must never be stored as one writing skill. Preserve component evidence and question/task context."
+}

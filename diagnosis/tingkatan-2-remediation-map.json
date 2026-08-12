@@ -1,0 +1,24 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 2","version":"1.0.0"},
+  "remediation_map":{
+    "RD_T2_IMPLICIT_MEANING":["identify explicit clue","connect clues","infer unstated meaning","justify inference with evidence","new text retest"],
+    "RD_T2_MAIN_IDEA":["retrieve T1 global meaning","separate main/supporting information","state main idea","justify selection","new passage retest"],
+    "WR_T2_TOPIC_SENTENCE":["identify paragraph focus","write one controlling idea","remove unrelated scope","connect to task","new paragraph retest"],
+    "WR_T2_ELABORATION":["state topic sentence","answer why/how","add relevant explanation","link explanation to idea","independent paragraph","delayed retest"],
+    "WR_T2_EXAMPLE":["identify claim","choose relevant example","explain link between example and claim","reject decorative example","new paragraph transfer"],
+    "WR_T2_CONCLUDING_SENTENCE":["identify paragraph claim","summarise/reinforce without copying","maintain relevance","write independent closing sentence"],
+    "WR_T2_RINGKASAN":["retrieve T1 important-idea selection","select required points","remove examples/repetition","preserve meaning","write concise grammatical sentences","new passage retest"],
+    "WR_T2_RUMUSAN":["identify focus","group relevant ideas","synthesise","write concise conclusion where required by task","check meaning and grammar","new text retest"],
+    "GR_T2_PRONOUN":["identify referent","classify pronoun","match person/context/register","correct misuse","construct sentence","writing transfer"],
+    "GR_T2_ACRONYM":["recognise acronym","identify source form","distinguish from abbreviation","use correctly in context","mixed retest"],
+    "GR_T2_ADJECTIVE":["retrieve T1 adjective recognition","classify distance/sensory/measurement/quality","choose by context","correct misuse","construct sentence"],
+    "GR_T2_FUNCTION_WORD":["identify function","classify bantu/penguat/penegas/nafi/pemeri/arah/bilangan","contrast confusing forms","correct sentence","context transfer"],
+    "GR_T2_TRANSITIVE_VERB":["retrieve T1 verb/transitivity awareness","identify verb","locate required object","correct structure","construct sentence","writing transfer"],
+    "GR_T2_PARTIAL_REDUPLICATION":["retrieve T1 full reduplication","recognise partial form","compare forms","identify meaning/function","correct use","new-context retest"],
+    "GR_T2_NOUN_AFFIX":["retrieve T1 affix concept","identify root","select noun-forming circumfix","explain meaning change","construct derived noun","sentence transfer"],
+    "GR_T2_ADJECTIVE_PHRASE":["retrieve T1 noun phrase concept","identify phrase head","identify modifier","construct adjective phrase","use in sentence","mixed retest"],
+    "SB_T2_CHARACTERISATION":["identify character","state trait","select event/text evidence","explain link","new extract retest"],
+    "SB_T2_JUSTIFICATION":["state answer","select precise evidence","explain why evidence supports answer","remove irrelevant retelling","new item retest"]
+  },
+  "persistent_weakness_policy":"Backtrack to the mapped Tingkatan 1 prerequisite, reteach the missing foundation, then return to the Tingkatan 2 target and require delayed independent success."
+}

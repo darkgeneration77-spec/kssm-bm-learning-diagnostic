@@ -1,0 +1,20 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 4","domain_code":"MNL","domain_name":"Kemahiran Menulis","version":"1.0.0","status":"curriculum-brain-v1","note":"Writing diagnosis separates task fulfilment, content, development, organisation, language and editing so a total essay mark is never treated as one skill."},
+  "curriculum_structure":[
+    {"sk":"3.1","focus":"Menulis untuk menerangkan makna kata dan istilah serta menggunakan bahasa mengikut konteks","diagnostic_micro_skills":["WORD_EXPLANATION","TERM_EXPLANATION","CONTEXTUAL_USAGE","LEXICAL_PRECISION"]},
+    {"sk":"3.2","focus":"Menulis untuk mengemukakan maklumat dan pandangan tentang sesuatu perkara","diagnostic_micro_skills":["INFORMATION_PRESENTATION","OPINION_FORMATION","CLAIM","REASON","EVIDENCE","RELEVANCE","REGISTER"]},
+    {"sk":"3.3","focus":"Menulis untuk melengkapkan maklumat dalam pelbagai bahan","diagnostic_micro_skills":["SOURCE_EXTRACTION","INFORMATION_MATCHING","FORM_COMPLETION","ACCURACY","CONTEXT_FIT"]},
+    {"sk":"3.4","focus":"Menulis untuk menghasilkan sesuatu penulisan secara terancang","diagnostic_micro_skills":["TASK_INTERPRETATION","IDEA_GENERATION","IDEA_SELECTION","OUTLINE","INTRODUCTION","THESIS_OR_FOCUS","TOPIC_SENTENCE","ELABORATION","EXAMPLE_OR_EVIDENCE","PARAGRAPH_COHERENCE","INTERPARAGRAPH_COHESION","CONCLUSION","FULL_TEXT_ORGANISATION"]},
+    {"sk":"3.5","focus":"Menulis untuk mengolah maklumat bagi menghasilkan pelbagai bentuk penulisan dan respons ringkas/rumusan mengikut kehendak bahan","diagnostic_micro_skills":["FOCUS_IDENTIFICATION","IMPORTANT_IDEA_SELECTION","IRRELEVANT_DETAIL_FILTERING","PARAPHRASING","SYNTHESIS","MEANING_PRESERVATION","CONCISION","SUMMARY_OR_RUMUSAN_STRUCTURE"]},
+    {"sk":"3.6","focus":"Menulis untuk mengolah dan menukar maklumat daripada satu bentuk kepada bentuk yang lain","diagnostic_micro_skills":["DATA_INTERPRETATION","TEXT_TO_GRAPHIC","GRAPHIC_TO_TEXT","FORM_TRANSFORMATION","CONTENT_PRESERVATION","REGISTER_ADAPTATION"]},
+    {"sk":"3.7","focus":"Mengedit dan memurnikan pelbagai teks","diagnostic_micro_skills":["ERROR_DETECTION","SPELLING_EDIT","PUNCTUATION_EDIT","MORPHOLOGY_EDIT","SYNTAX_EDIT","LEXICAL_EDIT","COHERENCE_EDIT","MEANING_PRESERVATION"]}
+  ],
+  "essay_diagnostic_model":{"task_fulfilment":["TASK_INTERPRETATION","RELEVANCE","SCOPE_CONTROL"],"content":["IDEA_GENERATION","IDEA_SELECTION","CONTENT_DEPTH"],"development":["TOPIC_SENTENCE","ELABORATION","EXAMPLE_OR_EVIDENCE","CLAIM_REASON_LINK"],"organisation":["OUTLINE","PARAGRAPH_COHERENCE","INTERPARAGRAPH_COHESION","INTRODUCTION","CONCLUSION"],"language":["GRAMMAR","VOCABULARY_RANGE","LEXICAL_PRECISION","REGISTER","SPELLING","PUNCTUATION","SENTENCE_VARIETY"],"critical_quality":["ARGUMENT_STRENGTH","EVIDENCE_RELEVANCE","REASONING","BALANCED_CONSIDERATION"]},
+  "diagnostic_examples":[
+    {"pattern":"relevant ideas but short undeveloped paragraphs","diagnosis":"ELABORATION weakness, not IDEA_GENERATION weakness"},
+    {"pattern":"many examples but examples do not prove the point","diagnosis":"CLAIM_EVIDENCE_LINK weakness"},
+    {"pattern":"good language but misses required task scope","diagnosis":"TASK_INTERPRETATION/TASK_FULFILMENT weakness"},
+    {"pattern":"strong content but repeated sentence-level grammar errors","diagnosis":"content mastery may be strong while grammar nodes remain weak"}
+  ],
+  "cross_domain_evidence":"Repeated grammar errors observed in authentic writing may update the relevant Tatabahasa micro-skill when attribution is clear; a single slip does not establish a weakness."
+}

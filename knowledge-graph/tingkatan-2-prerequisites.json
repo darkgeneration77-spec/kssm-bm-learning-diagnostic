@@ -1,0 +1,34 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 2","version":"1.0.0","purpose":"Backtrack T2 weaknesses to T1 foundations and connect internal T2 skill dependencies."},
+  "cross_form_edges":[
+    {"from":"T1_CONTEXTUAL_MEANING","to":"T2_EXPLICIT_IMPLICIT_MEANING","relation":"prerequisite"},
+    {"from":"T1_GLOBAL_MEANING","to":"T2_GLOBAL_MEANING","relation":"prerequisite"},
+    {"from":"T1_MAIN_IDEA","to":"T2_MAIN_SUPPORTING_IDEA","relation":"prerequisite"},
+    {"from":"T1_INFORMATION_FILTERING","to":"T2_RINGKASAN_RUMUSAN","relation":"prerequisite"},
+    {"from":"T1_IDEA_DEVELOPMENT","to":"T2_TOPIC_SENTENCE_ELABORATION","relation":"prerequisite"},
+    {"from":"T1_GRAMMATICAL_SENTENCE_CONSTRUCTION","to":"T2_PARAGRAPH_DEVELOPMENT","relation":"supports"},
+    {"from":"T1_ADJECTIVE_RECOGNITION","to":"T2_ADJECTIVE_CLASSIFICATION","relation":"prerequisite"},
+    {"from":"T1_FUNCTION_WORD_CONTEXT_USE","to":"T2_COMPLEX_FUNCTION_WORDS","relation":"prerequisite"},
+    {"from":"T1_INTRANSITIVE_VERB_AWARENESS","to":"T2_TRANSITIVE_VERB","relation":"supports_contrast"},
+    {"from":"T1_FULL_REDUPLICATION","to":"T2_PARTIAL_REDUPLICATION","relation":"prerequisite"},
+    {"from":"T1_AFFIX_CONCEPT","to":"T2_NOUN_AFFIX","relation":"prerequisite"},
+    {"from":"T1_NOUN_PHRASE","to":"T2_ADJECTIVE_PHRASE","relation":"phrase_concept_transfer"},
+    {"from":"T1_LITERARY_ELEMENT_IDENTIFICATION","to":"T2_CHARACTER_VALUE_LESSON","relation":"prerequisite"},
+    {"from":"T1_LITERARY_JUSTIFICATION","to":"T2_LITERARY_JUSTIFICATION","relation":"prerequisite"},
+    {"from":"T1_FOCUSED_QUESTION","to":"T2_DIVERGENT_QUESTION","relation":"progression"}
+  ],
+  "t2_internal_edges":[
+    {"from":"T2_TOPIC_SENTENCE","to":"T2_ELABORATION","relation":"prerequisite"},
+    {"from":"T2_ELABORATION","to":"T2_EXAMPLE","relation":"supports"},
+    {"from":"T2_TOPIC_SENTENCE_ELABORATION_EXAMPLE","to":"T2_CONCLUDING_SENTENCE","relation":"supports"},
+    {"from":"T2_EXPLICIT_MEANING","to":"T2_IMPLICIT_MEANING","relation":"prerequisite"},
+    {"from":"T2_MAIN_IDEA","to":"T2_RUMUSAN","relation":"supports"},
+    {"from":"T2_CHARACTER_IDENTIFICATION","to":"T2_CHARACTERISATION_WITH_EVIDENCE","relation":"prerequisite"}
+  ],
+  "backtracking_examples":[
+    {"observed":"T2_RUMUSAN_WEAK","check":["T1_INFORMATION_FILTERING","T1_MAIN_IDEA","T2_MAIN_IDEA","GRAMMATICAL_SENTENCE_CONSTRUCTION"]},
+    {"observed":"T2_ELABORATION_WEAK","check":["T1_IDEA_DEVELOPMENT","T2_TOPIC_SENTENCE","VOCABULARY_RANGE","GRAMMATICAL_SENTENCE_CONSTRUCTION"]},
+    {"observed":"T2_TRANSITIVE_VERB_WEAK","check":["VERB_RECOGNITION","T1_TRANSITIVITY_AWARENESS","OBJECT_RECOGNITION"]},
+    {"observed":"T2_IMPLICIT_MEANING_WEAK","check":["T1_CONTEXTUAL_MEANING","T2_EXPLICIT_MEANING","EVIDENCE_CONNECTION"]}
+  ]
+}

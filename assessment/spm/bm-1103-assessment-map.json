@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "assessment": "SPM",
+    "code_family": "1103",
+    "version": "1.0.0",
+    "verification_note": "KPM 2025 scheduling confirms Bahasa Melayu written, speaking and listening components remain in use. Kertas 1 and Kertas 2 section structures below are aligned with current KSSM-era 1103 papers and Lembaga Peperiksaan quality-report structure. Exact future administrative details should remain versioned rather than hard-coded globally."
+  },
+  "papers": [
+    {
+      "paper_code": "1103/1",
+      "name": "Kertas 1",
+      "mode": "written",
+      "focus": "Penulisan",
+      "current_structure": {
+        "Bahagian A": {
+          "label": "Karangan Respons Terhad",
+          "marks": 30,
+          "task_profile": ["bahan rangsangan", "task fulfilment", "idea selection", "huraian", "organisation", "language control"]
+        },
+        "Bahagian B": {
+          "label": "Karangan Respons Terbuka",
+          "marks": 70,
+          "task_profile": ["extended writing", "argumentation", "content depth", "elaboration", "examples/evidence", "cohesion", "language range", "register"]
+        }
+      },
+      "curriculum_links": [
+        "T4/T5 Menulis 3.2",
+        "T4/T5 Menulis 3.4",
+        "T4/T5 Menulis 3.5",
+        "T4/T5 Tatabahasa",
+        "T1-T5 longitudinal writing-development track"
+      ],
+      "diagnostic_dimensions": [
+        "TASK_INTERPRETATION",
+        "SCOPE_CONTROL",
+        "IDEA_GENERATION",
+        "IDEA_SELECTION",
+        "CONTENT_DEPTH",
+        "TOPIC_SENTENCE",
+        "ELABORATION",
+        "EXAMPLE_OR_EVIDENCE",
+        "CLAIM_REASON_LINK",
+        "CLAIM_EVIDENCE_LINK",
+        "PARAGRAPH_COHERENCE",
+        "GLOBAL_COHESION",
+        "INTRODUCTION",
+        "CONCLUSION",
+        "GRAMMAR",
+        "VOCABULARY_RANGE",
+        "LEXICAL_PRECISION",
+        "REGISTER",
+        "SPELLING",
+        "PUNCTUATION"
+      ]
+    },
+    {
+      "paper_code": "1103/2",
+      "name": "Kertas 2",
+      "mode": "written",
+      "focus": "Sistem dan Aplikasi Bahasa, Pemahaman, Novel dan Rumusan",
+      "current_structure": {
+        "Bahagian A": {
+          "label": "Sistem dan Aplikasi Bahasa",
+          "marks": 35,
+          "subskills": ["morfologi", "sintaksis", "penyuntingan", "bahasa Melayu standard", "peribahasa"]
+        },
+        "Bahagian B": {
+          "label": "Pemahaman",
+          "marks": 35,
+          "subskills": ["petikan umum", "petikan sastera", "maklumat tersurat", "maklumat tersirat", "inferens", "KBAT", "novel"]
+        },
+        "Bahagian C": {
+          "label": "Rumusan",
+          "marks": 30,
+          "subskills": ["fokus", "pemilihan isi", "sintesis", "pengolahan", "kesimpulan", "bahasa"]
+        }
+      },
+      "curriculum_links": [
+        "T4/T5 Membaca 2.2-2.4",
+        "T4/T5 Menulis 3.5",
+        "T4/T5 Menulis 3.7",
+        "T4/T5 Seni Bahasa",
+        "T4/T5 Tatabahasa 5.1-5.3",
+        "T1-T5 summary-synthesis track",
+        "T1-T5 grammar morphology/syntax tracks"
+      ],
+      "diagnostic_dimensions": [
+        "MORPHOLOGY",
+        "SYNTAX",
+        "EDITING",
+        "STANDARD_LANGUAGE_TRANSFORMATION",
+        "PROVERB",
+        "EXPLICIT_INFORMATION",
+        "IMPLICIT_INFORMATION",
+        "INFERENCE",
+        "ANALYSIS",
+        "EVALUATION",
+        "JUSTIFICATION",
+        "LITERARY_UNDERSTANDING",
+        "NOVEL_EVIDENCE",
+        "SUMMARY_FOCUS",
+        "IMPORTANT_IDEA_SELECTION",
+        "IRRELEVANT_DETAIL_FILTERING",
+        "SYNTHESIS",
+        "MEANING_PRESERVATION",
+        "CONCISION",
+        "GRAMMATICAL_SENTENCE_CONSTRUCTION"
+      ]
+    },
+    {
+      "paper_code": "1103/3",
+      "name": "Ujian Bertutur",
+      "mode": "oral",
+      "focus": "Kemahiran Bertutur",
+      "verification_status": "component confirmed in current SPM scheduling; detailed scoring schema remains versioned separately",
+      "curriculum_links": ["T4/T5 Mendengar dan Bertutur", "T1-T5 argumentation track"],
+      "diagnostic_dimensions": ["PRONUNCIATION", "INTONATION", "FLUENCY", "IDEA_RELEVANCE", "ORAL_ELABORATION", "OPINION", "REASON", "EVIDENCE", "INTERACTION", "REGISTER", "COURTESY", "RESPONSE_TO_COUNTERPOINT"],
+      "evidence_rule": "Requires audio/video/teacher-observation evidence. Written work alone cannot establish oral-performance weakness."
+    },
+    {
+      "paper_code": "1103/4",
+      "name": "Ujian Mendengar",
+      "mode": "listening",
+      "focus": "Kemahiran Mendengar",
+      "verification_status": "component confirmed in current SPM scheduling; detailed scoring schema remains versioned separately",
+      "curriculum_links": ["T4/T5 Mendengar dan Bertutur"],
+      "diagnostic_dimensions": ["KEY_INFORMATION", "FACT", "MAIN_IDEA", "DETAIL", "CONTEXT_MEANING", "EXPLICIT_INFORMATION", "IMPLICIT_INFORMATION", "INFERENCE", "INSTRUCTION_COMPREHENSION"],
+      "evidence_rule": "Requires listening-task evidence or explicit teacher marking tied to the listening item."
+    }
+  ],
+  "system_rules": [
+    "Assessment section performance must map to curriculum micro-skills rather than exist as a standalone score only.",
+    "A low paper score does not identify a root cause until item-level or rubric-level evidence is analysed.",
+    "For essay questions, infer weakness from rubric dimensions and observed writing features, not total mark alone.",
+    "For Kertas 2, each item may map to one primary and multiple secondary curriculum skills.",
+    "Do not back-propagate an exam error to lower forms unless the prerequisite graph has evidence of an actual gap.",
+    "If exact paper-format rules are updated by KPM/LP, update this assessment layer without rewriting the curriculum layer."
+  ]
+}

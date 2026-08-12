@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "curriculum": "KSSM",
+    "form": "Tingkatan 1",
+    "domain_code": "MB",
+    "domain_name": "Kemahiran Mendengar dan Bertutur",
+    "version": "1.0.0",
+    "status": "curriculum-brain-v1",
+    "design_note": "MOE/DSKP source wording must remain logically separated from AI diagnostic metadata. Teacher-confirmed mastery must remain separate from AI-estimated mastery."
+  },
+  "standard_kandungan": [
+    {
+      "code": "1.1",
+      "title": "Mendengar, mengenal dan menyebut",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.1.1",
+          "code": "1.1.1",
+          "focus": ["mendengar sebutan", "mengenal perkataan", "mengenal rangkai kata", "membezakan sebutan", "ketepatan sebutan"],
+          "diagnostic_micro_skills": ["WORD_RECOGNITION", "PHRASE_RECOGNITION", "SOUND_DISCRIMINATION", "PRONUNCIATION_ACCURACY"],
+          "common_error_tags": ["SEBUTAN_PERKATAAN", "RANGKAI_KATA_TIDAK_DIKENAL", "BUNYI_HAMPIR_SAMA", "BUNYI_TIDAK_DIPADANKAN_DENGAN_PERKATAAN"],
+          "remediation_path": ["dengar perkataan", "dengar rangkai kata", "bezakan sebutan", "ikut sebut", "kenal pasti secara kendiri"]
+        }
+      ]
+    },
+    {
+      "code": "1.2",
+      "title": "Mendengar dan memahami",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.2.1",
+          "code": "1.2.1",
+          "focus": ["perkataan", "rangkai kata", "istilah", "ungkapan", "makna mengikut konteks"],
+          "diagnostic_micro_skills": ["LEX_WORD", "LEX_PHRASE", "LEX_TERM", "LEX_EXPRESSION", "CONTEXT_MEANING"],
+          "common_error_tags": ["MB_LEX_WORD", "MB_LEX_PHRASE", "MB_LEX_TERM", "MB_LEX_EXPRESSION", "MB_CONTEXT_MEANING"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.2.2",
+          "code": "1.2.2",
+          "focus": ["ayat tunggal", "ayat majmuk mudah", "memahami maksud", "konteks"],
+          "diagnostic_micro_skills": ["SIMPLE_SENTENCE_COMPREHENSION", "COMPOUND_SENTENCE_COMPREHENSION", "SENTENCE_MEANING_IN_CONTEXT"],
+          "common_error_tags": ["MB_SENTENCE_SIMPLE", "MB_SENTENCE_COMPOUND", "MB_CONTEXT_SENTENCE_MEANING"]
+        }
+      ]
+    },
+    {
+      "code": "1.3",
+      "title": "Mendengar maklumat, fakta dan idea",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.3.1",
+          "code": "1.3.1",
+          "focus": ["maklumat", "fakta", "idea", "wacana", "respons lisan"],
+          "diagnostic_micro_skills": ["INFO", "FACT", "IDEA", "MAIN_IDEA", "DETAIL", "ORAL_RESPONSE", "RESPONSE_RELEVANCE", "RESPONSE_ACCURACY"],
+          "common_error_tags": ["MISSED_SPECIFIC_INFORMATION", "FACT_IDEA_CONFUSION", "MAIN_IDEA_MISIDENTIFIED", "ORAL_RESPONSE_IRRELEVANT", "ORAL_RESPONSE_INACCURATE"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.3.2",
+          "code": "1.3.2",
+          "focus": ["pengumuman", "ucapan", "maklumat", "fakta", "idea", "respons"],
+          "diagnostic_micro_skills": ["ANNOUNCEMENT_INFO", "ANNOUNCEMENT_MAIN_IDEA", "SPEECH_INFO", "SPEECH_MAIN_IDEA", "LISTENING_RESPONSE"],
+          "common_error_tags": ["ANNOUNCEMENT_DETAIL_MISSED", "ANNOUNCEMENT_MAIN_IDEA", "SPEECH_DETAIL_MISSED", "SPEECH_MAIN_IDEA"]
+        }
+      ]
+    },
+    {
+      "code": "1.4",
+      "title": "Berbicara",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.4.1",
+          "code": "1.4.1",
+          "focus": ["kegiatan harian", "hal persendirian", "sebutan", "intonasi"],
+          "diagnostic_micro_skills": ["DAILY_ACTIVITY_SPEAKING", "PERSONAL_TOPIC_SPEAKING", "SPEAKING_PRONUNCIATION", "SPEAKING_INTONATION"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.4.2",
+          "code": "1.4.2",
+          "focus": ["memulakan perbualan", "mengakhiri perbualan", "bertanya khabar", "terima kasih", "penghargaan"],
+          "diagnostic_micro_skills": ["OPEN_CONVERSATION", "CLOSE_CONVERSATION", "SOCIAL_GREETING", "THANKING", "APPRECIATION", "COURTESY"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.4.3",
+          "code": "1.4.3",
+          "focus": ["menceritakan pengalaman", "sebutan", "intonasi", "kesantunan"],
+          "diagnostic_micro_skills": ["EXPERIENCE_NARRATION", "EVENT_SEQUENCE", "PRONUNCIATION", "INTONATION", "COURTESY"]
+        }
+      ]
+    },
+    {
+      "code": "1.5",
+      "title": "Bersoal jawab",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.5.1",
+          "code": "1.5.1",
+          "focus": ["soalan bertumpu", "pesanan", "arahan", "panduan", "tunjuk cara"],
+          "diagnostic_micro_skills": ["QUESTION_FORMATION", "QUESTION_RELEVANCE", "MESSAGE_QUERY", "INSTRUCTION_QUERY", "GUIDE_QUERY", "PROCEDURE_QUERY"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.5.2",
+          "code": "1.5.2",
+          "focus": ["jawapan sesuai", "ketepatan", "kesantunan"],
+          "diagnostic_micro_skills": ["ANSWER_RELEVANCE", "ANSWER_ACCURACY", "SPOKEN_GRAMMAR", "COURTESY"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.5.3",
+          "code": "1.5.3",
+          "focus": ["interaksi soal jawab", "soalan bertumpu", "jawapan sesuai"],
+          "diagnostic_micro_skills": ["INTERACTION_FLOW", "FOLLOW_UP_RESPONSE", "QUESTION_ANSWER_ALIGNMENT", "COURTESY"]
+        }
+      ]
+    },
+    {
+      "code": "1.6",
+      "title": "Menyampaikan maklumat",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.6.1",
+          "code": "1.6.1",
+          "focus": ["isi", "fakta", "ketepatan maklumat", "kejelasan", "ayat gramatis"],
+          "diagnostic_micro_skills": ["CONTENT_DELIVERY", "FACT_DELIVERY", "INFORMATION_ACCURACY", "CLARITY", "GRAMMATICAL_SENTENCE"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.6.2",
+          "code": "1.6.2",
+          "focus": ["ucapan", "pengumuman", "intonasi", "penyampaian", "keberkesanan"],
+          "diagnostic_micro_skills": ["SPEECH_STRUCTURE", "ANNOUNCEMENT_STRUCTURE", "KEY_INFORMATION", "INTONATION", "DELIVERY_EFFECTIVENESS"]
+        }
+      ]
+    },
+    {
+      "code": "1.7",
+      "title": "Berbincang dan berunding",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.7.1",
+          "code": "1.7.1",
+          "focus": ["memahami isu", "mengemukakan pandangan", "menerima pandangan", "menanggapi pandangan", "bertukar idea", "rasional", "kesantunan"],
+          "diagnostic_micro_skills": ["ISSUE_UNDERSTANDING", "STATE_VIEW", "RESPOND_TO_VIEW", "EXCHANGE_IDEAS", "JUSTIFICATION", "COURTESY"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.7.2",
+          "code": "1.7.2",
+          "focus": ["tawaran", "memberi sebab", "membuat cadangan", "mencari persetujuan", "bahasa santun"],
+          "diagnostic_micro_skills": ["OFFER_UNDERSTANDING", "REASON_GIVING", "PROPOSAL", "AGREEMENT_SEEKING", "NEGOTIATION_COURTESY"]
+        }
+      ]
+    },
+    {
+      "code": "1.8",
+      "title": "Mengulas",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MB-1.8.1",
+          "code": "1.8.1",
+          "focus": ["memahami perkara", "isi relevan", "penjelasan", "pemikiran kritis", "ayat gramatis"],
+          "diagnostic_micro_skills": ["TOPIC_UNDERSTANDING", "RELEVANT_CONTENT", "EXPLANATION", "CRITICAL_THINKING", "GRAMMATICAL_SENTENCE"]
+        },
+        {
+          "skill_id": "BM-T1-MB-1.8.2",
+          "code": "1.8.2",
+          "focus": ["mengenal peristiwa", "urutan peristiwa", "hubungan peristiwa", "ulasan", "kejelasan"],
+          "diagnostic_micro_skills": ["EVENT_IDENTIFICATION", "EVENT_SEQUENCE", "EVENT_RELATIONSHIP", "COMMENTARY", "CLARITY"],
+          "common_error_tags": ["CHRONOLOGY_ERROR", "EVENT_RELATIONSHIP_ERROR", "IRRELEVANT_COMMENTARY", "UNCLEAR_COMMENTARY"]
+        }
+      ]
+    }
+  ],
+  "mastery_model": {
+    "ai_mastery_score": "0-100",
+    "evidence_count": true,
+    "trend": ["improving", "stable", "declining", "insufficient_evidence"],
+    "confidence": ["low", "medium", "high"],
+    "moe_tp_evidence": "AI-supported evidence only; not an automatic formal TP assignment",
+    "teacher_confirmed_tp": "separate field, teacher-controlled"
+  }
+}

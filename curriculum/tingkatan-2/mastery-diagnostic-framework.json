@@ -1,0 +1,10 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 2","version":"1.0.0"},
+  "principle":"AI mastery, suggested TP evidence and teacher-confirmed TP remain separate. Tingkatan 2 diagnosis also checks Tingkatan 1 prerequisites before prescribing remediation.",
+  "mastery_fields":["ai_mastery_score","evidence_count","evidence_diversity","trend","confidence","suggested_tp_evidence","teacher_confirmed_tp"],
+  "weakness_states":["observation","possible_weakness","confirmed_weakness","persistent_weakness","improving_weakness","resolved_monitoring"],
+  "confidence_rules":{"low":"single or uncertain evidence","medium":"repeated evidence within limited task types","high":"repeated cross-task/cross-date evidence with clear attribution"},
+  "evidence_policy":{"written":"usable for reading, writing, grammar and written literary response","oral":"audio/video/teacher observation required for pronunciation, intonation and interactive speaking","ocr_uncertain":"exclude from confirmed weakness until verified","teacher_mark":"takes priority for correctness when clearly visible"},
+  "longitudinal_logic":{"recent_weighting":true,"cross_source_bonus":true,"prerequisite_backtracking":true,"regression_reopen":true,"delayed_retest_required":true},
+  "tp_policy":"System may describe evidence consistent with TP characteristics but does not assign official PBD TP automatically."
+}

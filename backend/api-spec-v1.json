@@ -1,0 +1,31 @@
+{
+  "meta":{"name":"KSSM BM Learning Diagnostic API","version":"1.0.0","runtime":"Cloudflare Workers","database":"Cloudflare D1","object_storage":"Cloudflare R2"},
+  "bindings":{"DB":"D1 database","SUBMISSIONS":"R2 bucket for original and processed documents","OCR_PROVIDER":"server-side secret/config, never exposed to browser"},
+  "routes":[
+    {"method":"POST","path":"/api/students","purpose":"Create student profile","auth":"teacher/admin","writes":["students"]},
+    {"method":"GET","path":"/api/students/:id","purpose":"Student profile + current mastery summary","auth":"teacher/student-owner"},
+    {"method":"GET","path":"/api/students/:id/mastery","purpose":"Full skill mastery, trend, weakness state and prerequisite gaps","auth":"teacher/student-owner"},
+    {"method":"POST","path":"/api/submissions","purpose":"Create submission record and return upload instructions","auth":"teacher/student-owner","writes":["submissions"]},
+    {"method":"PUT","path":"/api/submissions/:id/file","purpose":"Upload image/PDF to R2 for small/medium files","auth":"teacher/student-owner","writes":["R2","submissions"]},
+    {"method":"POST","path":"/api/submissions/:id/analyse","purpose":"Run preprocessing, OCR, mark detection, question segmentation, curriculum mapping and diagnosis","auth":"teacher/student-owner","writes":["submission_pages","questions","question_skill_evidence"]},
+    {"method":"GET","path":"/api/submissions/:id","purpose":"Submission status and analysis summary","auth":"teacher/student-owner"},
+    {"method":"GET","path":"/api/submissions/:id/review","purpose":"Return only fields/questions requiring confirmation plus crop references","auth":"teacher"},
+    {"method":"PATCH","path":"/api/questions/:id/review","purpose":"Teacher corrects OCR, mark, score, skill mapping or diagnosis","auth":"teacher","writes":["questions","review_events","question_skill_evidence"],"side_effect":"recompute affected mastery"},
+    {"method":"POST","path":"/api/submissions/:id/confirm","purpose":"Confirm reviewed submission and make eligible evidence final","auth":"teacher","side_effect":"recompute mastery + remediation"},
+    {"method":"GET","path":"/api/questions/:id/source","purpose":"Return signed/controlled source crop for traceability","auth":"teacher/student-owner"},
+    {"method":"GET","path":"/api/students/:id/weaknesses","purpose":"Persistent/confirmed/improving weaknesses with supporting evidence","auth":"teacher/student-owner"},
+    {"method":"GET","path":"/api/students/:id/remediation","purpose":"Current targeted remediation plan","auth":"teacher/student-owner"},
+    {"method":"GET","path":"/api/teacher/dashboard","purpose":"Class-level overview of students, common weaknesses and review queue","auth":"teacher"}
+  ],
+  "analysis_state_machine":["uploaded","preprocessing","ocr","mapping","needs_review","confirmed"],
+  "critical_rules":[
+    "Original files remain immutable in R2; processed images/crops use separate keys.",
+    "No OCR/API provider key is sent to browser clients.",
+    "Questions with uncertain teacher mark or diagnosis-critical OCR remain needs_review.",
+    "Unknown prerequisite is never converted into weak prerequisite.",
+    "Teacher correction invalidates stale downstream evidence and triggers recomputation.",
+    "Every mastery claim must be traceable to question_skill_evidence and original source crop."
+  ],
+  "r2_key_pattern":{"original":"students/{studentId}/submissions/{submissionId}/original/{filename}","page":"students/{studentId}/submissions/{submissionId}/pages/{pageNo}.jpg","crop":"students/{studentId}/submissions/{submissionId}/questions/{questionId}.jpg"},
+  "security":{"recommended":["role-based access control","student ownership checks","rate limiting on analyse route","file type and size validation","private R2 bucket","short-lived controlled file access","audit log for teacher overrides","delete/export workflow for student data"]}
+}

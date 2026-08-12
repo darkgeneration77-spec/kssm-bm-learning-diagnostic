@@ -1,0 +1,13 @@
+{
+  "meta":{"system":"KSSM BM Learning Diagnostic","version":"1.0.0","purpose":"Convert item-level evidence into longitudinal student mastery without confusing isolated performance with stable ability."},
+  "evidence_weights":{"correct":1.0,"partial":0.5,"wrong":0.0,"teacher_confirmed_multiplier":1.0,"ai_only_high_confidence_multiplier":0.85,"medium_confidence_multiplier":0.6,"uncertain_multiplier":0.0},
+  "recency":{"principle":"recent independent evidence weighs more than old evidence","bands":[{"age_days":"0-30","weight":1.0},{"age_days":"31-90","weight":0.8},{"age_days":"91-180","weight":0.6},{"age_days":"181+","weight":0.4}]},
+  "diversity_bonus":{"same_exercise_pattern":0.8,"same_source_different_items":0.9,"different_source_same_skill":1.0,"authentic_writing_plus_explicit_exercise":1.1},
+  "mastery_formula":{"description":"weighted evidence score adjusted by confidence, recency and task diversity","output_range":"0-100","minimum_evidence_for_stable_label":3},
+  "status_rules":{"unknown":"no usable evidence","observation":"1 usable evidence item","possible_weakness":"2+ errors but limited diversity","confirmed_weakness":"3+ clearly attributable errors across independent items/tasks","persistent_weakness":"confirmed weakness across at least two dates or sources","improving":"previous weakness with recent independent success trend","mastered_monitoring":"repeated recent success across independent tasks; continue spaced checks"},
+  "trend_engine":{"window":"last 5 usable evidence items per micro-skill","states":["improving","stable","declining","insufficient_data"],"rule":"trend never overrides confidence/evidence sufficiency"},
+  "prerequisite_logic":{"rule":"persistent higher-level weakness triggers prerequisite inspection","unknown_prerequisite":"show UNKNOWN, never infer weak","repair_sequence":"repair earliest demonstrated weak prerequisite, then retest upward"},
+  "cross_domain_logic":{"example":"repeated imbuhan error in grammar worksheet plus authentic essay raises confidence in same grammar node","guardrail":"single writing slip must not create grammar weakness"},
+  "recalculation_triggers":["new confirmed submission","teacher correction to OCR","teacher correction to curriculum mapping","teacher correction to correctness/score","manual evidence exclusion"],
+  "student_output":{"overall_mastery":0,"domain_mastery":{},"micro_skill_mastery":{},"strengths":[],"confirmed_weaknesses":[],"persistent_weaknesses":[],"improving":[],"unknown_prerequisites":[],"recommended_next_actions":[]}
+}

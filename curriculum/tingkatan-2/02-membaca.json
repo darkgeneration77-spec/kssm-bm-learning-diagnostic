@@ -1,0 +1,21 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 2","domain_code":"MBR","domain_name":"Kemahiran Membaca","version":"1.0.0","status":"curriculum-brain-v1"},
+  "standard_kandungan":[
+    {"code":"2.1","title":"Membaca secara mekanis pelbagai bahan prosa dan puisi","standard_pembelajaran":[
+      {"skill_id":"BM-T2-MBR-2.1.1","code":"2.1.1","focus":["surat kiriman rasmi","surat kiriman tidak rasmi","teks pengacaraan","sebutan","intonasi","maksud tersurat","maksud tersirat"],"diagnostic_micro_skills":["FORMAL_LETTER_ORAL_READING","INFORMAL_LETTER_ORAL_READING","EMCEE_TEXT_ORAL_READING","EXPLICIT_MEANING","IMPLICIT_MEANING"],"evidence_limit":"oral aspects require audio/video/teacher observation; meaning identification may use written evidence"},
+      {"skill_id":"BM-T2-MBR-2.1.2","code":"2.1.2","focus":["syair","sajak","sebutan","intonasi","maksud tersurat","maksud tersirat"],"diagnostic_micro_skills":["POETRY_ORAL_READING","POETRY_EXPLICIT_MEANING","POETRY_IMPLICIT_MEANING"],"evidence_limit":"oral performance requires audio/video/teacher observation"}
+    ]},
+    {"code":"2.2","title":"Membaca untuk memahami makna perkataan, rangkai kata, istilah, ungkapan dan ayat","standard_pembelajaran":[
+      {"skill_id":"BM-T2-MBR-2.2.1","code":"2.2.1","focus":["makna rangkai kata","glosari","kamus","pelbagai bahan"],"diagnostic_micro_skills":["PHRASE_MEANING","GLOSSARY_USE","DICTIONARY_USE","CONTEXTUAL_PHRASE_MEANING"]},
+      {"skill_id":"BM-T2-MBR-2.2.2","code":"2.2.2","focus":["pesanan","menaakul maklumat","respons"],"diagnostic_micro_skills":["MESSAGE_COMPREHENSION","MESSAGE_REASONING","RESPONSE_ACCURACY"]},
+      {"skill_id":"BM-T2-MBR-2.2.3","code":"2.2.3","focus":["luncuran","imbasan","maksud keseluruhan","meneroka bahan"],"diagnostic_micro_skills":["SKIMMING","SCANNING","GLOBAL_MEANING","TEXT_EXPLORATION"]}
+    ]},
+    {"code":"2.3","title":"Membaca untuk memproses maklumat","standard_pembelajaran":[
+      {"skill_id":"BM-T2-MBR-2.3.1","code":"2.3.1","focus":["idea utama","idea sampingan","pelbagai bahan"],"diagnostic_micro_skills":["MAIN_IDEA","SUPPORTING_IDEA","IDEA_HIERARCHY","INFORMATION_FILTERING"]}
+    ]},
+    {"code":"2.4","title":"Membaca secara ekstensif","standard_pembelajaran":[
+      {"skill_id":"BM-T2-MBR-2.4.1","code":"2.4.1","focus":["fiksyen","bukan fiksyen","maklumat baharu","pembangunan diri"],"diagnostic_micro_skills":["EXTENSIVE_READING","NEW_INFORMATION_EXTRACTION","FICTION_NONFICTION_TRANSFER"]}
+    ]}
+  ],
+  "progression_note":"T2 extends T1 reading by adding explicit/implicit meaning in formal texts and poetry, reasoning from messages, and broader text exploration while retaining main/supporting idea processing."
+}

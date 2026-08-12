@@ -1,0 +1,12 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 4","version":"1.0.0"},
+  "principle":"T4 diagnosis combines curriculum mastery with upper-secondary readiness. AI mastery, assessment performance, suggested TP evidence and teacher judgement remain separate.",
+  "mastery_fields":["ai_mastery_score","evidence_count","evidence_diversity","trend","confidence","curriculum_node","assessment_node","suggested_tp_evidence","teacher_confirmed_tp"],
+  "weakness_states":["observation","possible_weakness","confirmed_weakness","persistent_weakness","improving_weakness","resolved_monitoring"],
+  "evidence_policy":{"written":"reading, writing, grammar, literature and editing evidence may be extracted from marked physical work","oral":"audio/video/teacher observation required for pronunciation, intonation, debate and interactive speaking","ocr_uncertain":"excluded from confirmed diagnosis until verified","teacher_mark":"priority for correctness when visible; root cause still requires item-response analysis"},
+  "upper_secondary_dimensions":["literal comprehension","inference","analysis","evaluation","synthesis","argumentation","task fulfilment","content depth","elaboration","evidence use","organisation","language accuracy","language range"],
+  "confidence_rules":{"low":"single/narrow/uncertain evidence","medium":"repeated evidence but limited diversity","high":"cross-task, cross-date and clearly attributable evidence"},
+  "backtracking_rule":"Before assigning intensive T4 remediation, inspect mapped T3 and earlier prerequisite nodes. Repair only the earliest demonstrably weak prerequisite, then return to the T4 target.",
+  "assessment_separation":"An SPM-style score is evidence about assessment performance, not a replacement for the curriculum mastery profile.",
+  "tp_policy":"System may describe evidence consistent with mastery characteristics but official PBD judgement remains teacher-controlled."
+}

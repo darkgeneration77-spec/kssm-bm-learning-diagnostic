@@ -10,27 +10,20 @@
 <body>
 <main class="wrap">
 <div class="top"><div class="brand"><div class="logo"></div><div><h1>学生管理</h1><p>KSSM BM Learning Diagnostic</p></div></div><div class="nav"><a class="btn" href="index.html">返回首页</a><a class="btn" href="upload.html">上传作业</a></div></div>
-<section class="hero"><div><h2>学生档案</h2><p>先用 Demo Data 跑完整流程。接上 Database 后，这里会显示真实学生的长期 mastery、弱点与进步趋势。</p></div><button class="btn primary" onclick="openModal()">+ 新增学生</button></section>
+<section class="hero"><div><h2>学生档案</h2><p>当前先用浏览器 Demo Data 串完整流程。接上 Database 后，这里会显示真实学生的长期 mastery、弱点与进步趋势。</p></div><button class="btn primary" onclick="openModal()">+ 新增学生</button></section>
 <div class="filters"><input id="search" class="input" placeholder="搜索学生姓名..." oninput="render()"><select id="formFilter" class="select" onchange="render()"><option value="all">全部年级</option><option>Tingkatan 1</option><option>Tingkatan 2</option><option>Tingkatan 3</option><option>Tingkatan 4</option><option>Tingkatan 5</option></select><select id="statusFilter" class="select" onchange="render()"><option value="all">全部状态</option><option value="stable">稳定</option><option value="improving">改善中</option><option value="attention">需关注</option></select></div>
 <div class="sectionTitle"><h3>学生列表</h3><span id="count"></span></div>
 <section id="studentsGrid" class="grid"></section>
-<div class="footer">Student Management · Demo Frontend</div>
+<div class="footer">Student Management · Shared Demo State</div>
 </main>
 <div id="modal" class="modal"><div class="modalCard"><h3>新增学生</h3><div class="form"><div><label>学生姓名</label><input id="newName" class="input" placeholder="例如：Jayden"></div><div class="row"><div><label>年级</label><select id="newForm" class="select"><option>Tingkatan 1</option><option>Tingkatan 2</option><option>Tingkatan 3</option><option>Tingkatan 4</option><option>Tingkatan 5</option></select></div><div><label>班级</label><input id="newClass" class="input" placeholder="例如：2A"></div></div><div class="row"><button class="btn" onclick="closeModal()">取消</button><button class="btn primary" onclick="addStudent()">保存 Demo 学生</button></div></div></div></div>
+<script src="assets/app-state.js"></script>
 <script>
-const demo=[
-{name:'Jayden',form:'Tingkatan 2',cls:'2A',mastery:68,status:'attention',weak:'Rumusan · Main Idea',trend:'↓ 6%',evidence:18},
-{name:'Alyssa',form:'Tingkatan 4',cls:'4C',mastery:81,status:'improving',weak:'Claim → Evidence Link',trend:'↑ 12%',evidence:27},
-{name:'Bryan',form:'Tingkatan 1',cls:'1B',mastery:76,status:'stable',weak:'Kata Ganda',trend:'→ 1%',evidence:14},
-{name:'Sofia',form:'Tingkatan 5',cls:'5A',mastery:73,status:'improving',weak:'Inferens',trend:'↑ 8%',evidence:32},
-{name:'Daniel',form:'Tingkatan 3',cls:'3D',mastery:61,status:'attention',weak:'Huraian',trend:'↓ 4%',evidence:21},
-{name:'Mei Xin',form:'Tingkatan 2',cls:'2B',mastery:87,status:'stable',weak:'Tanda Baca',trend:'↑ 2%',evidence:25}
-];
-let students=JSON.parse(localStorage.getItem('bm_demo_students')||'null')||demo;
+let students=BMState.getStudents();
 function statusText(s){return s==='improving'?'改善中':s==='attention'?'需关注':'稳定'}
-function render(){const q=document.getElementById('search').value.toLowerCase();const f=document.getElementById('formFilter').value;const st=document.getElementById('statusFilter').value;const list=students.filter(x=>(!q||x.name.toLowerCase().includes(q))&&(f==='all'||x.form===f)&&(st==='all'||x.status===st));document.getElementById('count').textContent=`${list.length} 位学生`;document.getElementById('studentsGrid').innerHTML=list.map((s,i)=>`<article class="card"><div class="studentHead"><div style="display:flex;gap:12px;align-items:center"><div class="avatar">${s.name.charAt(0)}</div><div><h4>${s.name}</h4><p>${s.form} · ${s.cls}</p></div></div><span class="badge">${statusText(s.status)}</span></div><div class="mini"><div><small>Mastery</small><strong>${s.mastery}%</strong></div><div><small>Trend</small><strong>${s.trend}</strong></div><div><small>Evidence</small><strong>${s.evidence}</strong></div></div><div class="weak"><strong>当前主要弱点</strong><br>${s.weak}</div><div class="actions"><a href="analysis.html?student=${encodeURIComponent(s.name)}">查看诊断</a><a href="upload.html?student=${encodeURIComponent(s.name)}">上传作业</a></div></article>`).join('')||'<div class="card">没有符合条件的学生。</div>'}
+function render(){students=BMState.getStudents();const q=document.getElementById('search').value.toLowerCase();const f=document.getElementById('formFilter').value;const st=document.getElementById('statusFilter').value;const list=students.filter(x=>(!q||x.name.toLowerCase().includes(q))&&(f==='all'||x.form===f)&&(st==='all'||x.status===st));document.getElementById('count').textContent=`${list.length} 位学生`;document.getElementById('studentsGrid').innerHTML=list.map(s=>`<article class="card"><div class="studentHead"><div style="display:flex;gap:12px;align-items:center"><div class="avatar">${s.name.charAt(0)}</div><div><h4>${s.name}</h4><p>${s.form} · ${s.cls}</p></div></div><span class="badge">${statusText(s.status)}</span></div><div class="mini"><div><small>Mastery</small><strong>${s.mastery}%</strong></div><div><small>Trend</small><strong>${s.trend}</strong></div><div><small>Evidence</small><strong>${s.evidence}</strong></div></div><div class="weak"><strong>当前主要弱点</strong><br>${s.weak}</div><div class="actions"><a href="analysis.html?student=${encodeURIComponent(s.name)}" onclick="BMState.selectStudent('${s.name.replace(/'/g,"\\'")}')">查看诊断</a><a href="upload.html?student=${encodeURIComponent(s.name)}" onclick="BMState.selectStudent('${s.name.replace(/'/g,"\\'")}')">上传作业</a></div></article>`).join('')||'<div class="card">没有符合条件的学生。</div>'}
 function openModal(){document.getElementById('modal').classList.add('show')}function closeModal(){document.getElementById('modal').classList.remove('show')}
-function addStudent(){const name=document.getElementById('newName').value.trim();if(!name)return alert('请输入学生姓名');students.push({name,form:document.getElementById('newForm').value,cls:document.getElementById('newClass').value.trim()||'-',mastery:0,status:'stable',weak:'尚无足够证据',trend:'—',evidence:0});localStorage.setItem('bm_demo_students',JSON.stringify(students));closeModal();render()}
+function addStudent(){const name=document.getElementById('newName').value.trim();if(!name)return alert('请输入学生姓名');students.push({name,form:document.getElementById('newForm').value,cls:document.getElementById('newClass').value.trim()||'-',mastery:0,status:'stable',weak:'尚无足够证据',trend:'—',evidence:0});BMState.saveStudents(students);closeModal();render()}
 render();
 </script>
 </body></html>

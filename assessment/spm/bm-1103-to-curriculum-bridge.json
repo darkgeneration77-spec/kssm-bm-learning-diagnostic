@@ -1,0 +1,35 @@
+{
+  "meta":{"subject":"Bahasa Melayu","assessment":"SPM","version":"1.0.0","purpose":"Translate marked SPM-style paper evidence into curriculum and diagnostic nodes."},
+  "mapping_examples":[
+    {"assessment":"1103/1 Bahagian A","observed":"uses stimulus but misses one required scope","primary":"WR_T5_TASK","secondary":["WR_T5_SCOPE"],"curriculum":"T4/T5 Menulis 3.4"},
+    {"assessment":"1103/1 Bahagian B","observed":"many relevant ideas but shallow paragraphs","primary":"WR_T5_CONTENT_DEPTH","secondary":["WR_T5_ELABORATION"],"curriculum":"T4/T5 Menulis 3.4"},
+    {"assessment":"1103/1 Bahagian B","observed":"example is relevant to topic but does not prove claim","primary":"WR_T5_CLAIM_EVIDENCE_LINK","secondary":["WR_T5_REASONING"],"curriculum":"T4/T5 Menulis 3.2/3.4"},
+    {"assessment":"1103/2 Sistem dan Aplikasi Bahasa","observed":"wrong affixed word formation","primary":"GR_T5_WORD_FORM","secondary":["MORPHOLOGY"],"curriculum":"T4/T5 Tatabahasa 5.1/5.2"},
+    {"assessment":"1103/2 Sistem dan Aplikasi Bahasa","observed":"sentence transformation changes original meaning","primary":"GR_T5_SENTENCE_TRANSFORMATION","secondary":["MEANING_PRESERVATION"],"curriculum":"T4/T5 Tatabahasa 5.3"},
+    {"assessment":"1103/2 Pemahaman","observed":"direct facts correct but inferred meaning wrong","primary":"RD_T5_INFERENCE","secondary":["RD_T5_EVIDENCE"],"curriculum":"T4/T5 Membaca 2.2/2.3"},
+    {"assessment":"1103/2 Novel","observed":"correct event named but no explanation linking event to requested value/character trait","primary":"SB_T5_JUSTIFICATION","secondary":["NOVEL_EVIDENCE_LINK"],"curriculum":"T4/T5 Seni Bahasa"},
+    {"assessment":"1103/2 Rumusan","observed":"copies many details and examples but misses focus","primary":"WR_T5_SYNTHESIS","secondary":["SUMMARY_FOCUS","IMPORTANT_IDEA_SELECTION","IRRELEVANT_DETAIL_FILTERING"],"curriculum":"T4/T5 Menulis 3.5"},
+    {"assessment":"1103/3 Bertutur","observed":"ideas relevant but cannot expand or support them","primary":"ORAL_ELABORATION","secondary":["REASON","EVIDENCE"],"curriculum":"T4/T5 Mendengar dan Bertutur"},
+    {"assessment":"1103/4 Mendengar","observed":"specific details correct but main idea repeatedly wrong","primary":"LISTEN_MAIN_IDEA","secondary":["INFORMATION_PRIORITISATION"],"curriculum":"T4/T5 Mendengar dan Bertutur"}
+  ],
+  "upload_analysis_pipeline":[
+    "detect paper/section/question",
+    "extract question text and stimulus",
+    "extract student answer",
+    "extract teacher marking and annotations",
+    "determine correctness/score evidence",
+    "classify assessment skill",
+    "map to curriculum micro-skill",
+    "classify likely error type",
+    "compare with student history",
+    "backtrack prerequisites only where evidence supports it",
+    "generate remediation and retest target"
+  ],
+  "confidence_guardrails":[
+    "Teacher ticks/crosses and awarded marks establish performance evidence but do not by themselves prove root cause.",
+    "If teacher annotations explicitly identify an error type, treat them as high-value evidence but preserve raw annotation separately.",
+    "If question or handwriting is unreadable, request/flag verification rather than infer a weakness.",
+    "For essay total marks without rubric annotations, generate dimension hypotheses with lower confidence instead of a definitive diagnosis.",
+    "Multiple independent examples of the same underlying skill error are required before persistent weakness status."
+  ]
+}

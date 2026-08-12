@@ -1,0 +1,28 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 3","version":"1.0.0","purpose":"Connect T3 higher-order skills to T2/T1 foundations."},
+  "cross_form_edges":[
+    {"from":"T2_EXPLICIT_IMPLICIT_MEANING","to":"T3_GRAPHIC_EXPLICIT_IMPLICIT","relation":"prerequisite"},
+    {"from":"T2_MAIN_SUPPORTING_IDEA","to":"T3_CROSS_TEXT_REVIEW","relation":"prerequisite"},
+    {"from":"T2_TOPIC_SENTENCE_ELABORATION","to":"T3_CONTENT_PARAGRAPH","relation":"prerequisite"},
+    {"from":"T2_PARAGRAPH_DEVELOPMENT","to":"T3_COMPLETE_DISCOURSE","relation":"prerequisite"},
+    {"from":"T2_RINGKASAN_RUMUSAN","to":"T3_INFORMATION_SYNTHESIS","relation":"supports"},
+    {"from":"T2_COMPLEX_FUNCTION_WORDS","to":"T3_GRAMMAR_ANALYSIS","relation":"supports"},
+    {"from":"T2_TRANSITIVE_VERB","to":"T3_VERB_ANALYSIS","relation":"prerequisite"},
+    {"from":"T2_PARTIAL_REDUPLICATION","to":"T3_PELBAGAI_KATA_GANDA","relation":"prerequisite"},
+    {"from":"T2_NOUN_AFFIX","to":"T3_PELBAGAI_KATA_TERBITAN","relation":"prerequisite"},
+    {"from":"T2_ADJECTIVE_PHRASE","to":"T3_PELBAGAI_FRASA","relation":"phrase_progression"},
+    {"from":"T2_SIMPLE_SENTENCE","to":"T3_SENTENCE_STRUCTURE","relation":"prerequisite"},
+    {"from":"T2_SENTENCE_TYPE","to":"T3_SENTENCE_TRANSFORMATION","relation":"supports"},
+    {"from":"T2_LITERARY_JUSTIFICATION","to":"T3_LITERARY_JUSTIFICATION","relation":"prerequisite"},
+    {"from":"T2_DIVERGENT_QUESTION","to":"T3_ANALYTICAL_DISCUSSION","relation":"progression"},
+    {"from":"T2_FILTER_INFORMATION","to":"T3_CATEGORISE_ANALYSE_INFO","relation":"progression"}
+  ],
+  "backtracking_examples":[
+    {"observed":"T3_GRAPHIC_IMPLICIT_WEAK","check":["T3_GRAPHIC_EXPLICIT","T2_EXPLICIT_MEANING","T2_IMPLICIT_MEANING","T1_CONTEXTUAL_MEANING"]},
+    {"observed":"T3_COMPLETE_DISCOURSE_WEAK","check":["T3_FRAMEWORK","T3_CONTENT_PARAGRAPH","T2_TOPIC_SENTENCE","T2_ELABORATION","GRAMMATICAL_SENTENCE_CONSTRUCTION"]},
+    {"observed":"T3_SENTENCE_TRANSFORMATION_WEAK","check":["T3_SENTENCE_STRUCTURE","T2_SIMPLE_SENTENCE","T2_SENTENCE_TYPE","T1_SUBJECT_PREDICATE"]},
+    {"observed":"T3_GRAMMAR_ANALYSIS_WEAK","check":["WORD_CLASS_RECOGNITION","T2_PHRASE_SKILLS","T3_SENTENCE_STRUCTURE","T1_T2_AFFIX_FOUNDATIONS"]},
+    {"observed":"T3_CRITICAL_RESPONSE_WEAK","check":["INFORMATION_IDENTIFICATION","MAIN_IDEA","EVIDENCE_SELECTION","JUSTIFICATION"]}
+  ],
+  "rule":"Repair the earliest clearly broken prerequisite, then climb forward with reduced scaffolding. Do not send a learner back an entire form when only one foundation node is weak."
+}

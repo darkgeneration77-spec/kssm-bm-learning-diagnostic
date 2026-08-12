@@ -1,0 +1,15 @@
+{
+  "meta":{"system":"KSSM Bahasa Melayu Learning Diagnostic","version":"1.0.0","purpose":"Define auditable evidence records generated from each analysed question before updating student mastery."},
+  "evidence_record":{
+    "student_id":"string","submission_id":"string","question_id":"string","timestamp":"datetime","source_page":"integer|null","source_bbox":"polygon|null","question_text":"string","student_answer":"string|null","teacher_mark":"correct|wrong|partial|unknown","score_awarded":"number|null","score_max":"number|null","assessment_node":"string|null","curriculum_skill":"string|null","secondary_skills":"array","micro_skills":"array","error_codes":"array","ocr_confidence":"0..1","mapping_confidence":"0..1","error_confidence":"0..1","overall_evidence_confidence":"0..1","status":"confirmed|provisional|needs_review|rejected","human_verified":"boolean","human_corrections":"array","explanation":"string","prerequisite_checks":"array","diagnosis_impact":"none|low|medium|high"
+  },
+  "gating_rules":[
+    "needs_review evidence cannot create confirmed or persistent weakness",
+    "provisional evidence may affect trend softly but cannot close or reopen mastery by itself",
+    "human_verified evidence receives priority over unverified model output",
+    "OCR confidence, curriculum mapping confidence and error-cause confidence are separate and must never be collapsed into one hidden score",
+    "a correct answer may provide positive mastery evidence when the item genuinely tests the mapped skill",
+    "partial marks should create component-level evidence where possible instead of binary right/wrong evidence"
+  ],
+  "auditability":"Every diagnostic statement shown to teacher/student must be traceable to one or more evidence_record IDs and source image regions."
+}

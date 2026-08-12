@@ -1,0 +1,34 @@
+{
+  "meta":{"project":"KSSM BM Learning Diagnostic","version":"1.0.0"},
+  "input_types":["camera photo","gallery image","multi-page PDF","scanned worksheet"],
+  "question_evidence_object":{"fields":["student_id","document_id","page","question_number","question_text_raw","question_text_clean","student_answer_raw","student_answer_clean_candidate","teacher_mark","teacher_score","max_score","teacher_comment","question_polygon","answer_polygon","mark_polygon","ocr_confidence","mark_confidence","verification_status","assessment_mapping","curriculum_mapping","diagnostic_error_candidates"]},
+  "teacher_mark_states":["correct","wrong","partially_correct","unmarked","uncertain","teacher_corrected_answer_present"],
+  "workflow":[
+    "upload",
+    "quality gate",
+    "preprocess while retaining original",
+    "OCR/layout extraction",
+    "question segmentation",
+    "student-vs-teacher role separation",
+    "mark/score recognition",
+    "question-answer alignment",
+    "confidence reconciliation",
+    "teacher review for uncertain fields",
+    "assessment mapping",
+    "curriculum skill mapping",
+    "error/root-cause hypothesis",
+    "historical evidence lookup",
+    "prerequisite backtracking",
+    "mastery update",
+    "remediation recommendation"
+  ],
+  "review_ui_rules":[
+    "Show the original crop beside every uncertain extracted field.",
+    "Allow one-click correction of OCR text, question number, teacher mark and score.",
+    "Highlight only fields that materially affect diagnosis; do not force the user to verify every correctly read printed line.",
+    "After teacher correction, persist corrected truth and recompute downstream diagnosis.",
+    "Never hide the original OCR result so extraction quality can be audited."
+  ],
+  "diagnosis_gate":{"rule":"No confirmed weakness update from a question unless correctness and relevant response text are sufficiently reliable.","allowed_states":["verified","high_confidence_consistent"],"blocked_states":["uncertain_ocr","ambiguous_mark","missing_question_alignment"]},
+  "auditability":{"store":["original page","cropped regions","raw OCR","corrected OCR","who corrected","timestamp","mapping version","diagnostic version"],"reason":"Any future model upgrade must allow reprocessing without losing historical truth."}
+}

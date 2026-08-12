@@ -1,0 +1,11 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 3","version":"1.0.0"},
+  "principle":"AI diagnosis supports teacher judgement. AI mastery score, suggested TP evidence and teacher-confirmed TP remain separate.",
+  "mastery_fields":["ai_mastery_score","evidence_count","evidence_diversity","trend","confidence","suggested_tp_evidence","teacher_confirmed_tp"],
+  "weakness_states":["observation","possible_weakness","confirmed_weakness","persistent_weakness","improving_weakness","resolved_monitoring"],
+  "confidence_rules":{"low":"single, unclear or OCR-uncertain evidence","medium":"repeated evidence with limited task/source diversity","high":"clear repeated evidence across independent tasks, sources or dates"},
+  "evidence_policy":{"written":"usable for reading, writing, grammar and written literary responses","oral":"audio/video or teacher observation required for pronunciation, intonation, pidato and interactive speaking","audiovisual":"required where the targeted skill explicitly depends on audiovisual interpretation","ocr_uncertain":"exclude from confirmed weakness until verified","teacher_mark":"teacher-confirmed correctness takes priority over automatic mark recognition"},
+  "t3_emphasis":["analysis","critical response","creative response","explicit and implicit information","complete discourse construction","language register","text transformation","grammar analysis"],
+  "longitudinal_logic":{"recent_weighting":true,"cross_source_bonus":true,"t1_t2_prerequisite_backtracking":true,"regression_reopen":true,"delayed_retest_required":true},
+  "tp_policy":"The system may describe evidence consistent with TP characteristics but must not automatically assign official PBD Tahap Penguasaan."
+}

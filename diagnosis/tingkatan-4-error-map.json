@@ -1,0 +1,11 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 4","version":"1.0.0"},
+  "error_map":{
+    "reading":["RD_T4_WORD_CONTEXT","RD_T4_EXPLICIT","RD_T4_IMPLICIT","RD_T4_MAIN_IDEA","RD_T4_INFO_SELECTION","RD_T4_COMPARE","RD_T4_CAUSE_EFFECT","RD_T4_INFERENCE","RD_T4_ANALYSIS","RD_T4_EVALUATION","RD_T4_SYNTHESIS","RD_T4_EVIDENCE","RD_T4_JUSTIFICATION"],
+    "writing":["WR_T4_TASK_INTERPRETATION","WR_T4_SCOPE","WR_T4_IDEA_GENERATION","WR_T4_IDEA_SELECTION","WR_T4_CONTENT_DEPTH","WR_T4_INTRODUCTION","WR_T4_TOPIC_SENTENCE","WR_T4_ELABORATION","WR_T4_EXAMPLE_EVIDENCE","WR_T4_CLAIM_REASON_LINK","WR_T4_CLAIM_EVIDENCE_LINK","WR_T4_PARAGRAPH_COHERENCE","WR_T4_COHESION","WR_T4_CONCLUSION","WR_T4_REGISTER","WR_T4_LEXICAL_PRECISION","WR_T4_SUMMARY_FOCUS","WR_T4_SUMMARY_SELECTION","WR_T4_SYNTHESIS","WR_T4_MEANING_PRESERVATION","WR_T4_EDITING"],
+    "grammar":["GR_T4_WORD_FORM","GR_T4_SINGLE_WORD","GR_T4_COMPOUND_WORD","GR_T4_DERIVED_WORD","GR_T4_REDUPLICATION","GR_T4_ACRONYM","GR_T4_NOUN","GR_T4_VERB","GR_T4_ADJECTIVE","GR_T4_FUNCTION_WORD","GR_T4_PHRASE_TYPE","GR_T4_BASIC_SENTENCE","GR_T4_SIMPLE_SENTENCE","GR_T4_NORMAL_INVERTED_ORDER","GR_T4_COMPOUND_SENTENCE","GR_T4_SENTENCE_TYPE"],
+    "seni_bahasa":["SB_T4_PROSE_MEANING","SB_T4_POETRY_MEANING","SB_T4_THEME","SB_T4_ISSUE","SB_T4_VALUE","SB_T4_LESSON","SB_T4_CHARACTER","SB_T4_CHARACTERISATION","SB_T4_LANGUAGE_STYLE","SB_T4_PROVERB","SB_T4_DRAMA_SCRIPT","SB_T4_CREATIVE_PRODUCTION","SB_T4_JUSTIFICATION"],
+    "oral_listening":["OL_T4_FACT","OL_T4_ARGUMENT","OL_T4_ANALYSIS","OL_T4_OPINION","OL_T4_PRESENTATION","OL_T4_DISCUSSION","OL_T4_NEGOTIATION","OL_T4_DEBATE","OL_T4_SYNTHESIS"]
+  },
+  "root_cause_rules":["Use the narrowest defensible code.","Separate claim generation, evidence selection and reasoning.","Separate idea generation from elaboration.","Separate comprehension failure from inability to express a correct response.","Check T3 prerequisite nodes for repeated T4 higher-order failures.","Do not infer oral weaknesses from written evidence alone.","OCR uncertainty is not learner error.","Repeated authentic-writing grammar errors may update grammar nodes when attribution is clear."]
+}

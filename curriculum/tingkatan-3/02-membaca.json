@@ -1,0 +1,10 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 3","domain":"Kemahiran Membaca","version":"1.0.0","source_basis":"DSKP KSSM Bahasa Melayu Tingkatan 3, Terbitan 2017"},
+  "standards":[
+    {"sk":"2.1","sp":[{"code":"2.1.1","focus":["laras bahasa laporan","berita","sebutan","intonasi","nada","kepantasan"],"micro_skills":["REPORT_REGISTER","NEWS_REGISTER","MECHANICAL_READING","READING_PROSODY"]},{"code":"2.1.2","focus":["laras bahasa cerpen","sebutan","intonasi","nada"],"micro_skills":["SHORT_STORY_REGISTER","LITERARY_ORAL_READING","READING_PROSODY"]}]},
+    {"sk":"2.2","sp":[{"code":"2.2.1","focus":["maksud istilah","glosari","kamus","tesaurus"],"micro_skills":["TERM_MEANING","REFERENCE_TOOL_SELECTION","THESAURUS_USE","CONTEXTUAL_PRECISION"]},{"code":"2.2.2","focus":["menganalisis maklumat","pelbagai panduan","respons peribadi"],"micro_skills":["GUIDE_ANALYSIS","INSTRUCTIONAL_INFORMATION","PERSONAL_RESPONSE","APPLY_GUIDANCE"]},{"code":"2.2.3","focus":["bahan grafik","maksud keseluruhan","ulasan"],"micro_skills":["GRAPHIC_TEXT_COMPREHENSION","MULTIMODAL_INTEGRATION","GLOBAL_MEANING","GRAPHIC_COMMENTARY"]}]},
+    {"sk":"2.3","sp":[{"code":"2.3.1","focus":["mengulas maklumat","pelbagai teks","ketepatan"],"micro_skills":["TEXT_INFORMATION_PROCESSING","SYNTHESIS","COMMENTARY","EVIDENCE_SELECTION"]}]},
+    {"sk":"2.4","sp":[{"code":"2.4.1","focus":["fiksyen","bukan fiksyen","pendapat rasional"],"micro_skills":["EXTENSIVE_READING","TEXT_EVALUATION","RATIONAL_OPINION","JUSTIFICATION"]}]}
+  ],
+  "evidence_rules":{"oral_reading":"audio/video/teacher observation needed for direct sebutan/intonasi/nada claims","written_comprehension":"usable for meaning, analysis, commentary and opinion nodes","graphic_task":"retain image/graphic context when classifying error"}
+}

@@ -29,7 +29,7 @@ app/
 
 ### Tingkatan 1
 - [x] 1.0 Kemahiran Mendengar dan Bertutur — Curriculum Brain v1
-- [ ] 2.0 Kemahiran Membaca
+- [x] 2.0 Kemahiran Membaca — Curriculum Brain v1
 - [ ] 3.0 Kemahiran Menulis
 - [ ] 4.0 Aspek Seni Bahasa
 - [ ] 5.0 Aspek Tatabahasa

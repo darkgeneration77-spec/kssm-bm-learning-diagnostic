@@ -1,0 +1,10 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 5","domain_code":"SB","domain_name":"Aspek Seni Bahasa","version":"1.0.0","status":"curriculum-brain-v1"},
+  "curriculum_structure":[
+    {"sk":"4.1","focus":"Memahami dan mengapresiasi karya sastera melalui analisis unsur, maksud dan kesan","diagnostic_micro_skills":["SYNOPSIS","THEME","ISSUE","VALUE","LESSON","CHARACTER","CHARACTERISATION","PLOT_EVENT_EVIDENCE","LANGUAGE_STYLE","MEANING","APPRECIATION","JUSTIFICATION"]},
+    {"sk":"4.2","focus":"Memahami dan menggunakan peribahasa serta bahasa indah/kiasan mengikut konteks","diagnostic_micro_skills":["PROVERB_MEANING","PROVERB_CONTEXT","FIGURATIVE_LANGUAGE","CONTEXT_MATCHING"]},
+    {"sk":"4.3","focus":"Menghasilkan dan mengubah suai karya kreatif dalam pelbagai bentuk","diagnostic_micro_skills":["CREATIVE_IDEA","FORM_CONVENTION","ADAPTATION","LANGUAGE_CREATIVITY","COHERENCE","MEANING_PRESERVATION"]},
+    {"sk":"4.4","focus":"Mempersembahkan karya prosa, puisi, drama atau sedutan novel secara kreatif dan berkesan","diagnostic_micro_skills":["TEXT_INTERPRETATION","ORAL_DELIVERY","INTONATION","TONE","STYLE","CREATIVE_PRESENTATION","AUDIENCE_EFFECT"],"evidence":"oral/performance nodes require audio/video/teacher observation"}
+  ],
+  "diagnostic_rule":"Distinguish identifying a literary element from explaining it and from justifying it with textual/event evidence."
+}

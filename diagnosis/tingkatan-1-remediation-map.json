@@ -1,0 +1,43 @@
+{
+  "meta": {"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 1","version":"1.0.0","purpose":"Targeted remediation recipes selected after root-cause diagnosis."},
+  "remediation_map": {
+    "RD_WORD_MEANING":{"steps":["identify unknown word/phrase","use sentence clues","check glossary/dictionary meaning","compare possible meanings","apply word in new context","delayed retest"]},
+    "RD_INSTRUCTION":{"steps":["underline action word","identify required output","identify conditions/sequence","paraphrase instruction","complete guided example","new instruction retest"]},
+    "RD_GLOBAL_MEANING":{"steps":["skim title/opening/key sentences","state topic","collect repeated/key ideas","combine into overall meaning","verify against whole text","new text retest"]},
+    "RD_MAIN_IDEA":{"steps":["identify topic","separate detail/example","find sentence/idea covering most content","state main idea in own words","compare with distractors","new passage retest"]},
+    "RD_SUPPORTING_IDEA":{"steps":["state main idea first","locate evidence/details","group detail under main idea","remove unrelated detail","new passage retest"]},
+    "RD_SCAN_INFO":{"steps":["extract question keyword","predict equivalent words","scan rather than reread all","locate exact evidence","verify requested detail","new text retest"]},
+    "WR_TASK":{"steps":["circle task verb","mark topic","mark audience/format/limits where relevant","rewrite task requirement","plan only relevant content","complete new prompt"]},
+    "WR_IDEA":{"steps":["brainstorm relevant ideas","reject off-topic ideas","rank strongest ideas","build simple outline","write paragraph from outline","new prompt transfer"]},
+    "WR_ELAB":{"steps":["state isi","answer mengapa/bagaimana","add relevant detail","add example/effect where suitable","link back to topic","write independent paragraph","delayed transfer"]},
+    "WR_ORG":{"steps":["arrange outline","one main focus per paragraph","use logical sequence","connect sentences","check introduction-body-ending relationship","rewrite independently"]},
+    "WR_SUMMARY_SELECT":{"steps":["identify task focus","mark important ideas","cross out examples/repetition","check coverage","write selected points","new passage retest"]},
+    "WR_SUMMARY_PRESERVE":{"steps":["compare original idea","paraphrase without changing claim","remove added opinion","check key actors/actions","rewrite concise sentence","new passage retest"]},
+    "WR_EDIT":{"steps":["identify error category","state rule","correct one targeted error type","edit mixed sentences","edit own writing","delayed editing retest"]},
+    "GR_NOUN":{"steps":["recognise noun","classify common/proper","identify compound form","choose by context","correct misuse","construct sentence","authentic writing check"]},
+    "GR_ADJ":{"steps":["recognise adjective","distinguish from other classes","match adjective to context","correct misuse","construct sentence","writing transfer"]},
+    "GR_FUNCTION":{"steps":["identify function-word category","state communicative function","choose correct word","correct context misuse","construct dialogue/sentence","transfer task"]},
+    "GR_VERB_INTR":{"steps":["identify verb","check whether object is required","contrast transitive/intransitive pattern","correct sentence","construct new sentence","writing transfer"]},
+    "GR_REDUP":{"steps":["recognise reduplication form","identify meaning/function","check affixed form","remove double plural marking","correct sentence","new-context application"]},
+    "GR_AFFIX":{"steps":["identify root word","identify intended meaning/function","select affix","form derived word","compare wrong/correct forms","use in sentence","apply in writing","delayed retest"]},
+    "GR_PHRASE":{"steps":["identify noun phrase","locate head","locate modifier","rebuild phrase","use in sentence","new-context retest"]},
+    "GR_SUBPRED":{"steps":["locate subject","locate predicate","check completeness","split sample sentences","reconstruct sentences","independent retest"]},
+    "GR_PATTERN":{"steps":["identify subject/predicate","classify predicate phrase","map FN+FN/FK/FA/FS","compare patterns","construct each pattern","mixed retest"]},
+    "GR_SENTTYPE":{"steps":["identify communicative purpose","recognise sentence type","match punctuation/form","transform between types","construct by context","mixed retest"]},
+    "LM_SPELL":{"steps":["identify recurring spelling pattern","state correct form/rule","contrast wrong/correct","short dictation/correction","apply in sentence","check later writing"]},
+    "LM_PUNCT":{"steps":["identify sentence boundary/function","choose punctuation","correct examples","punctuate short paragraph","edit own writing","later check"]},
+    "LM_GRAM_SENT":{"steps":["find subject/predicate","check completeness","identify structural fault","repair sentence","construct parallel example","apply in paragraph"]},
+    "SB_THEME":{"steps":["summarise work/event","identify central recurring concern","separate theme from detail","support with evidence","apply to another extract"]},
+    "SB_ISSUE":{"steps":["identify theme","list issues shown by events","link each issue to evidence","write concise response","new extract retest"]},
+    "SB_MEANING":{"steps":["read literal meaning","identify figurative/implicit clue","connect to context","paraphrase meaning","verify with text","new extract retest"]},
+    "SB_JUSTIFY":{"steps":["state claim","select textual/event evidence","explain how evidence supports claim","remove irrelevant evidence","write concise justification","new item retest"]},
+    "SB_CREATIVE":{"steps":["identify required form","model structure","plan idea","draft","check language/form conventions","revise","independent creation"]}
+  },
+  "assignment_policy": {
+    "possible_weakness":"assign short diagnostic practice before full remediation",
+    "confirmed_weakness":"assign targeted remediation sequence",
+    "persistent_weakness":"backtrack prerequisites, reteach explicitly, then targeted practice",
+    "improving_weakness":"reduce scaffolding and use transfer tasks",
+    "resolved_monitoring":"no intensive remediation; schedule spaced check"
+  }
+}

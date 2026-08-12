@@ -1,0 +1,12 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 5","version":"1.0.0"},
+  "principle":"T5 diagnosis represents end-of-secondary curriculum mastery and readiness evidence. Curriculum mastery, SPM assessment performance, AI confidence and teacher judgement remain separate.",
+  "mastery_fields":["ai_mastery_score","evidence_count","evidence_diversity","trend","confidence","curriculum_node","assessment_node","suggested_tp_evidence","teacher_confirmed_tp"],
+  "weakness_states":["observation","possible_weakness","confirmed_weakness","persistent_weakness","improving_weakness","resolved_monitoring"],
+  "evidence_policy":{"written":"marked physical exercises, school tests, essays, comprehension, grammar, editing and literary responses","oral":"audio/video/teacher observation required for speaking/listening performance","ocr_uncertain":"never count as confirmed learner error","teacher_mark":"priority for correctness where clearly visible; root cause still requires analysis"},
+  "terminal_dimensions":["literal comprehension","inference","analysis","evaluation","synthesis","argumentation","multi-source integration","task fulfilment","content depth","elaboration","evidence quality","reasoning","organisation","language accuracy","language range","register control","editing"],
+  "confidence_rules":{"low":"single/narrow/uncertain evidence","medium":"repeated but limited evidence","high":"cross-task, cross-date, multi-source evidence with clear attribution"},
+  "backtracking_rule":"For persistent T5 weakness, inspect T4 then earlier prerequisite nodes and repair the earliest demonstrated break rather than reteaching an entire lower form.",
+  "assessment_separation":"SPM-style marks and paper-section performance are assessment evidence. They do not replace curriculum micro-skill mastery.",
+  "closure_rule":"A weakness closes only after later independent success, preferably across more than one task type."
+}

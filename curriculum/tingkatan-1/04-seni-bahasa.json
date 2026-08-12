@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "curriculum": "KSSM",
+    "form": "Tingkatan 1",
+    "domain_code": "SB",
+    "domain_name": "Aspek Seni Bahasa",
+    "version": "1.0.0",
+    "status": "curriculum-brain-v1",
+    "source_note": "SK/SP structure aligned to DSKP KSSM Bahasa Melayu Tingkatan 1. Diagnostic metadata is system-authored and must remain separate from official MOE wording."
+  },
+  "standard_kandungan": [
+    {
+      "code": "4.1",
+      "title": "Memahami dan mengapresiasi karya sastera dengan memberikan respons peribadi",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-SB-4.1.1",
+          "code": "4.1.1",
+          "official_focus": ["karya prosa", "sinopsis", "tema", "persoalan", "respons peribadi", "rasional", "penghayatan"],
+          "diagnostic_micro_skills": ["PROSE_COMPREHENSION", "SYNOPSIS", "THEME_IDENTIFICATION", "ISSUE_IDENTIFICATION", "PERSONAL_RESPONSE", "JUSTIFICATION", "LITERARY_APPRECIATION"],
+          "common_error_tags": ["SYNOPSIS_INACCURATE", "THEME_CONFUSED_WITH_ISSUE", "ISSUE_NOT_SUPPORTED", "PERSONAL_RESPONSE_IRRELEVANT", "JUSTIFICATION_WEAK"]
+        },
+        {
+          "skill_id": "BM-T1-SB-4.1.2",
+          "code": "4.1.2",
+          "official_focus": ["karya puisi", "bentuk", "huraian maksud", "respons peribadi", "rasional", "penghayatan"],
+          "diagnostic_micro_skills": ["POETRY_COMPREHENSION", "POETIC_FORM", "MEANING_EXPLANATION", "STANZA_MEANING", "PERSONAL_RESPONSE", "JUSTIFICATION", "LITERARY_APPRECIATION"],
+          "common_error_tags": ["POETIC_FORM_ERROR", "LITERAL_ONLY_INTERPRETATION", "STANZA_MEANING_INACCURATE", "MEANING_NOT_CONTEXTUAL", "JUSTIFICATION_WEAK"]
+        },
+        {
+          "skill_id": "BM-T1-SB-4.1.3",
+          "code": "4.1.3",
+          "official_focus": ["karya sastera", "pengulangan kata", "singkatan kata", "respons peribadi", "penghayatan"],
+          "diagnostic_micro_skills": ["WORD_REPETITION_RECOGNITION", "WORD_ABBREVIATION_RECOGNITION", "LITERARY_LANGUAGE_EFFECT", "PERSONAL_RESPONSE", "APPRECIATION"],
+          "common_error_tags": ["REPETITION_NOT_IDENTIFIED", "ABBREVIATION_NOT_IDENTIFIED", "LANGUAGE_EFFECT_NOT_EXPLAINED", "RESPONSE_UNSUPPORTED"]
+        }
+      ]
+    },
+    {
+      "code": "4.2",
+      "title": "Memahami dan menggunakan perbandingan semacam, peribahasa, kata-kata hikmat, kiasan madah pujangga, dan bahasa berirama dalam komunikasi dan penulisan",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-SB-4.2.1",
+          "code": "4.2.1",
+          "official_focus": ["perbandingan semacam", "komunikasi", "penulisan", "ketepatan", "konteks"],
+          "diagnostic_micro_skills": ["SIMILE_RECOGNITION", "SIMILE_MEANING", "SIMILE_CONTEXT_SELECTION", "SIMILE_USAGE_SPEAKING", "SIMILE_USAGE_WRITING"],
+          "common_error_tags": ["SIMILE_NOT_RECOGNISED", "SIMILE_MEANING_WRONG", "SIMILE_CONTEXT_MISMATCH", "SIMILE_FORM_INACCURATE"]
+        }
+      ]
+    },
+    {
+      "code": "4.3",
+      "title": "Menghasilkan karya fiksyen dan puisi secara terancang",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-SB-4.3.1",
+          "code": "4.3.1",
+          "official_focus": ["karya fiksyen", "kerangka penulisan sastera", "terancang", "tertib", "idea kreatif", "bahasa indah", "bahasa menarik"],
+          "diagnostic_micro_skills": ["FICTION_PLANNING", "LITERARY_FRAMEWORK", "PLOT_SEQUENCE", "CREATIVE_IDEA", "CHARACTER_OR_EVENT_DEVELOPMENT", "AESTHETIC_LANGUAGE", "COHERENCE"],
+          "common_error_tags": ["NO_LITERARY_PLAN", "PLOT_DISORGANISED", "IDEA_UNDEVELOPED", "CREATIVITY_LIMITED", "LANGUAGE_PLAIN_OR_INAPPROPRIATE", "COHERENCE_WEAK"]
+        },
+        {
+          "skill_id": "BM-T1-SB-4.3.2",
+          "code": "4.3.2",
+          "official_focus": ["syair", "terancang", "tertib", "idea kreatif", "bahasa indah", "bahasa menarik"],
+          "diagnostic_micro_skills": ["SYAIR_FORM", "SYAIR_PLANNING", "IDEA_SEQUENCE", "CREATIVE_IDEA", "AESTHETIC_LANGUAGE", "POETIC_COHERENCE"],
+          "common_error_tags": ["SYAIR_FORM_ERROR", "IDEA_SEQUENCE_WEAK", "CREATIVE_IDEA_LIMITED", "POETIC_LANGUAGE_WEAK", "MEANING_INCOHERENT"]
+        }
+      ]
+    },
+    {
+      "code": "4.4",
+      "title": "Mempersembahkan karya prosa, puisi dan pelbagai persembahan lain",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-SB-4.4.1",
+          "code": "4.4.1",
+          "official_focus": ["pengacaraan", "sebutan", "intonasi", "nada", "gaya", "bahasa badan", "teknik persembahan", "keberkesanan"],
+          "diagnostic_micro_skills": ["HOSTING_STRUCTURE", "PRONUNCIATION", "INTONATION", "TONE", "DELIVERY_STYLE", "BODY_LANGUAGE", "AUDIENCE_ENGAGEMENT", "PRESENTATION_EFFECTIVENESS"],
+          "common_error_tags": ["PRONUNCIATION_WEAK", "INTONATION_FLAT_OR_INAPPROPRIATE", "TONE_INAPPROPRIATE", "DELIVERY_STYLE_WEAK", "BODY_LANGUAGE_INEFFECTIVE", "AUDIENCE_ENGAGEMENT_WEAK"]
+        }
+      ]
+    }
+  ],
+  "diagnostic_dimensions": {
+    "literary_comprehension": ["sinopsis", "tema", "persoalan", "maksud", "bentuk"],
+    "literary_appreciation": ["respons peribadi", "rasional", "penghayatan", "kesan bahasa"],
+    "figurative_language": ["perbandingan semacam", "makna", "pemilihan mengikut konteks", "penggunaan"],
+    "creative_production": ["kerangka", "susunan", "kreativiti", "bahasa indah", "koheren"],
+    "performance": ["sebutan", "intonasi", "nada", "gaya", "bahasa badan", "keberkesanan"]
+  },
+  "evidence_rules": {
+    "written_corrected_work": ["4.1.1", "4.1.2", "4.1.3", "4.2.1", "4.3.1", "4.3.2"],
+    "audio_or_video_or_teacher_observation_required": ["4.4.1"],
+    "rule": "Do not infer pronunciation, intonation, tone, style or body-language mastery from a still image of written work. Mark evidence as unavailable unless suitable performance evidence exists."
+  },
+  "diagnostic_guardrails": [
+    "Do not treat all KOMSAS errors as one generic literature weakness.",
+    "Separate identification from explanation: a learner may identify a theme but fail to justify it with textual evidence.",
+    "Separate literal comprehension from literary appreciation.",
+    "Do not infer persistent weakness from one isolated task; aggregate repeated evidence across submissions.",
+    "Keep AI diagnostic labels separate from official DSKP wording and teacher judgement."
+  ]
+}

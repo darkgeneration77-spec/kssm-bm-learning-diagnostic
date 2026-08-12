@@ -1,0 +1,21 @@
+{
+  "meta":{"subject":"Bahasa Melayu","transition":"Tingkatan 3 -> Tingkatan 4","version":"1.0.0","purpose":"Bridge Menengah Rendah foundations to Menengah Atas analytical, argumentative and formal communication demands."},
+  "edges":[
+    {"from":"T3_INFORMATION_ANALYSIS","to":"T4_FACT_ARGUMENT_ORGANISATION","relation":"progression"},
+    {"from":"T3_ISSUE_ANALYSIS","to":"T4_ISSUE_SYNTHESIS","relation":"progression"},
+    {"from":"T3_OPINION_RESPONSE","to":"T4_OPINION_WITH_REASON","relation":"progression"},
+    {"from":"T3_DISCUSSION","to":"T4_FORMAL_DISCUSSION","relation":"progression"},
+    {"from":"T3_QUESTIONING","to":"T4_PROBING_QUESTION","relation":"progression"},
+    {"from":"T3_ORAL_PRESENTATION","to":"T4_CERAMAH_SYARAHAN_FORUM","relation":"progression"},
+    {"from":"T3_ARGUMENT","to":"T4_DEBATE_ARGUMENT","relation":"progression"},
+    {"from":"T3_NEGOTIATION","to":"T4_PROBLEM_SOLVING_NEGOTIATION","relation":"progression"},
+    {"from":"T3_JUSTIFICATION","to":"T4_EVIDENCE_BASED_JUSTIFICATION","relation":"progression"}
+  ],
+  "diagnostic_backtracking":[
+    {"observed":"T4_DEBATE_ARGUMENT_WEAK","check_first":["T3_ARGUMENT","T3_OPINION_WITH_REASON","EVIDENCE_SELECTION","IDEA_ORGANISATION"]},
+    {"observed":"T4_ISSUE_SYNTHESIS_WEAK","check_first":["T3_ISSUE_ANALYSIS","MAIN_IDEA","INFORMATION_FILTERING","INFERENCE"]},
+    {"observed":"T4_FORMAL_PRESENTATION_WEAK","check_first":["T3_ORAL_PRESENTATION","IDEA_STRUCTURE","REGISTER_AWARENESS"]},
+    {"observed":"T4_PROBING_QUESTION_WEAK","check_first":["T2_DIVERGENT_QUESTION","T3_QUESTIONING","INFORMATION_GAP_RECOGNITION"]}
+  ],
+  "boundary_rule":"T4 weakness does not automatically imply a T3 weakness. Backtrack only when lower-level evidence is missing or repeatedly weak."
+}

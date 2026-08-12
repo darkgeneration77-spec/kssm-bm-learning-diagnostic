@@ -1,0 +1,41 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 5","version":"1.0.0"},
+  "cross_form_edges":[
+    {"from":"T4_INFERENCE","to":"T5_INFERENCE","relation":"prerequisite"},
+    {"from":"T4_ANALYSIS","to":"T5_ANALYSIS_EVALUATION","relation":"progression"},
+    {"from":"T4_SYNTHESIS","to":"T5_MULTI_SOURCE_SYNTHESIS","relation":"prerequisite"},
+    {"from":"T4_EVIDENCE_SELECTION","to":"T5_EVIDENCE_EVALUATION","relation":"progression"},
+    {"from":"T4_TASK_INTERPRETATION","to":"T5_TASK_SCOPE_REGISTER","relation":"prerequisite"},
+    {"from":"T4_CONTENT_DEPTH_ELABORATION","to":"T5_CONTENT_DEPTH","relation":"prerequisite"},
+    {"from":"T4_CLAIM_REASON_EVIDENCE","to":"T5_ARGUMENT_REASONING","relation":"prerequisite"},
+    {"from":"T4_ARGUMENT_STRENGTH","to":"T5_COUNTERPOINT_REBUTTAL","relation":"progression"},
+    {"from":"T4_FULL_TEXT_ORGANISATION","to":"T5_GLOBAL_COHESION","relation":"prerequisite"},
+    {"from":"T4_SUMMARY_SYNTHESIS","to":"T5_MULTI_SOURCE_SYNTHESIS","relation":"prerequisite"},
+    {"from":"T4_WORD_FORM","to":"T5_WORD_FORM_REGISTER","relation":"prerequisite"},
+    {"from":"T4_PHRASE_TYPE","to":"T5_PHRASE_CONTROL","relation":"prerequisite"},
+    {"from":"T4_BASIC_SIMPLE_SENTENCE","to":"T5_DERIVED_SENTENCE","relation":"prerequisite"},
+    {"from":"T4_COMPOUND_SENTENCE","to":"T5_COMPLEX_COMPOUND_CONTROL","relation":"prerequisite"},
+    {"from":"T4_SENTENCE_TRANSFORMATION","to":"T5_SENTENCE_TRANSFORMATION","relation":"progression"},
+    {"from":"T4_LITERARY_ANALYSIS","to":"T5_LITERARY_EVALUATION","relation":"prerequisite"},
+    {"from":"T4_DEBATE_ARGUMENT","to":"T5_DEBATE_COUNTERPOINT","relation":"progression"}
+  ],
+  "t5_internal_edges":[
+    {"from":"T5_EXPLICIT","to":"T5_INFERENCE","relation":"prerequisite"},
+    {"from":"T5_INFERENCE","to":"T5_ANALYSIS","relation":"supports"},
+    {"from":"T5_ANALYSIS","to":"T5_EVALUATION","relation":"supports"},
+    {"from":"T5_INFORMATION_SELECTION","to":"T5_SYNTHESIS","relation":"prerequisite"},
+    {"from":"T5_SYNTHESIS","to":"T5_MULTI_SOURCE_INTEGRATION","relation":"progression"},
+    {"from":"T5_CLAIM","to":"T5_REASON","relation":"supports"},
+    {"from":"T5_REASON","to":"T5_REASONING","relation":"supports"},
+    {"from":"T5_EVIDENCE","to":"T5_CLAIM_EVIDENCE_LINK","relation":"supports"},
+    {"from":"T5_ARGUMENT_REASONING","to":"T5_COUNTERPOINT","relation":"prerequisite"},
+    {"from":"T5_PARAGRAPH_COHERENCE","to":"T5_GLOBAL_COHESION","relation":"prerequisite"},
+    {"from":"T5_BASIC_SENTENCE_KNOWLEDGE","to":"T5_DERIVED_SENTENCE","relation":"prerequisite"}
+  ],
+  "backtracking_examples":[
+    {"observed":"T5_MULTI_SOURCE_SYNTHESIS_WEAK","check":["T4_SYNTHESIS","T5_SOURCE_COMPREHENSION","T5_INFORMATION_SELECTION","T5_GROUPING","T5_INFERENCE"]},
+    {"observed":"T5_ARGUMENT_REASONING_WEAK","check":["T4_CLAIM_REASON_EVIDENCE","T5_CLAIM","T5_REASON","T5_EVIDENCE","T5_CLAIM_EVIDENCE_LINK"]},
+    {"observed":"T5_COUNTERPOINT_WEAK","check":["T4_ARGUMENT_STRENGTH","T5_ARGUMENT_REASONING","OPPOSING_VIEW_COMPREHENSION"]},
+    {"observed":"T5_DERIVED_SENTENCE_WEAK","check":["T4_BASIC_SIMPLE_SENTENCE","SUBJECT_PREDICATE","PHRASE_TYPE","TRANSFORMATION_RULE"]}
+  ]
+}

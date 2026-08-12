@@ -1,0 +1,11 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 5","domain_code":"MBR","domain_name":"Kemahiran Membaca","version":"1.0.0","status":"curriculum-brain-v1"},
+  "curriculum_structure":[
+    {"sk":"2.1","focus":"Membaca secara mekanis pelbagai bahan dengan sebutan, intonasi, nada dan kelancaran yang sesuai","diagnostic_micro_skills":["READ_ACCURACY","FLUENCY","PRONUNCIATION","INTONATION","TONE","TEXT_TYPE_DELIVERY"],"evidence":"audio/video/teacher observation"},
+    {"sk":"2.2","focus":"Membaca untuk memahami makna dan maklumat dalam pelbagai bahan dan laras","diagnostic_micro_skills":["WORD_MEANING","TERM_MEANING","EXPRESSION_MEANING","CONTEXTUAL_MEANING","REFERENCE_RESOLUTION","EXPLICIT_INFORMATION","IMPLICIT_INFORMATION"]},
+    {"sk":"2.3","focus":"Membaca untuk memproses, menganalisis, menilai dan mensintesis maklumat daripada pelbagai bahan","diagnostic_micro_skills":["INFORMATION_SELECTION","MAIN_IDEA","SUPPORTING_IDEA","COMPARE_CONTRAST","CAUSE_EFFECT","INFERENCE","ANALYSIS","EVALUATION","SYNTHESIS","MULTISOURCE_INTEGRATION","EVIDENCE_SELECTION","JUSTIFICATION"]},
+    {"sk":"2.4","focus":"Membaca secara ekstensif untuk memperkukuh bahasa, pengetahuan dan pemikiran kritis","diagnostic_micro_skills":["EXTENSIVE_READING","SOURCE_UNDERSTANDING","KNOWLEDGE_TRANSFER","CRITICAL_RESPONSE","OPINION_FORMATION","SOURCE_COMPARISON"]}
+  ],
+  "t5_reading_hierarchy":["literal","inferential","analytical","evaluative","synthetic","multi-source transfer"],
+  "backtrack_rule":"If T5 synthesis/evaluation repeatedly fails, inspect T4 analysis/inference/evidence nodes before prescribing more T5 practice."
+}

@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "curriculum": "KSSM",
+    "form": "Tingkatan 1",
+    "domain_code": "MBCA",
+    "domain_name": "Kemahiran Membaca",
+    "version": "1.0.0",
+    "status": "curriculum-brain-v1",
+    "source_basis": "DSKP KSSM Bahasa Melayu Tingkatan 1, Domain 2.0 Kemahiran Membaca",
+    "design_note": "MOE/DSKP standards are kept logically separate from AI diagnostic metadata. Diagnostic labels, misconceptions, mastery scores and remediation rules are system-added metadata, not MOE wording."
+  },
+  "standard_kandungan": [
+    {
+      "code": "2.1",
+      "title": "Membaca secara mekanis pelbagai bahan prosa dan puisi",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MBCA-2.1.1",
+          "code": "2.1.1",
+          "source_scope": ["pengumuman", "ikrar", "iklan", "promosi"],
+          "focus": ["sebutan", "intonasi", "nada", "kepantasan membaca"],
+          "diagnostic_micro_skills": ["ORAL_READING_ACCURACY", "PRONUNCIATION", "INTONATION", "TONE_MATCHING", "READING_PACE", "PUNCTUATION_CUE_READING"],
+          "common_error_tags": ["MISPRONUNCIATION", "FLAT_INTONATION", "INAPPROPRIATE_TONE", "PACE_TOO_FAST", "PACE_TOO_SLOW", "IGNORES_PUNCTUATION_CUES"],
+          "remediation_path": ["model reading", "phrase chunking", "punctuation-guided reading", "shadow reading", "independent oral reading"]
+        },
+        {
+          "skill_id": "BM-T1-MBCA-2.1.2",
+          "code": "2.1.2",
+          "source_scope": ["pantun"],
+          "focus": ["sebutan", "intonasi", "nada sesuai", "kelancaran bacaan pantun"],
+          "diagnostic_micro_skills": ["PANTUN_ORAL_READING", "PRONUNCIATION", "INTONATION", "RHYTHMIC_PHRASING", "TONE_MATCHING"],
+          "common_error_tags": ["PANTUN_RHYTHM_BREAKDOWN", "MISPRONUNCIATION", "WRONG_INTONATION", "INAPPROPRIATE_TONE"],
+          "remediation_path": ["kenal pasti baris pantun", "dengar model bacaan", "latih jeda dan irama", "bacaan berpandu", "bacaan kendiri"]
+        }
+      ]
+    },
+    {
+      "code": "2.2",
+      "title": "Membaca untuk memahami makna dan maksud daripada pelbagai bahan",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MBCA-2.2.1",
+          "code": "2.2.1",
+          "source_scope": ["pelbagai bahan", "glosari", "kamus"],
+          "focus": ["makna perkataan", "rujukan glosari", "rujukan kamus", "pemilihan makna yang tepat"],
+          "diagnostic_micro_skills": ["WORD_MEANING", "DICTIONARY_LOOKUP", "GLOSSARY_USE", "ENTRY_SELECTION", "CONTEXTUAL_MEANING"],
+          "common_error_tags": ["UNKNOWN_WORD", "WRONG_DICTIONARY_ENTRY", "WRONG_SENSE_SELECTED", "CONTEXT_IGNORED", "GLOSSARY_USE_ERROR"],
+          "remediation_path": ["kenal pasti kata sasaran", "cari entri kamus/glosari", "bandingkan pilihan makna", "padankan dengan konteks", "guna perkataan dalam ayat"]
+        },
+        {
+          "skill_id": "BM-T1-MBCA-2.2.2",
+          "code": "2.2.2",
+          "source_scope": ["arahan", "pelbagai bahan"],
+          "focus": ["memahami arahan", "maklumat khusus", "urutan tindakan", "memberikan respons"],
+          "diagnostic_micro_skills": ["INSTRUCTION_COMPREHENSION", "ACTION_VERB_RECOGNITION", "SPECIFIC_INFORMATION", "SEQUENCE_FOLLOWING", "RESPONSE_ACCURACY"],
+          "common_error_tags": ["MISREAD_INSTRUCTION", "ACTION_VERB_MISUNDERSTOOD", "DETAIL_MISSED", "SEQUENCE_ERROR", "RESPONSE_DOES_NOT_MATCH_INSTRUCTION"],
+          "remediation_path": ["garis kata kerja arahan", "kenal pasti maklumat penting", "susun langkah", "parafrasa arahan", "beri respons dan semak"]
+        },
+        {
+          "skill_id": "BM-T1-MBCA-2.2.3",
+          "code": "2.2.3",
+          "source_scope": ["pelbagai bahan prosa"],
+          "focus": ["idea keseluruhan", "bacaan luncuran", "bacaan imbasan", "pemahaman global"],
+          "diagnostic_micro_skills": ["SKIMMING", "SCANNING", "GLOBAL_MEANING", "MAIN_TOPIC", "TEXT_PURPOSE", "KEY_INFORMATION_LOCATION"],
+          "common_error_tags": ["READS_EVERY_DETAIL_WITHOUT_GLOBAL_VIEW", "MAIN_TOPIC_MISIDENTIFIED", "TEXT_PURPOSE_MISIDENTIFIED", "SCANNING_FAILURE", "GLOBAL_MEANING_ERROR"],
+          "remediation_path": ["kenal tajuk dan petunjuk teks", "skimming untuk gambaran umum", "scanning untuk maklumat sasaran", "rumus idea keseluruhan", "semak dengan bukti teks"]
+        }
+      ]
+    },
+    {
+      "code": "2.3",
+      "title": "Membaca untuk memproses maklumat daripada pelbagai bahan",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MBCA-2.3.1",
+          "code": "2.3.1",
+          "source_scope": ["pelbagai bahan"],
+          "focus": ["menyaring maklumat", "idea utama", "idea sampingan", "hubungan idea"],
+          "diagnostic_micro_skills": ["INFORMATION_FILTERING", "MAIN_IDEA", "SUPPORTING_IDEA", "MAIN_SUPPORT_RELATIONSHIP", "RELEVANCE_JUDGEMENT"],
+          "common_error_tags": ["MAIN_IDEA_CONFUSED_WITH_DETAIL", "SUPPORTING_IDEA_MISIDENTIFIED", "IRRELEVANT_INFORMATION_SELECTED", "KEY_INFORMATION_OMITTED", "MAIN_SUPPORT_RELATIONSHIP_ERROR"],
+          "remediation_path": ["bezakan topik dan isi", "cari ayat/idea teras", "kelompokkan maklumat sokongan", "buang maklumat tidak relevan", "bina peta idea utama-sampingan"]
+        }
+      ]
+    },
+    {
+      "code": "2.4",
+      "title": "Membaca secara ekstensif untuk kelancaran, kosa kata dan ilmu",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-MBCA-2.4.1",
+          "code": "2.4.1",
+          "source_scope": ["fiksyen", "bukan fiksyen"],
+          "focus": ["kelancaran membaca", "kosa kata", "ungkapan menarik", "pemahaman", "penghayatan", "pengetahuan"],
+          "diagnostic_micro_skills": ["EXTENSIVE_READING_STAMINA", "FICTION_COMPREHENSION", "NONFICTION_COMPREHENSION", "VOCABULARY_ACQUISITION", "INTERESTING_EXPRESSION_RECOGNITION", "TEXT_APPRECIATION", "KNOWLEDGE_GAIN"],
+          "common_error_tags": ["LOW_READING_STAMINA", "VOCABULARY_NOT_RETAINED", "EXPRESSION_NOT_RECOGNISED", "SURFACE_COMPREHENSION_ONLY", "FICTION_NONFICTION_STRATEGY_MISMATCH"],
+          "remediation_path": ["bahan pendek mengikut tahap", "catat kosa kata dan ungkapan", "jelaskan isi selepas membaca", "hubungkan teks dengan pengetahuan sedia ada", "tingkatkan panjang dan kerumitan bahan secara beransur"]
+        }
+      ]
+    }
+  ],
+  "cross_skill_diagnostics": {
+    "reading_dimensions": [
+      "DECODING_AND_ORAL_FLUENCY",
+      "LEXICAL_COMPREHENSION",
+      "INSTRUCTION_COMPREHENSION",
+      "GLOBAL_COMPREHENSION",
+      "INFORMATION_PROCESSING",
+      "MAIN_IDEA_IDENTIFICATION",
+      "SUPPORTING_IDEA_IDENTIFICATION",
+      "EXTENSIVE_READING",
+      "VOCABULARY_GROWTH"
+    ],
+    "important_distinctions": [
+      "A wrong comprehension answer does not automatically mean weak overall reading.",
+      "The engine must distinguish word-meaning weakness from instruction-reading weakness.",
+      "The engine must distinguish failure to find information from failure to infer the overall idea.",
+      "Main-idea and supporting-idea errors must be tracked separately.",
+      "Oral mechanical reading evidence must not be inferred from written worksheets alone."
+    ]
+  },
+  "evidence_rules": {
+    "written_marked_work_can_support": ["2.2.1", "2.2.2", "2.2.3", "2.3.1", "parts of 2.4.1 when task evidence is explicit"],
+    "audio_or_teacher_observation_preferred": ["2.1.1", "2.1.2", "oral fluency elements of 2.4.1"],
+    "insufficient_evidence_rule": "Do not infer pronunciation, intonation, tone or oral reading pace solely from a photographed written worksheet."
+  },
+  "mastery_model": {
+    "ai_mastery_score": "0-100",
+    "evidence_count": true,
+    "trend": ["improving", "stable", "declining", "insufficient_evidence"],
+    "confidence": ["low", "medium", "high"],
+    "persistent_weakness_minimum": "Require repeated evidence across different tasks before marking a weakness persistent.",
+    "moe_tp_evidence": "AI-supported evidence only; not an automatic formal TP assignment",
+    "teacher_confirmed_tp": "separate field, teacher-controlled"
+  }
+}

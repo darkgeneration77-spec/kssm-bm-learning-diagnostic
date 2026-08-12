@@ -1,0 +1,12 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 3","domain":"Aspek Tatabahasa","version":"1.0.0","source_basis":"DSKP KSSM Bahasa Melayu Tingkatan 3, Terbitan 2017","note":"T3 DSKP deliberately broadens several grammar SPs to pelbagai forms; diagnostic graph retains finer morphology/syntax nodes."},
+  "standards":[
+    {"sk":"5.1","sp":[{"code":"5.1.1","focus":["kata nama","kata pinjaman"],"micro_skills":["NOUN_SYSTEM","LOANWORD_RECOGNITION","LOANWORD_SPELLING","CONTEXTUAL_NOUN_USE"]},{"code":"5.1.2","focus":["kata adjektif","konteks"],"micro_skills":["ADJECTIVE_SYSTEM","ADJECTIVE_CONTEXT_USE","ADJECTIVE_PRECISION"]},{"code":"5.1.3","focus":["kata tugas","konteks"],"micro_skills":["FUNCTION_WORD_SYSTEM","FUNCTION_WORD_SELECTION","CONTEXTUAL_FUNCTION_WORD_USE"]},{"code":"5.1.4","focus":["kata kerja","konteks"],"micro_skills":["VERB_SYSTEM","TRANSITIVITY","VERB_FORM","CONTEXTUAL_VERB_USE"]}]},
+    {"sk":"5.2","sp":[{"code":"5.2.1","focus":["pelbagai kata ganda","konteks"],"micro_skills":["REDUPLICATION_SYSTEM","FULL_REDUPLICATION","PARTIAL_REDUPLICATION","RHYTHMIC_REDUPLICATION","AFFIXED_REDUPLICATION","CONTEXTUAL_REDUPLICATION"]}]},
+    {"sk":"5.3","sp":[{"code":"5.3.1","focus":["pelbagai kata terbitan","konteks"],"micro_skills":["DERIVATION_SYSTEM","PREFIX","SUFFIX","CIRCUMFIX","INFIX","DERIVED_MEANING","CONTEXTUAL_DERIVED_WORD"]}]},
+    {"sk":"5.4","sp":[{"code":"5.4.1","focus":["pelbagai frasa","konteks"],"micro_skills":["NOUN_PHRASE","VERB_PHRASE","ADJECTIVE_PHRASE","PREPOSITIONAL_PHRASE","PHRASE_HEAD","PHRASE_CONSTRUCTION"]}]},
+    {"sk":"5.5","sp":[{"code":"5.5.1","focus":["membina ayat","menukar struktur ayat","konteks"],"micro_skills":["SENTENCE_CONSTRUCTION","NORMAL_ORDER","INVERTED_ORDER","ACTIVE_PASSIVE_AWARENESS","SENTENCE_TRANSFORMATION","MEANING_PRESERVATION"]}]},
+    {"sk":"5.6","sp":[{"code":"5.6.1","focus":["menganalisis ayat","tatabahasa betul","penggunaan"],"micro_skills":["GRAMMAR_ANALYSIS","ERROR_IDENTIFICATION","MORPHOLOGY_ANALYSIS","SYNTAX_ANALYSIS","GRAMMATICAL_CORRECTION"]}]}
+  ],
+  "system_language_extensions":{"spelling":["vowel_harmony","loanword_spelling","base_and_derived_word_spelling"],"punctuation":["full_stop","comma","semicolon","colon","hyphen","question_mark","exclamation_mark","quotation_mark","parentheses","capitalisation","italics"],"syntax_progression":["word","phrase","clause","subject_predicate","sentence_type","active_passive","normal_inverted_order","simple_compound_derived_sentence","deletion_reordering_expansion"]}
+}

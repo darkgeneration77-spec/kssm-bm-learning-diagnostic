@@ -1,0 +1,37 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 4","domain":"Kemahiran Mendengar dan Bertutur","version":"1.0.0","source_note":"Structured from DSKP KSSM Bahasa Melayu Tingkatan 4 dan 5; official standard nodes are separated from diagnostic micro-skills."},
+  "standard_kandungan":[
+    {"code":"1.1","focus":"Mendengar, mengenal dan menyebut perkataan, rangkai kata, istilah, ungkapan serta intonasi ayat dalam pelbagai ujaran","sp":[
+      {"code":"1.1.1","focus":["mendengar","mengenal","menyebut","mengenal pasti perbezaan sebutan","perkataan","rangkai kata","istilah","ungkapan"],"micro_skills":["PHONOLOGICAL_DISCRIMINATION","WORD_PHRASE_TERM_EXPRESSION_RECOGNITION","PRONUNCIATION_DIFFERENTIATION","CLEAR_ACCURATE_PRONUNCIATION"]},
+      {"code":"1.1.2","focus":["mendengar","memahami","menuturkan ayat","pelbagai ujaran"],"micro_skills":["SENTENCE_LISTENING_COMPREHENSION","ORAL_SENTENCE_REPRODUCTION","ACCURATE_UTTERANCE"]}
+    ]},
+    {"code":"1.2","focus":"Mendengar dan memahami perkataan, rangkai kata, istilah, ungkapan dan ayat dalam pelbagai ujaran","sp":[
+      {"code":"1.2.1","focus":["mendengar","memberikan respons","kejelasan","nada","kefasihan"],"micro_skills":["LISTEN_AND_RESPOND","RESPONSE_CLARITY","TONE_CONTROL","ORAL_FLUENCY"]}
+    ]},
+    {"code":"1.3","focus":"Mendengar dan memahami maklumat, fakta, idea dan hujah dalam pelbagai wacana dan memberikan respons","sp":[
+      {"code":"1.3.1","focus":["menyebut semula","menyusun fakta","menyusun hujah","pelbagai situasi"],"micro_skills":["FACT_RECALL","ARGUMENT_RECALL","FACT_ORGANISATION","ARGUMENT_ORGANISATION","MEANINGFUL_RESTATEMENT"]},
+      {"code":"1.3.2","focus":["mendengar","menganalisis","menerangkan maklumat","pelbagai wacana"],"micro_skills":["INFORMATION_ANALYSIS","EVIDENCE_ORGANISATION","ORAL_EXPLANATION"]}
+    ]},
+    {"code":"1.4","focus":"Berbicara tentang sesuatu perkara dalam pelbagai situasi formal dan tidak formal","sp":[
+      {"code":"1.4.1","focus":["menyampaikan pendapat","situasi formal","situasi tidak formal","bahasa gramatis","santun"],"micro_skills":["OPINION_FORMULATION","REGISTER_AWARENESS","FORMAL_INFORMAL_SPEAKING","GRAMMATICAL_ORAL_EXPRESSION"]},
+      {"code":"1.4.2","focus":["ceramah","syarahan","forum","penyampaian idea"],"micro_skills":["FORMAL_ORAL_PRESENTATION","IDEA_STRUCTURE","AUDIENCE_AWARENESS","DELIVERY_EFFECTIVENESS"]}
+    ]},
+    {"code":"1.5","focus":"Bersoal jawab tentang sesuatu perkara dengan menggunakan pelbagai soalan","sp":[
+      {"code":"1.5.1","focus":["mengemukakan soalan","mencungkil maklumat","pelbagai soalan"],"micro_skills":["QUESTION_FORMULATION","PROBING_QUESTION","INFORMATION_ELICITATION"]},
+      {"code":"1.5.2","focus":["mendengar","menilai","memberikan respons"],"micro_skills":["RESPONSE_EVALUATION","EVIDENCE_BASED_RESPONSE","RELEVANCE_JUDGEMENT"]},
+      {"code":"1.5.3","focus":["bersoal jawab","menggunakan soalan","respons sesuai"],"micro_skills":["INTERACTIVE_QUESTIONING","FOLLOW_UP_RESPONSE","DIALOGUE_COHERENCE"]}
+    ]},
+    {"code":"1.6","focus":"Mempersembahkan maklumat secara lisan tentang sesuatu perkara dalam pelbagai situasi","sp":[
+      {"code":"1.6.1","focus":["menyampaikan maklumat","pembentangan","perbahasan","kejelasan","kesesuaian"],"micro_skills":["ORAL_INFORMATION_PRESENTATION","PRESENTATION_STRUCTURE","DEBATE_ARGUMENT","CLAIM_EVIDENCE_REASONING","DELIVERY_CLARITY"]}
+    ]},
+    {"code":"1.7","focus":"Berbincang dan berunding tentang sesuatu perkara","sp":[
+      {"code":"1.7.1","focus":["berbincang","mengemukakan idea","rasional","santun"],"micro_skills":["DISCUSSION","IDEA_PROPOSAL","RATIONALE","RESPOND_TO_VIEWPOINT"]},
+      {"code":"1.7.2","focus":["berunding","menyelesaikan masalah","mencapai persetujuan"],"micro_skills":["NEGOTIATION","PROBLEM_SOLVING","OPTION_EVALUATION","CONSENSUS_BUILDING"]}
+    ]},
+    {"code":"1.8","focus":"Mengulas sesuatu perkara, isu atau topik","sp":[
+      {"code":"1.8.1","focus":["memberi pendapat","mengulas isu","merumus isu","rasional"],"micro_skills":["ISSUE_ANALYSIS","OPINION_WITH_REASON","ISSUE_SYNTHESIS","ORAL_CONCLUSION"]},
+      {"code":"1.8.2","focus":["mengulas karya","pandangan","justifikasi"],"micro_skills":["WORK_REVIEW","INTERPRETATION","EVIDENCE_SELECTION","JUSTIFICATION"]}
+    ]}
+  ],
+  "diagnostic_policy":{"written_upload":"May provide indirect evidence only when a teacher-marked written response directly assesses content/argument. Do not infer pronunciation, tone or fluency from paper.","oral_evidence":"Audio/video/teacher observation required for pronunciation, intonation, fluency, delivery and interaction.","progression_note":"T4 moves from lower-secondary comprehension and discussion toward analysis, argument organisation, formal presentation, debate, issue synthesis and justified evaluation."}
+}

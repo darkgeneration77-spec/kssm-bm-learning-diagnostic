@@ -1,0 +1,40 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 2","domain_code":"MB","domain_name":"Kemahiran Mendengar dan Bertutur","version":"1.0.0","note":"Official SP nodes are separated from diagnostic micro-skills. Oral/listening weaknesses require appropriate audio, listening-task or teacher-observation evidence."},
+  "standard_kandungan":[
+    {"code":"1.1","title":"Mendengar, mengenal dan menyebut perkataan, rangkai kata, istilah dan ungkapan serta intonasi ayat dalam pelbagai ujaran","sp":[
+      {"skill_id":"BM-T2-MB-1.1.1","code":"1.1.1","focus":["perkataan","rangkai kata","istilah","ungkapan","ketepatan sebutan"],"micro_skills":["LEXICAL_LISTENING","WORD_RECOGNITION","PHRASE_RECOGNITION","TERM_RECOGNITION","EXPRESSION_RECOGNITION","PRONUNCIATION_ACCURACY"]},
+      {"skill_id":"BM-T2-MB-1.1.2","code":"1.1.2","focus":["mengenal pasti ayat","menuturkan ayat","intonasi"],"micro_skills":["SENTENCE_AURAL_RECOGNITION","SENTENCE_REPRODUCTION","INTONATION_ACCURACY"]}
+    ]},
+    {"code":"1.2","title":"Mendengar dan memahami perkataan, rangkai kata, istilah, ungkapan dan ayat dalam pelbagai ujaran","sp":[
+      {"skill_id":"BM-T2-MB-1.2.1","code":"1.2.1","focus":["makna perkataan","rangkai kata","istilah","ungkapan","konteks"],"micro_skills":["AURAL_WORD_MEANING","AURAL_PHRASE_MEANING","AURAL_TERM_MEANING","AURAL_EXPRESSION_MEANING","CONTEXTUAL_AURAL_MEANING"]},
+      {"skill_id":"BM-T2-MB-1.2.2","code":"1.2.2","focus":["ayat majmuk","penggunaan mengikut konteks"],"micro_skills":["COMPOUND_SENTENCE_LISTENING","COMPOUND_SENTENCE_MEANING","CONTEXTUAL_SENTENCE_USE"]}
+    ]},
+    {"code":"1.3","title":"Mendengar dan memahami maklumat, fakta, idea dan hujah dalam pelbagai wacana dan memberikan respons","sp":[
+      {"skill_id":"BM-T2-MB-1.3.1","code":"1.3.1","focus":["mengenal pasti maklumat","pelbagai wacana","respons"],"micro_skills":["LISTEN_INFORMATION","SPECIFIC_INFORMATION","ORAL_RESPONSE_RELEVANCE","ORAL_RESPONSE_ACCURACY"]},
+      {"skill_id":"BM-T2-MB-1.3.2","code":"1.3.2","focus":["panduan","tunjuk cara","arahan","menyusun","respons"],"micro_skills":["LISTEN_GUIDANCE","LISTEN_INSTRUCTION","LISTEN_PROCEDURE","SEQUENCE_ORAL_INFORMATION","RESPOND_TO_INSTRUCTION"]}
+    ]},
+    {"code":"1.4","title":"Berbicara tentang sesuatu perkara dalam pelbagai situasi formal dan tidak formal","sp":[
+      {"skill_id":"BM-T2-MB-1.4.1","code":"1.4.1","focus":["isu komuniti","situasi tidak formal","sebutan","tatatertib bahasa"],"micro_skills":["COMMUNITY_ISSUE_TALK","EXPLANATION","PRONUNCIATION","COURTESY"]},
+      {"skill_id":"BM-T2-MB-1.4.2","code":"1.4.2","focus":["memohon kemaafan","memberi kemaafan","situasi formal","bertatasusila"],"micro_skills":["FORMAL_APOLOGY","ACCEPTING_APOLOGY","REGISTER","COURTESY"]},
+      {"skill_id":"BM-T2-MB-1.4.3","code":"1.4.3","focus":["menceritakan peristiwa","didengar","dilihat","formal/tidak formal","sebutan","intonasi"],"micro_skills":["EVENT_RETELLING","EVENT_SEQUENCE","AUDITORY_SOURCE_RETELL","VISUAL_SOURCE_RETELL","PRONUNCIATION","INTONATION"]}
+    ]},
+    {"code":"1.5","title":"Bersoal jawab tentang sesuatu perkara menggunakan pelbagai soalan dan mengemukakan jawapan","sp":[
+      {"skill_id":"BM-T2-MB-1.5.1","code":"1.5.1","focus":["soalan bercapah","mencungkil pendapat","bertatasusila"],"micro_skills":["OPEN_ENDED_QUESTION","OPINION_ELICITATION","QUESTION_RELEVANCE","COURTESY"]},
+      {"skill_id":"BM-T2-MB-1.5.2","code":"1.5.2","focus":["jawapan","pelbagai penyelesaian masalah","betul","tepat","bertatasusila"],"micro_skills":["PROBLEM_SOLUTION_RESPONSE","MULTIPLE_SOLUTIONS","ANSWER_ACCURACY","ANSWER_RELEVANCE","COURTESY"]},
+      {"skill_id":"BM-T2-MB-1.5.3","code":"1.5.3","focus":["soalan bercapah","perbincangan","jawapan sesuai"],"micro_skills":["DISCUSSION_QUESTIONING","DISCUSSION_RESPONSE","INTERACTION_FLOW","FOLLOW_UP_QUESTION"]}
+    ]},
+    {"code":"1.6","title":"Menyampaikan maklumat tentang sesuatu perkara dalam pelbagai situasi","sp":[
+      {"skill_id":"BM-T2-MB-1.6.1","code":"1.6.1","focus":["menyaring maklumat","maklumat tepat","penyampaian","ayat gramatis"],"micro_skills":["INFORMATION_FILTERING","INFORMATION_ACCURACY","ORAL_INFORMATION_DELIVERY","GRAMMATICAL_ORAL_SENTENCE"]},
+      {"skill_id":"BM-T2-MB-1.6.2","code":"1.6.2","focus":["menjana maklumat","panduan","pesanan","intonasi","keberkesanan"],"micro_skills":["GENERATE_INFORMATION","GUIDANCE_DELIVERY","MESSAGE_DELIVERY","INTONATION","DELIVERY_EFFECTIVENESS"]}
+    ]},
+    {"code":"1.7","title":"Berbincang dan berunding tentang sesuatu perkara","sp":[
+      {"skill_id":"BM-T2-MB-1.7.1","code":"1.7.1","focus":["memberikan penjelasan","mendapatkan penjelasan","rasional","ayat gramatis","bahasa santun"],"micro_skills":["DISCUSSION_CLARIFICATION","REQUEST_CLARIFICATION","RATIONAL_EXPLANATION","GRAMMATICAL_ORAL_SENTENCE","COURTESY"]},
+      {"skill_id":"BM-T2-MB-1.7.2","code":"1.7.2","focus":["berunding","persetujuan","rasional","ayat gramatis","bahasa santun"],"micro_skills":["NEGOTIATION","REASON_GIVING","CONSENSUS_BUILDING","GRAMMATICAL_ORAL_SENTENCE","COURTESY"]}
+    ]},
+    {"code":"1.8","title":"Mengulas sesuatu perkara dan isu","sp":[
+      {"skill_id":"BM-T2-MB-1.8.1","code":"1.8.1","focus":["menghuraikan perkara","bernas","kritis","jelas","ayat gramatis"],"micro_skills":["CRITICAL_ORAL_EXPLANATION","RELEVANT_ELABORATION","REASONING","CLARITY","GRAMMATICAL_ORAL_SENTENCE"]},
+      {"skill_id":"BM-T2-MB-1.8.2","code":"1.8.2","focus":["bahan grafik","maklumat tersurat","maklumat tersirat","ulasan","ayat gramatis"],"micro_skills":["GRAPHIC_INTERPRETATION","EXPLICIT_INFORMATION","IMPLICIT_INFORMATION","ORAL_COMMENTARY","GRAMMATICAL_ORAL_SENTENCE"]}
+    ]}
+  ],
+  "evidence_rules":{"written_only":"May support content comprehension for graphic/material tasks when a teacher-marked written response exists, but does not establish pronunciation, intonation, fluency or interaction skill.","audio_or_teacher_mark":"Required for listening discrimination and pronunciation/intonation conclusions.","video_or_teacher_observation":"Preferred for interactive speaking, courtesy/register in live interaction and delivery effectiveness.","uncertain":"Do not diagnose from unclear marks, unreadable handwriting or ambiguous source evidence."}
+}

@@ -1,0 +1,39 @@
+{
+  "meta":{"project":"KSSM BM Learning Diagnostic","version":"1.0.0"},
+  "entities":{
+    "student":{"required":["student_id","display_name","current_form"],"fields":["student_id","display_name","current_form","school_year","class_name","created_at"]},
+    "document":{"required":["document_id","student_id","source_type","uploaded_at"],"fields":["document_id","student_id","title","source_type","assessment_type","form","date_completed","uploaded_at","page_count","processing_status"]},
+    "page":{"fields":["page_id","document_id","page_number","asset_ref","quality_score","quality_flags","rotation","processing_status"]},
+    "question":{"required":["question_id","document_id"],"fields":["question_id","document_id","page_id","question_number","question_text","question_type","max_score","assessment_component","curriculum_node_ids","micro_skill_ids","classification_confidence","source_bbox"]},
+    "student_response":{"fields":["response_id","question_id","student_answer_text","response_asset_bbox","transcription_confidence","awarded_score","correctness","teacher_mark_text","teacher_comment","mark_confidence","verified_by_teacher"]},
+    "error_evidence":{"fields":["evidence_id","student_id","question_id","response_id","error_code","role","root_cause_candidate","confidence","evidence_date","source_type","is_independent_task","status"]},
+    "skill_evidence":{"fields":["skill_evidence_id","student_id","skill_id","question_id","outcome","score_ratio","confidence","evidence_date","source_type","assessment_component"]},
+    "student_skill_state":{"fields":["student_id","skill_id","mastery_score","confidence","evidence_count","evidence_diversity","trend","weakness_state","last_updated","last_success_date","last_failure_date"]},
+    "diagnosis":{"fields":["diagnosis_id","student_id","target_skill_id","observed_problem","root_gap_skill_id","root_gap_status","confidence","supporting_evidence_ids","prerequisite_path","created_at","teacher_status"]},
+    "remediation_plan":{"fields":["plan_id","student_id","diagnosis_id","target_skill_id","steps","practice_type","difficulty","assigned_at","status","retest_after","retest_evidence_ids"]},
+    "audit_event":{"fields":["event_id","actor","action","entity_type","entity_id","before","after","timestamp"]}
+  },
+  "enums":{
+    "correctness":["correct","incorrect","partial","unmarked","uncertain"],
+    "weakness_state":["observation","possible_weakness","confirmed_weakness","persistent_weakness","improving_weakness","resolved_monitoring","unknown"],
+    "teacher_status":["not_reviewed","accepted","edited","rejected"],
+    "processing_status":["uploaded","quality_check","segmented","transcribed","mapped","diagnosed","needs_review","complete","failed"]
+  },
+  "relationships":[
+    "student 1:N document",
+    "document 1:N page",
+    "document 1:N question",
+    "question 1:1-or-N student_response",
+    "response 1:N error_evidence",
+    "question N:N curriculum/micro-skill nodes",
+    "student N:N skill nodes through student_skill_state",
+    "diagnosis N:N supporting evidence",
+    "diagnosis 1:N remediation_plan"
+  ],
+  "privacy_design":[
+    "Use internal student_id rather than embedding personal details in analysis records.",
+    "Separate uploaded page assets from derived academic features.",
+    "Support deletion of a document and recalculation of affected mastery states.",
+    "Keep an audit trail for teacher corrections."
+  ]
+}

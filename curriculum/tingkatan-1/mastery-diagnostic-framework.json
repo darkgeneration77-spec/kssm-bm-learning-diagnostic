@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "curriculum": "KSSM",
+    "form": "Tingkatan 1",
+    "version": "1.0.0",
+    "purpose": "Connect curriculum evidence to diagnostic confidence, mastery evidence and intervention without replacing teacher professional judgement for official PBD Tahap Penguasaan."
+  },
+  "mastery_model": {
+    "separation_rule": "AI mastery score, AI suggested TP evidence and teacher-confirmed TP are separate fields.",
+    "fields": ["ai_mastery_score", "evidence_count", "evidence_diversity", "trend", "confidence", "suggested_tp_evidence", "teacher_confirmed_tp"],
+    "confidence_levels": {
+      "low": "insufficient or single-source evidence",
+      "medium": "repeated evidence but limited task diversity",
+      "high": "repeated, recent and cross-task evidence with clear attribution"
+    },
+    "trend_states": ["improving", "stable", "declining", "insufficient_data"]
+  },
+  "tp_evidence_framework": {
+    "TP1": {"system_interpretation": "very limited evidence of the targeted skill; substantial guidance typically required", "official_status": "evidence suggestion only"},
+    "TP2": {"system_interpretation": "limited/basic evidence; learner can perform parts of the skill with support", "official_status": "evidence suggestion only"},
+    "TP3": {"system_interpretation": "adequate/basic independent performance is observable in familiar tasks", "official_status": "evidence suggestion only"},
+    "TP4": {"system_interpretation": "good and generally consistent application across appropriate tasks", "official_status": "evidence suggestion only"},
+    "TP5": {"system_interpretation": "very good, detailed and consistent application across varied tasks", "official_status": "evidence suggestion only"},
+    "TP6": {"system_interpretation": "excellent, highly consistent, detailed and transferable performance that may serve as an example", "official_status": "evidence suggestion only"}
+  },
+  "evidence_policy": {
+    "written_upload": ["written comprehension", "writing", "grammar", "written literary response"],
+    "audio_required": ["pronunciation", "intonation", "oral fluency", "listening discrimination when no teacher mark directly evidences it"],
+    "video_or_teacher_observation_preferred": ["body language", "oral performance style", "interactive speaking behaviour"],
+    "uncertain_ocr": "store as uncertain and exclude from confirmed weakness calculations until verified",
+    "teacher_mark_override": "teacher-confirmed marking has priority over automatic visual inference of correctness"
+  },
+  "weakness_states": {
+    "observation": "isolated error; no weakness conclusion",
+    "possible_weakness": "same micro-skill has repeated errors but evidence is still narrow",
+    "confirmed_weakness": "repeated errors across independent items/tasks with adequate attribution",
+    "persistent_weakness": "confirmed weakness persists across different dates or task sources",
+    "improving_weakness": "previous weakness with clear recent improvement",
+    "resolved_monitoring": "recent independent evidence indicates mastery, but continue periodic checking"
+  },
+  "error_families": [
+    "KNOWLEDGE_GAP",
+    "CONCEPT_MISUNDERSTANDING",
+    "VOCABULARY_ERROR",
+    "CONTEXT_MEANING_ERROR",
+    "GRAMMAR_MORPHOLOGY_ERROR",
+    "GRAMMAR_SYNTAX_ERROR",
+    "SPELLING_ERROR",
+    "PUNCTUATION_ERROR",
+    "INSTRUCTION_MISREAD",
+    "MAIN_IDEA_ERROR",
+    "SUPPORTING_IDEA_ERROR",
+    "INFORMATION_SELECTION_ERROR",
+    "SEQUENCING_ERROR",
+    "SUMMARY_SELECTION_ERROR",
+    "WRITING_IDEA_ERROR",
+    "ELABORATION_ERROR",
+    "ORGANISATION_ERROR",
+    "TASK_FULFILMENT_ERROR",
+    "LITERARY_UNDERSTANDING_ERROR",
+    "JUSTIFICATION_ERROR",
+    "CARELESS_OR_SLIP",
+    "UNCERTAIN_EVIDENCE"
+  ],
+  "root_cause_rules": [
+    "Prefer the narrowest defensible micro-skill rather than diagnosing an entire domain.",
+    "Do not label a learner weak in Tatabahasa because of one spelling slip.",
+    "If the same underlying rule fails in explicit grammar tasks and authentic writing, raise confidence in the grammar diagnosis.",
+    "If the learner identifies content correctly but cannot justify it, diagnose justification rather than content identification.",
+    "If an answer is wrong because the instruction was misunderstood, separate task interpretation from subject knowledge.",
+    "When multiple causes remain plausible, retain multiple hypotheses with lower confidence rather than forcing one diagnosis."
+  ],
+  "remediation_engine": {
+    "generic_sequence": ["retrieve prerequisite", "explicit explanation", "worked example", "recognition task", "guided application", "independent application", "authentic/contextual application", "delayed retest"],
+    "rules": {
+      "knowledge_gap": ["teach missing concept", "check recognition", "apply in simple context", "retest"],
+      "grammar_rule": ["identify form", "classify", "explain rule/function", "correct errors", "construct sentence", "apply in writing", "delayed retest"],
+      "reading_main_idea": ["separate topic from main idea", "identify repeated/key information", "eliminate supporting details", "state main idea", "apply to new text"],
+      "summary": ["mark important ideas", "remove examples/repetition", "preserve original meaning", "construct grammatical concise sentences", "retest with new passage"],
+      "writing_elaboration": ["identify main idea", "answer why/how", "add relevant detail/example", "connect to topic", "write full paragraph", "transfer to new prompt"],
+      "literary_justification": ["identify requested element", "locate textual/event evidence", "link evidence to claim", "write concise justification", "apply to new work"]
+    },
+    "success_condition": "Improvement must be demonstrated on later independent evidence; immediate correction alone does not close the weakness."
+  },
+  "longitudinal_logic": {
+    "recent_weighting": "recent independent evidence should influence current mastery more than old evidence, while persistent historical weaknesses remain visible",
+    "cross_source_bonus": "same skill demonstrated across workbook, school worksheet, test or authentic writing increases confidence",
+    "recovery_logic": "move confirmed/persistent weakness to improving only after better independent evidence; move to resolved_monitoring only after repeated success",
+    "regression_logic": "a previously mastered skill may reopen when multiple recent independent errors appear"
+  }
+}

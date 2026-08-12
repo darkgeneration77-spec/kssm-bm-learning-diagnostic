@@ -1,0 +1,14 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 5","domain_code":"MBT","domain_name":"Kemahiran Mendengar dan Bertutur","version":"1.0.0","status":"curriculum-brain-v1"},
+  "curriculum_structure":[
+    {"sk":"1.1","focus":"Mendengar, mengenal, menyebut dan memahami perkataan, rangkai kata, istilah, ungkapan dan ayat dalam pelbagai komunikasi lisan","diagnostic_micro_skills":["ORAL_LEXICAL_DISCRIMINATION","ORAL_TERM_MEANING","ORAL_EXPRESSION_MEANING","ORAL_SENTENCE_MEANING","PRONUNCIATION","INTONATION"]},
+    {"sk":"1.2","focus":"Mendengar dan memberikan respons terhadap pelbagai ujaran tanpa mengubah maksud konteks","diagnostic_micro_skills":["LISTEN_ACCURACY","CONTEXT_PRESERVATION","RESPONSE_RELEVANCE","PARAPHRASE_WITHOUT_MEANING_CHANGE"]},
+    {"sk":"1.3","focus":"Mendengar, menghubungkaitkan maklumat dengan pengetahuan sedia ada dan menjana idea baharu","diagnostic_micro_skills":["PRIOR_KNOWLEDGE_LINK","NEW_FACT_INTEGRATION","INFORMATION_SYNTHESIS","NEW_IDEA_GENERATION"]},
+    {"sk":"1.4","focus":"Berbicara, memberikan maklum balas dan berbahas dengan fakta yang logik dan relevan","diagnostic_micro_skills":["ORAL_FEEDBACK","CLAIM","LOGICAL_REASON","RELEVANT_FACT","ORAL_ARGUMENT","CIVIL_DISCOURSE"]},
+    {"sk":"1.5","focus":"Bersoal jawab dan berinteraksi untuk meneroka, menilai dan memperjelas sesuatu perkara","diagnostic_micro_skills":["QUESTIONING","CLARIFICATION","PROBING","EVALUATIVE_QUESTION","RESPONSE_BUILDING"]},
+    {"sk":"1.6","focus":"Mempersembahkan maklumat secara lisan dengan jelas, tersusun dan berkesan","diagnostic_micro_skills":["ORAL_ORGANISATION","FACT_SELECTION","ARGUMENT_SELECTION","PRESENTATION_CLARITY","REGISTER","AUDIENCE_AWARENESS"]},
+    {"sk":"1.7","focus":"Berbincang, berunding dan menilai pandangan untuk mencapai keputusan atau persetujuan","diagnostic_micro_skills":["DISCUSSION","NEGOTIATION","VIEWPOINT_EVALUATION","COUNTERARGUMENT","CONSENSUS_BUILDING"]},
+    {"sk":"1.8","focus":"Mengulas, menilai dan merumus isu atau maklumat daripada pelbagai sumber lisan/audiovisual","diagnostic_micro_skills":["SOURCE_COMPREHENSION","EXPLICIT_IMPLICIT_INFO","CRITICAL_COMMENT","EVALUATION","SYNTHESIS","ORAL_CONCLUSION"]}
+  ],
+  "evidence_policy":"Pronunciation, intonation, debate, negotiation and live interaction require audio/video or teacher observation. Written work alone cannot confirm these oral weaknesses."
+}

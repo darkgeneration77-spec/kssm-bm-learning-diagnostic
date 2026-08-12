@@ -1,0 +1,32 @@
+{
+  "meta":{"system":"KSSM Bahasa Melayu Learning Diagnostic","version":"1.0.0","purpose":"Map OCR-extracted question/response/marking data to assessment nodes, curriculum skills, diagnostic micro-skills and plausible error causes with explicit evidence and confidence."},
+  "inputs":["question_text","stimulus_text","student_answer","teacher_mark","teacher_correction","score","page_context","form_hint","paper_hint","question_number","layout_region","ocr_confidences"],
+  "pipeline":[
+    "detect task type and command verb",
+    "identify subject level/form candidates",
+    "detect assessment family if paper context exists",
+    "retrieve candidate curriculum nodes from T1-T5 knowledge graph",
+    "rank primary and secondary skills",
+    "compare student response with task demand and teacher evidence",
+    "generate error hypotheses",
+    "check prerequisite graph",
+    "assign confidence and evidence explanation",
+    "request human confirmation when ambiguity remains",
+    "emit structured diagnosis evidence"
+  ],
+  "task_type_taxonomy":["tatabahasa","pemahaman tersurat","pemahaman tersirat","inferens","analisis","sintesis","rumusan","ringkasan","karangan","penyuntingan","kosa kata","peribahasa","komsas","novel","transformasi ayat","morfologi","sintaksis","oral/listening","other"],
+  "classification_output":{"assessment_node":"nullable","curriculum_primary_skill":"required when confidence sufficient","curriculum_secondary_skills":"0..n","micro_skills":"1..n","difficulty":"basic|intermediate|advanced|unknown","cognitive_demand":"remember|understand|apply|analyse|evaluate|create|unknown","task_demand_summary":"short natural-language explanation","mapping_confidence":"0..1","mapping_evidence":["keywords","command verb","required response form","stimulus structure","assessment context","teacher correction pattern"]},
+  "error_hypothesis_model":{"primary_error":"nullable","secondary_errors":"0..n","root_cause_candidates":"0..n","error_confidence":"0..1","reasoning_evidence":["student response vs demand","teacher correction","repeated historical pattern","prerequisite evidence"],"prohibited":"Never infer a weakness solely from the fact that an answer is wrong when multiple causes remain plausible."},
+  "ambiguity_rules":[
+    "If two curriculum nodes are close, return both with ranked confidence rather than force one.",
+    "If question text is incomplete due to OCR or crop, status=needs_review.",
+    "If teacher marking conflicts with extracted student answer, status=needs_review.",
+    "If the question can test both content knowledge and language expression, preserve both dimensions separately.",
+    "If historical evidence contradicts the current error hypothesis, lower confidence and retain alternative cause."
+  ],
+  "examples":[
+    {"input":"Betulkan kesalahan: Para pelajar-pelajar sedang beratur.","mapping":{"primary":"Tatabahasa","micro_skill":"double plural marking / kata ganda","likely_error":"GR_REDUP or equivalent form-level node"}},
+    {"input":"Nyatakan idea utama petikan.","mapping":{"primary":"Membaca","micro_skill":"MAIN_IDEA","likely_error":"RD_MAIN_IDEA when incorrect"}},
+    {"input":"Huraikan satu langkah mengatasi masalah...","mapping":{"primary":"Menulis/Pemahaman response","micro_skill":"ELABORATION","note":"Do not diagnose idea generation if learner states a relevant point but fails to develop it."}}
+  ]
+}

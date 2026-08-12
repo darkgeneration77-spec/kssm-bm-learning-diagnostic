@@ -1,0 +1,25 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 5","version":"1.0.0"},
+  "remediation_map":{
+    "RD_T5_INFERENCE":["confirm explicit facts","locate clues","connect clues","state inference","justify with evidence","new text retest"],
+    "RD_T5_EVALUATION":["define judgement criterion","make claim","select evidence","explain reasoning","consider limitation/alternative","new material transfer"],
+    "RD_T5_SYNTHESIS":["identify common focus","extract key ideas","group overlaps/differences","integrate without duplication","preserve source meaning","write synthesis","new multi-source retest"],
+    "RD_T5_MULTI_SOURCE":["understand each source independently","identify shared/different claims","compare reliability/relevance where task requires","combine evidence","form integrated conclusion","new source set"],
+    "WR_T5_TASK":["decode task verb","mark scope","identify audience/register/form","paraphrase requirement","plan only relevant ideas","new prompt transfer"],
+    "WR_T5_CONTENT_DEPTH":["state core idea","explain mechanism/reason","develop consequence","add precise example/evidence","connect to wider implication","independent paragraph"],
+    "WR_T5_REASONING":["state claim","state reason","ask why reason supports claim","make logical bridge explicit","test for contradiction","apply to new argument"],
+    "WR_T5_COUNTERPOINT":["identify plausible opposing view","represent fairly","respond with reason/evidence","return to main claim","new argument transfer"],
+    "WR_T5_CLAIM_EVIDENCE_LINK":["state claim","select strongest evidence","explain exactly what it proves","remove decorative examples","compare strong/weak evidence","new paragraph retest"],
+    "WR_T5_GLOBAL_COHESION":["map paragraph purpose","check logical order","add necessary transitions","remove repetition","verify progression toward conclusion","rewrite full response"],
+    "WR_T5_SYNTHESIS":["extract source points","categorise","merge related ideas","avoid duplication","preserve meaning","produce concise integrated response","new sources retest"],
+    "GR_T5_REGISTER_CONTEXT":["identify context/audience","retrieve word class/form","compare register choices","select appropriate form","correct mismatch","authentic writing transfer"],
+    "GR_T5_DERIVED_SENTENCE":["retrieve basic sentence structure","identify transformation process","build derived form","preserve intended meaning","compare structures","mixed retest"],
+    "GR_T5_COMPOUND_SENTENCE":["identify clauses","identify semantic relationship","select appropriate connector/structure","combine","check grammar and meaning","writing transfer"],
+    "GR_T5_SENTENCE_TRANSFORMATION":["identify original structure","apply required transformation","preserve core meaning","check grammar","produce reverse transformation","mixed retest"],
+    "SB_T5_EVALUATION":["identify literary element/issue","state judgement","select precise textual/event evidence","explain reasoning","avoid plot retelling","new extract retest"],
+    "SB_T5_JUSTIFICATION":["state answer","cite event/text evidence","explain relevance","check against question demand","new item retest"],
+    "OL_T5_DEBATE":["form claim","build reason","select evidence","anticipate counterpoint","rebut logically","deliver under time constraint","teacher/audio reassessment"]
+  },
+  "persistent_weakness_policy":"Backtrack to T4 and earlier prerequisites, repair the earliest demonstrated gap, return to T5 target, then require delayed independent success.",
+  "success_condition":"Immediate correction is practice evidence, not mastery evidence."
+}

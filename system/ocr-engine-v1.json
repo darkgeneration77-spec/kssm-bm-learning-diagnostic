@@ -1,0 +1,40 @@
+{
+  "meta":{"project":"KSSM BM Learning Diagnostic","version":"1.0.0","purpose":"High-accuracy OCR and document-understanding pipeline for marked physical exercises, worksheets and exam papers."},
+  "design_principle":"OCR is never treated as a single pass or as ground truth. Printed text, handwriting, teacher marks, layout and scores are extracted separately, reconciled, confidence-scored and reviewable.",
+  "provider_strategy":{
+    "primary":"document-optimized OCR service with printed+handwritten extraction, layout polygons, word confidence and multilingual support",
+    "recommended_initial_provider":"Azure Document Intelligence Read/Layout",
+    "fallback_provider":"Google Document AI OCR or a second independent OCR engine for low-confidence regions",
+    "reason":"Use a document-native OCR engine first; invoke fallback only on uncertain regions to improve accuracy while controlling cost."
+  },
+  "pipeline":[
+    {"stage":1,"name":"upload_quality_gate","checks":["resolution","blur","glare","shadow","page cutoff","perspective skew","rotation","contrast","multiple pages in one frame"],"output":"accept | auto-enhance | request recapture"},
+    {"stage":2,"name":"image_preprocessing","actions":["deskew","perspective correction","crop page border","illumination normalization","contrast normalization","mild denoise","retain original image unchanged"]},
+    {"stage":3,"name":"page_layout_detection","detect":["question blocks","answer areas","tables","boxes","lines","page number","question numbers","teacher annotation regions","score boxes"]},
+    {"stage":4,"name":"printed_text_ocr","extract":["question text","instructions","printed answer options","headers","marks allocation"],"store":["text","polygon","word_confidence","line_confidence","language"]},
+    {"stage":5,"name":"handwriting_ocr","extract":["student handwritten answers","teacher handwritten comments","teacher score annotations"],"store":["text","polygon","confidence","handwriting_flag"]},
+    {"stage":6,"name":"mark_symbol_detection","detect":["tick","cross","circle","underline","strikeout","arrow","question mark","score fraction","red correction mark"],"note":"Do not rely on OCR alone for graphical marks; use visual classification/object detection."},
+    {"stage":7,"name":"color_role_separation","goal":"Separate likely teacher markings from student writing when pen colours differ","examples":["red/green teacher pen","blue/black student pen"],"rule":"Colour is supporting evidence, never sole evidence."},
+    {"stage":8,"name":"question_answer_alignment","link":["question_number","question_text","student_answer_region","teacher_mark_region","score_region"],"output":"question-level evidence objects"},
+    {"stage":9,"name":"semantic_reconstruction","actions":["repair line breaks","restore Malay punctuation where safely inferable","preserve original token stream","detect answer overwritten/corrected by teacher","separate teacher correction from student original answer"]},
+    {"stage":10,"name":"confidence_fusion","inputs":["ocr confidence","layout confidence","mark-symbol confidence","semantic consistency","cross-engine agreement"],"output":"field-level final confidence"},
+    {"stage":11,"name":"selective_second_pass","trigger":"field confidence below threshold or OCR engines disagree","actions":["crop uncertain region","upscale","rerun OCR","invoke fallback OCR","vision-model contextual review"]},
+    {"stage":12,"name":"human_review_gate","rule":"Low-confidence or diagnosis-critical fields must be shown for teacher confirmation before they alter the student's confirmed weakness profile."}
+  ],
+  "confidence_policy":{
+    "high":{"threshold":0.92,"action":"auto-accept for ordinary text if internally consistent"},
+    "medium":{"threshold_range":"0.75-0.919","action":"accept provisionally; highlight when diagnosis depends on it"},
+    "low":{"threshold":"<0.75","action":"rerun/fallback; if unresolved require human confirmation"},
+    "diagnosis_critical":"Correct/wrong status, question number, student answer, score and skill mapping require stricter confirmation than decorative or header text."
+  },
+  "malay_specific_rules":[
+    "Do not silently normalize a student spelling error into the correct Malay word; preserve raw OCR and normalized candidate separately.",
+    "Keep di- prefix versus di preposition distinctions observable because they may be the actual grammar error.",
+    "Preserve hyphens in kata ganda and punctuation because they may be diagnostically relevant.",
+    "Store uncertain characters as alternatives rather than forcing a word when confidence is low.",
+    "Do not use a language model to 'fix' the student's answer before diagnostic analysis."
+  ],
+  "required_storage_per_token":["raw_text","normalized_candidate","polygon","page","source_region_id","ocr_engine","confidence","is_handwritten","language_hint","teacher_or_student_role","verification_status"],
+  "failure_modes_to_test":["faint pencil","red pen crossing student word","teacher writes correct answer above wrong answer","multiple ticks/crosses near same question","curved workbook page","mobile shadow","rotated photo","two-column exam layout","table answer","long essay handwriting","mixed printed and handwritten Malay","numbers mistaken for letters","question number merged with answer","correction fluid","erasures","student self-correction","teacher score 1/2 or 2/3 misread as dates"],
+  "privacy_note":"Original student document images and extracted data should be access-controlled and retained only according to the product's explicit storage policy."
+}

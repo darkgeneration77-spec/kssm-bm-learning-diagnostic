@@ -1,0 +1,26 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 4","version":"1.0.0"},
+  "remediation_map":{
+    "RD_T4_INFERENCE":["retrieve explicit information","identify textual clues","connect clues","state inference","cite evidence","test with new text"],
+    "RD_T4_ANALYSIS":["identify relevant components","state relationship","compare/categorise/cause-effect as required","support with text","form analytical conclusion","new material transfer"],
+    "RD_T4_EVALUATION":["state criterion","make judgement","select evidence","explain reasoning","consider limitation/counterpoint where suitable","new item retest"],
+    "RD_T4_SYNTHESIS":["identify focus","extract key ideas from each source","group overlapping/complementary ideas","resolve contradictions where present","write integrated conclusion","new multi-source retest"],
+    "RD_T4_JUSTIFICATION":["state answer/claim","select precise evidence","explain claim-evidence link","remove retelling","write concise justification","new item retest"],
+    "WR_T4_TASK_INTERPRETATION":["mark task verb","identify topic","identify required scope/audience/form","paraphrase requirement","reject irrelevant ideas","plan response to new prompt"],
+    "WR_T4_IDEA_GENERATION":["activate topic knowledge","generate candidate ideas","group ideas","rank relevance/strength","build outline","new prompt transfer"],
+    "WR_T4_ELABORATION":["state point","answer why/how","develop mechanism/reason","add relevant example/evidence","explain effect/link","close back to focus","independent paragraph","delayed retest"],
+    "WR_T4_CLAIM_EVIDENCE_LINK":["state claim","choose evidence","ask what exactly evidence proves","write explicit linking sentence","reject weak evidence","apply to new claim"],
+    "WR_T4_PARAGRAPH_COHERENCE":["identify paragraph controlling idea","order supporting sentences","remove unrelated sentence","use logical links","rewrite paragraph","transfer"],
+    "WR_T4_SUMMARY_SELECTION":["identify focus","mark key ideas","remove examples/repetition","group related ideas","preserve source meaning","write concise response","new material retest"],
+    "WR_T4_SYNTHESIS":["extract source ideas","categorise","combine without duplication","preserve meaning","write integrated response","new multi-source task"],
+    "GR_T4_WORD_FORM":["retrieve T3 morphology","identify base/form","classify formation","explain function/meaning","correct form","context use","writing transfer"],
+    "GR_T4_PHRASE_TYPE":["retrieve earlier phrase knowledge","locate phrase head","classify FN/FK/FA/FS","identify phrase function","construct sentence","mixed retest"],
+    "GR_T4_NORMAL_INVERTED_ORDER":["identify subject/predicate","recognise normal order","move predicate/component appropriately","preserve meaning","construct both forms","mixed retest"],
+    "GR_T4_COMPOUND_SENTENCE":["identify clauses","identify relationship","select connector/structure","combine correctly","check meaning/grammar","writing transfer"],
+    "SB_T4_JUSTIFICATION":["identify requested literary element","state claim","select event/text evidence","explain relevance","avoid plot retelling","new extract retest"],
+    "SB_T4_PROVERB":["identify situation","infer intended meaning","select matching proverb","explain fit","apply in new context"],
+    "OL_T4_DEBATE":["build claim","add reason","select evidence/example","anticipate counterpoint","respond logically","practise timed oral delivery","teacher/audio reassessment"]
+  },
+  "assignment_policy":{"possible_weakness":"short diagnostic set","confirmed_weakness":"targeted remediation","persistent_weakness":"backtrack prerequisite then reteach target","improving_weakness":"reduce scaffolding and increase transfer","resolved_monitoring":"spaced reassessment only"},
+  "success_condition":"Later independent evidence is required; correcting the same item does not close a weakness."
+}

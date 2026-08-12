@@ -1,0 +1,21 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 5","domain_code":"TB","domain_name":"Aspek Tatabahasa","version":"1.0.0","status":"curriculum-brain-v1"},
+  "standard_kandungan":[
+    {"code":"5.1","title":"Memahami dan menggunakan bentuk kata yang sesuai dalam pelbagai bidang","nodes":[
+      {"code":"5.1.1","focus":"Mengaplikasikan kata tunggal dan kata majmuk dalam pelbagai laras bahasa mengikut konteks","micro_skills":["SINGLE_WORD","COMPOUND_WORD","REGISTER_APPLICATION","CONTEXT_USE"]},
+      {"code":"5.1.2","focus":"Mengaplikasikan pelbagai kata terbitan dalam pelbagai laras bahasa mengikut konteks","micro_skills":["DERIVED_WORD","AFFIX_SELECTION","DERIVATIONAL_MEANING","REGISTER_APPLICATION","CONTEXT_USE"]},
+      {"code":"5.1.3","focus":"Mengaplikasikan kata ganda dan akronim dalam pelbagai laras bahasa mengikut konteks","micro_skills":["REDUPLICATION","ACRONYM","FORM_SELECTION","REGISTER_APPLICATION","CONTEXT_USE"]}
+    ]},
+    {"code":"5.2","title":"Memahami dan menggunakan golongan kata yang sesuai dalam pelbagai bidang","nodes":[
+      {"code":"5.2.1","focus":"Memahami dan menggunakan golongan kata dalam pelbagai laras bahasa mengikut konteks","micro_skills":["NOUN","VERB","ADJECTIVE","FUNCTION_WORD","WORD_CLASS_SELECTION","REGISTER_APPLICATION","CONTEXT_USE"]}
+    ]},
+    {"code":"5.3","title":"Memahami dan menggunakan ayat yang sesuai dalam pelbagai bidang","nodes":[
+      {"code":"5.3.1","focus":"Memahami dan menggunakan frasa dalam pelbagai laras bahasa mengikut konteks","micro_skills":["NOUN_PHRASE","VERB_PHRASE","ADJECTIVE_PHRASE","PREPOSITIONAL_PHRASE","PHRASE_FUNCTION","REGISTER_APPLICATION"]},
+      {"code":"5.3.2","focus":"Memahami dan menggunakan ayat terbitan mengikut konteks","micro_skills":["DERIVED_SENTENCE","SENTENCE_TRANSFORMATION","STRUCTURE_PRESERVATION","MEANING_PRESERVATION"]},
+      {"code":"5.3.3","focus":"Memahami dan menggunakan ayat majmuk mengikut konteks","micro_skills":["CLAUSE_RECOGNITION","COMPOUND_SENTENCE","COMPLEX_RELATION","CONNECTOR_FUNCTION","GRAMMATICAL_COMBINATION"]},
+      {"code":"5.3.4","focus":"Memahami dan menggunakan ragam ayat mengikut konteks","micro_skills":["ACTIVE_PASSIVE","SENTENCE_VOICE","VOICE_TRANSFORMATION","REGISTER_AND_CONTEXT","MEANING_PRESERVATION"]}
+    ]}
+  ],
+  "diagnostic_graph":{"morfologi":["kata tunggal","kata majmuk","kata terbitan","kata ganda","akronim","golongan kata"],"sintaksis":["frasa","ayat terbitan","ayat majmuk","ragam ayat"],"transfer":"Errors may be evidenced in explicit grammar exercises, editing tasks, comprehension responses and authentic writing when attribution is clear."},
+  "progression_note":"T5 emphasises application across laras bahasa and context, not merely recognition of forms learned earlier."
+}

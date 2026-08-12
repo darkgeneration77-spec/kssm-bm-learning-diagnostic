@@ -1,0 +1,43 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 4","version":"1.0.0","purpose":"Connect upper-secondary targets to T3 foundations and internal T4 dependencies."},
+  "cross_form_edges":[
+    {"from":"T3_CONTEXTUAL_MEANING","to":"T4_WORD_CONTEXT","relation":"prerequisite"},
+    {"from":"T3_EXPLICIT_IMPLICIT_INFORMATION","to":"T4_INFERENCE","relation":"prerequisite"},
+    {"from":"T3_ANALYSIS","to":"T4_ANALYSIS","relation":"progression"},
+    {"from":"T3_OPINION_WITH_REASON","to":"T4_EVALUATION_JUSTIFICATION","relation":"progression"},
+    {"from":"T3_INFORMATION_PROCESSING","to":"T4_SYNTHESIS","relation":"prerequisite"},
+    {"from":"T3_KERANGKA","to":"T4_OUTLINE","relation":"prerequisite"},
+    {"from":"T3_PARAGRAPH_DEVELOPMENT","to":"T4_CONTENT_DEPTH_ELABORATION","relation":"prerequisite"},
+    {"from":"T3_HURAIAN_CONTOH","to":"T4_CLAIM_REASON_EVIDENCE","relation":"progression"},
+    {"from":"T3_FULL_TEXT_WRITING","to":"T4_FULL_TEXT_ORGANISATION","relation":"prerequisite"},
+    {"from":"T3_SUMMARY_INFORMATION_SELECTION","to":"T4_SUMMARY_SYNTHESIS","relation":"prerequisite"},
+    {"from":"T3_MORPHOLOGY","to":"T4_WORD_FORM","relation":"prerequisite"},
+    {"from":"T3_PHRASE_ANALYSIS","to":"T4_PHRASE_TYPE","relation":"prerequisite"},
+    {"from":"T3_SENTENCE_STRUCTURE","to":"T4_BASIC_SIMPLE_SENTENCE","relation":"prerequisite"},
+    {"from":"T3_SENTENCE_TRANSFORMATION","to":"T4_NORMAL_INVERTED_ORDER","relation":"supports"},
+    {"from":"T3_LITERARY_ANALYSIS","to":"T4_LITERARY_ANALYSIS","relation":"prerequisite"},
+    {"from":"T3_JUSTIFICATION","to":"T4_LITERARY_JUSTIFICATION","relation":"progression"},
+    {"from":"T3_ARGUMENT_FOUNDATION","to":"T4_DEBATE_ARGUMENT","relation":"progression"}
+  ],
+  "t4_internal_edges":[
+    {"from":"T4_EXPLICIT_INFORMATION","to":"T4_INFERENCE","relation":"prerequisite"},
+    {"from":"T4_INFERENCE","to":"T4_ANALYSIS","relation":"supports"},
+    {"from":"T4_ANALYSIS","to":"T4_EVALUATION","relation":"supports"},
+    {"from":"T4_INFORMATION_SELECTION","to":"T4_SYNTHESIS","relation":"prerequisite"},
+    {"from":"T4_CLAIM","to":"T4_REASON","relation":"supports"},
+    {"from":"T4_REASON","to":"T4_EVIDENCE","relation":"supports"},
+    {"from":"T4_CLAIM_REASON_EVIDENCE","to":"T4_ARGUMENT_STRENGTH","relation":"prerequisite"},
+    {"from":"T4_TOPIC_SENTENCE","to":"T4_ELABORATION","relation":"prerequisite"},
+    {"from":"T4_ELABORATION","to":"T4_CONTENT_DEPTH","relation":"supports"},
+    {"from":"T4_PARAGRAPH_COHERENCE","to":"T4_FULL_TEXT_ORGANISATION","relation":"prerequisite"},
+    {"from":"T4_PHRASE_TYPE","to":"T4_SENTENCE_PATTERN","relation":"supports"},
+    {"from":"T4_BASIC_SENTENCE","to":"T4_NORMAL_INVERTED_ORDER","relation":"prerequisite"},
+    {"from":"T4_SIMPLE_SENTENCE","to":"T4_COMPOUND_SENTENCE","relation":"prerequisite"}
+  ],
+  "backtracking_examples":[
+    {"observed":"T4_SYNTHESIS_WEAK","check":["T3_INFORMATION_PROCESSING","T4_MAIN_IDEA","T4_INFORMATION_SELECTION","T4_INFERENCE"]},
+    {"observed":"T4_ARGUMENT_WEAK","check":["T3_OPINION_WITH_REASON","T4_CLAIM","T4_REASON","T4_EVIDENCE","T4_CLAIM_EVIDENCE_LINK"]},
+    {"observed":"T4_ESSAY_ELABORATION_WEAK","check":["T3_PARAGRAPH_DEVELOPMENT","T4_TOPIC_SENTENCE","IDEA_SELECTION","VOCABULARY_RANGE"]},
+    {"observed":"T4_COMPOUND_SENTENCE_WEAK","check":["T3_SENTENCE_STRUCTURE","T4_SIMPLE_SENTENCE","CLAUSE_RECOGNITION","CONNECTOR_FUNCTION"]}
+  ]
+}

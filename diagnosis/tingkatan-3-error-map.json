@@ -1,0 +1,20 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 3","version":"1.0.0"},
+  "error_map":{
+    "reading":["RD_T3_REGISTER","RD_T3_GUIDE_ANALYSIS","RD_T3_GRAPHIC_EXPLICIT","RD_T3_GRAPHIC_IMPLICIT","RD_T3_CROSS_TEXT","RD_T3_REVIEW","RD_T3_OPINION_EVIDENCE","RD_T3_MAIN_SUPPORTING_IDEA"],
+    "writing":["WR_T3_TASK","WR_T3_FRAMEWORK","WR_T3_INTRODUCTION","WR_T3_CONTENT_PARAGRAPH","WR_T3_CRITICAL_IDEA","WR_T3_CREATIVE_IDEA","WR_T3_ELABORATION","WR_T3_COHERENCE","WR_T3_CONCLUSION","WR_T3_COMPLETE_DISCOURSE","WR_T3_PROSE_ADAPTATION","WR_T3_GRAPHIC_TO_PROSE","WR_T3_EDIT_PRESERVE_MEANING"],
+    "grammar":["GR_T3_NOUN_LOANWORD","GR_T3_ADJECTIVE","GR_T3_FUNCTION_WORD","GR_T3_VERB","GR_T3_REDUPLICATION","GR_T3_DERIVED_WORD","GR_T3_PHRASE","GR_T3_SENTENCE_STRUCTURE","GR_T3_SENTENCE_TRANSFORMATION","GR_T3_GRAMMAR_ANALYSIS","GR_T3_SPELLING","GR_T3_PUNCTUATION","GR_T3_VOCABULARY","GR_T3_PROVERB"],
+    "seni_bahasa":["SB_T3_MEANING","SB_T3_THEME","SB_T3_ISSUE","SB_T3_VALUE","SB_T3_LESSON","SB_T3_CHARACTER","SB_T3_CHARACTERISATION","SB_T3_LANGUAGE_STYLE","SB_T3_JUSTIFICATION","SB_T3_CREATIVE_ADAPTATION"],
+    "oral_listening":["OL_T3_CATEGORISE_INFO","OL_T3_ANALYSE_INFO","OL_T3_CURRENT_ISSUE","OL_T3_PIDATO","OL_T3_ACCEPT_REJECT_VIEW","OL_T3_CONSTRUCTIVE_CRITICISM","OL_T3_AUDIOVISUAL_EXPLICIT","OL_T3_AUDIOVISUAL_IMPLICIT"]
+  },
+  "root_cause_rules":[
+    "Use the narrowest defensible code rather than a whole-domain label.",
+    "For analytical failures, inspect whether the learner first failed to identify information, distinguish categories, connect evidence or justify a conclusion.",
+    "For T3 writing, distinguish weak planning, weak idea generation, weak elaboration and weak language control.",
+    "For tersirat errors, verify explicit-information comprehension before diagnosing inference weakness.",
+    "For grammar analysis errors, inspect lower-level word-class, phrase and sentence-structure prerequisites.",
+    "Do not infer oral/audiovisual performance from a written upload alone.",
+    "OCR uncertainty is not learner error.",
+    "Cross-source and cross-date repetition raises diagnostic confidence."
+  ]
+}

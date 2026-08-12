@@ -1,0 +1,24 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 3","version":"1.0.0"},
+  "remediation_map":{
+    "RD_T3_REGISTER":["identify text purpose and audience","notice register markers","compare report/news/creative forms","classify samples","rewrite short extract in target register","new text retest"],
+    "RD_T3_GRAPHIC_IMPLICIT":["identify explicit visual data","connect two or more clues","state inference","justify using visual evidence","compare plausible distractors","new graphic retest"],
+    "RD_T3_CROSS_TEXT":["identify each text's main idea","mark similarities/differences","connect evidence across texts","form synthesis","justify response","new paired-text retest"],
+    "WR_T3_FRAMEWORK":["analyse task","generate relevant ideas","group ideas","sequence ideas","attach planned elaboration/examples","write from framework","new prompt transfer"],
+    "WR_T3_INTRODUCTION":["identify topic and purpose","compare introduction approaches","write focused opening","avoid unrelated background","connect to body","new prompt retest"],
+    "WR_T3_CONTENT_PARAGRAPH":["state controlling idea","develop why/how","add evidence/example","maintain paragraph focus","link sentences","independent paragraph retest"],
+    "WR_T3_CRITICAL_IDEA":["state issue","consider cause/effect or strengths/limitations","select defensible position","support with reason/evidence","write concise critical paragraph","new issue transfer"],
+    "WR_T3_COMPLETE_DISCOURSE":["retrieve framework","check introduction-body-conclusion","check paragraph progression","check cohesion","edit grammar/mechanics","rewrite independently","delayed retest"],
+    "WR_T3_EDIT_PRESERVE_MEANING":["identify error","state intended meaning","correct only necessary language feature","compare before/after meaning","edit mixed text","edit own writing","delayed retest"],
+    "GR_T3_NOUN_LOANWORD":["identify noun","identify borrowed form","check accepted spelling/form","use in context","mixed classification","writing transfer"],
+    "GR_T3_REDUPLICATION":["retrieve T1 full and T2 partial reduplication","classify reduplication form","identify meaning/function","correct malformed form","use in context","mixed retest"],
+    "GR_T3_DERIVED_WORD":["retrieve affix foundations","identify root","analyse affix and word class","explain meaning/function change","correct form","construct sentence","authentic writing transfer"],
+    "GR_T3_PHRASE":["retrieve noun/adjective phrase concepts","identify phrase head","classify phrase","analyse phrase role","construct phrase","use in sentence","mixed retest"],
+    "GR_T3_SENTENCE_STRUCTURE":["identify subject/predicate","identify phrase types","analyse clause structure","repair structural error","construct parallel sentence","new-context retest"],
+    "GR_T3_SENTENCE_TRANSFORMATION":["identify original meaning and structure","identify target transformation","transform without meaning loss","compare grammaticality","mixed transformation practice","delayed retest"],
+    "GR_T3_GRAMMAR_ANALYSIS":["identify word classes","identify phrases","identify sentence structure","explain grammatical relationship","correct targeted error","analyse unseen sentence","delayed retest"],
+    "SB_T3_JUSTIFICATION":["state literary claim","select precise textual/event evidence","explain relationship","avoid plot retelling","write concise justification","new extract retest"],
+    "OL_T3_ANALYSE_INFO":["identify information units","categorise","compare relationships","state analysis","support orally with evidence","new listening task retest"]
+  },
+  "persistent_weakness_policy":"For persistent T3 weaknesses, backtrack through T2 and where necessary T1 prerequisites, reteach the first broken foundation, then return progressively to the T3 target."
+}

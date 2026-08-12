@@ -1,0 +1,22 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 4","domain_name":"Aspek Seni Bahasa","version":"1.0.0","status":"curriculum-brain-v1"},
+  "standard_kandungan":[
+    {"code":"4.1","title":"Memahami dan mengapresiasi karya sastera","standard_pembelajaran":[
+      {"skill_id":"BM-T4-SB-4.1.1","code":"4.1.1","official_focus":"Memahami dan mengapresiasi prosa moden dan prosa tradisional dengan menyatakan respons peribadi yang sesuai terhadap karya.","micro_skills":["PROSE_COMPREHENSION","LITERARY_APPRECIATION","PERSONAL_RESPONSE","TEXT_EVIDENCE","RESPONSE_RELEVANCE"]},
+      {"skill_id":"BM-T4-SB-4.1.2","code":"4.1.2","official_focus":"Memahami dan mengapresiasi puisi moden dan puisi tradisional dengan menyatakan respons peribadi yang sesuai terhadap karya.","micro_skills":["POETRY_COMPREHENSION","FIGURATIVE_MEANING","LITERARY_APPRECIATION","PERSONAL_RESPONSE","TEXT_EVIDENCE"]}
+    ]},
+    {"code":"4.2","title":"Memahami dan menggunakan peribahasa dalam lisan dan penulisan","standard_pembelajaran":[
+      {"skill_id":"BM-T4-SB-4.2.1","code":"4.2.1","official_focus":"Menggunakan peribahasa dan menghubung kait maksudnya dengan betul mengikut konteks.","micro_skills":["PROVERB_RECOGNITION","PROVERB_MEANING","CONTEXT_MATCHING","PROVERB_APPLICATION","MEANING_CONTEXT_LINK"]}
+    ]},
+    {"code":"4.3","title":"Menghasilkan karya kreatif dalam bentuk prosa dan puisi","standard_pembelajaran":[
+      {"skill_id":"BM-T4-SB-4.3.1","code":"4.3.1","official_focus":"Menghasilkan skrip drama secara berpandu dengan menggunakan gaya bahasa yang sesuai dan menarik.","micro_skills":["DRAMA_SCRIPT_STRUCTURE","DIALOGUE","CHARACTER_VOICE","PLOT_SEQUENCE","STYLE_LANGUAGE","CREATIVE_EXPRESSION"]},
+      {"skill_id":"BM-T4-SB-4.3.2","code":"4.3.2","official_focus":"Menghasilkan seloka menggunakan idea yang kreatif serta bahasa yang indah dan bertatasusila.","micro_skills":["SELOKA_FORM","CREATIVE_IDEA","BEAUTIFUL_LANGUAGE","COURTEOUS_LANGUAGE","COHERENCE"]}
+    ]},
+    {"code":"4.4","title":"Mempersembahkan pelbagai prosa dan puisi secara kreatif","standard_pembelajaran":[
+      {"skill_id":"BM-T4-SB-4.4.1","code":"4.4.1","official_focus":"Mempersembahkan sketsa dalam bentuk multimedia secara kreatif dan menarik.","micro_skills":["SKETCH_PERFORMANCE","MULTIMEDIA_USE","CREATIVITY","AUDIENCE_ENGAGEMENT"],"evidence":"video/teacher observation preferred"},
+      {"skill_id":"BM-T4-SB-4.4.2","code":"4.4.2","official_focus":"Mempersembahkan syair dan pantun dengan nada dan intonasi yang sesuai menggunakan pelbagai media secara kreatif.","micro_skills":["SYAIR_PERFORMANCE","PANTUN_PERFORMANCE","TONE","INTONATION","MEDIA_USE"],"evidence":"audio/video/teacher observation required"},
+      {"skill_id":"BM-T4-SB-4.4.3","code":"4.4.3","official_focus":"Mempersembahkan cerpen secara langsung dengan kreatif dan menarik.","micro_skills":["SHORT_STORY_PERFORMANCE","VOICE_EXPRESSION","PACING","CREATIVITY","AUDIENCE_ENGAGEMENT"],"evidence":"audio/video/teacher observation required"}
+    ]}
+  ],
+  "diagnosis_rules":["Separate literary understanding from personal response quality.","A relevant response without textual support may indicate TEXT_EVIDENCE weakness rather than comprehension weakness.","Do not infer performance skills from written worksheets alone.","Peribahasa errors should distinguish meaning knowledge from contextual application."]
+}

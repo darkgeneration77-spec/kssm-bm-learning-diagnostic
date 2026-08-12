@@ -1,0 +1,15 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 4","domain_code":"MBR","domain_name":"Kemahiran Membaca","version":"1.0.0","status":"curriculum-brain-v1","note":"Official DSKP nodes are separated from AI diagnostic micro-skills."},
+  "curriculum_structure":[
+    {"sk":"2.1","focus":"Membaca secara mekanis pelbagai bahan prosa dan puisi","diagnostic_micro_skills":["READ_ACCURACY","READ_FLUENCY","PRONUNCIATION","INTONATION","PROSE_READING","POETRY_READING"],"evidence":"audio/video/teacher observation required for oral-reading performance"},
+    {"sk":"2.2","focus":"Membaca untuk memahami makna perkataan, rangkai kata, istilah, ungkapan, ayat dan maklumat dalam pelbagai bahan","diagnostic_micro_skills":["WORD_MEANING","PHRASE_MEANING","TERM_MEANING","EXPRESSION_MEANING","CONTEXTUAL_MEANING","SENTENCE_MEANING","EXPLICIT_INFORMATION","IMPLICIT_INFORMATION","REFERENCE_RESOLUTION"]},
+    {"sk":"2.3","focus":"Membaca untuk memproses maklumat daripada pelbagai bahan","diagnostic_micro_skills":["INFORMATION_SELECTION","MAIN_IDEA","SUPPORTING_IDEA","COMPARE_CONTRAST","CAUSE_EFFECT","INFERENCE","ANALYSIS","SYNTHESIS","EVIDENCE_SELECTION","JUSTIFICATION"]},
+    {"sk":"2.4","focus":"Membaca secara ekstensif pelbagai bahan untuk mengukuhkan penguasaan bahasa dan meluaskan pengetahuan","diagnostic_micro_skills":["EXTENSIVE_READING","SOURCE_UNDERSTANDING","KNOWLEDGE_TRANSFER","OPINION_FORMATION","CRITICAL_RESPONSE"]}
+  ],
+  "diagnostic_dimensions":{"literal":"explicit facts, vocabulary and direct meaning","inferential":"unstated meaning inferred from textual evidence","analytical":"relationships, comparison, cause-effect and structure","evaluative":"judgement supported by evidence","synthetic":"combine information across sentences/materials into a coherent conclusion"},
+  "root_cause_examples":[
+    {"observed":"INFERENCE_WEAK","check":["EXPLICIT_INFORMATION","CONTEXTUAL_MEANING","EVIDENCE_SELECTION","EVIDENCE_CONNECTION"]},
+    {"observed":"SYNTHESIS_WEAK","check":["MAIN_IDEA","INFORMATION_SELECTION","COMPARE_CONTRAST","INFERENCE"]},
+    {"observed":"JUSTIFICATION_WEAK","check":["ANSWER_CLAIM","TEXTUAL_EVIDENCE","CLAIM_EVIDENCE_LINK"]}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 2","domain_code":"MN","domain_name":"Kemahiran Menulis","version":"1.0.0","status":"curriculum-brain-v1"},
+  "standard_kandungan":[
+    {"code":"3.1","title":"Menulis untuk menerangkan makna kata dan istilah; maksud rangkai kata, ungkapan dan ayat","standard_pembelajaran":[{"skill_id":"BM-T2-MN-3.1.1","code":"3.1.1","focus":["makna kata","rangkai kata","istilah","ungkapan","penggunaan mengikut konteks"],"diagnostic_micro_skills":["WRITTEN_WORD_MEANING","WRITTEN_PHRASE_MEANING","TERM_MEANING","EXPRESSION_MEANING","CONTEXT_USE"]}]},
+    {"code":"3.2","title":"Menulis untuk mengemukakan maklumat dan pandangan","standard_pembelajaran":[{"skill_id":"BM-T2-MN-3.2.1","code":"3.2.1","focus":["maklumat betul","pengetahuan sedia ada","pelbagai sumber","ayat gramatis"],"diagnostic_micro_skills":["INFORMATION_ACCURACY","PRIOR_KNOWLEDGE_LINK","MULTISOURCE_INTEGRATION","GRAMMATICAL_SENTENCE"]}]},
+    {"code":"3.3","title":"Menulis untuk melengkapkan maklumat","standard_pembelajaran":[{"skill_id":"BM-T2-MN-3.3.1","code":"3.3.1","focus":["melengkapkan perenggan","ketepatan maklumat","kesesuaian konteks"],"diagnostic_micro_skills":["PARAGRAPH_COMPLETION","CONTEXTUAL_COMPLETION","INFORMATION_COHERENCE"]}]},
+    {"code":"3.4","title":"Menulis untuk menghasilkan perenggan dan karangan secara terancang","standard_pembelajaran":[
+      {"skill_id":"BM-T2-MN-3.4.1","code":"3.4.1","focus":["kerangka karangan","bentuk grafik","perancangan"],"diagnostic_micro_skills":["GRAPHIC_OUTLINE","IDEA_PLANNING","SEQUENCE_PLANNING"]},
+      {"skill_id":"BM-T2-MN-3.4.2","code":"3.4.2","focus":["ayat topik","ayat huraian","ayat contoh","ayat penegas","perenggan isi"],"diagnostic_micro_skills":["TOPIC_SENTENCE","ELABORATION_SENTENCE","EXAMPLE_SENTENCE","CONCLUDING_SENTENCE","PARAGRAPH_COHERENCE"]},
+      {"skill_id":"BM-T2-MN-3.4.3","code":"3.4.3","focus":["pendahuluan","kesimpulan","bahasa gramatis"],"diagnostic_micro_skills":["INTRODUCTION","CONCLUSION","GRAMMATICAL_PARAGRAPH"]},
+      {"skill_id":"BM-T2-MN-3.4.4","code":"3.4.4","focus":["karangan","ejaan","bahasa tepat","bahasa indah","bahasa menarik"],"diagnostic_micro_skills":["ESSAY_TASK_FULFILMENT","SPELLING","LANGUAGE_PRECISION","STYLE_RANGE","ENGAGING_EXPRESSION"]}
+    ]},
+    {"code":"3.5","title":"Menulis untuk meringkaskan dan merumuskan pelbagai bahan prosa","standard_pembelajaran":[{"skill_id":"BM-T2-MN-3.5.1","code":"3.5.1","focus":["ringkasan","rumusan","pelbagai bahan prosa","ayat gramatis"],"diagnostic_micro_skills":["SUMMARY_SELECTION","RUMUSAN_FOCUS","MEANING_PRESERVATION","CONCISION","GRAMMATICAL_SUMMARY"]}]},
+    {"code":"3.6","title":"Menulis untuk mengolah maklumat bagi menghasilkan pelbagai bentuk penulisan dan grafik","standard_pembelajaran":[{"skill_id":"BM-T2-MN-3.6.1","code":"3.6.1","focus":["dialog","prosa","puisi","pengolahan maklumat","ayat gramatis"],"diagnostic_micro_skills":["SOURCE_INFORMATION_EXTRACTION","FORM_TRANSFORMATION","PROSE_TO_POETRY","MEANING_PRESERVATION","GRAMMATICAL_REEXPRESSION"]}]},
+    {"code":"3.7","title":"Mengedit dan memurnikan pelbagai teks","standard_pembelajaran":[{"skill_id":"BM-T2-MN-3.7.1","code":"3.7.1","focus":["ejaan","tanda baca","kesalahan nahu mudah","maksud asal"],"diagnostic_micro_skills":["SPELLING_EDIT","PUNCTUATION_EDIT","BASIC_GRAMMAR_EDIT","MEANING_PRESERVATION_IN_EDITING"]}]}
+  ],
+  "progression_note":"T2 writing advances beyond basic paragraph/summary production by explicitly structuring body paragraphs into topic, elaboration, example and concluding sentences, adding rumusan, and transforming dialogue/prose into poetry."
+}

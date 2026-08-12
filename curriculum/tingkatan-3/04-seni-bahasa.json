@@ -1,0 +1,9 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 3","domain":"Aspek Seni Bahasa","version":"1.0.0","source_basis":"DSKP KSSM Bahasa Melayu Tingkatan 3, Terbitan 2017"},
+  "standards":[
+    {"sk":"4.1","sp":[{"code":"4.1.1","focus":["apresiasi prosa","respons peribadi","kekuatan","kelemahan karya"],"micro_skills":["PROSE_APPRECIATION","STRENGTH_EVALUATION","WEAKNESS_EVALUATION","PERSONAL_RESPONSE","TEXTUAL_JUSTIFICATION"]},{"code":"4.1.2","focus":["apresiasi puisi","maksud tersurat","maksud tersirat","respons peribadi"],"micro_skills":["POETRY_APPRECIATION","EXPLICIT_POETIC_MEANING","IMPLICIT_POETIC_MEANING","INTERPRETATION","PERSONAL_RESPONSE"]}]},
+    {"sk":"4.2","sp":[{"code":"4.2.1","focus":["kiasan","peribahasa","konteks"],"micro_skills":["FIGURATIVE_LANGUAGE","PROVERB_MEANING","CONTEXTUAL_PROVERB_USE","FIGURATIVE_SELECTION"]}]},
+    {"sk":"4.3","sp":[{"code":"4.3.1","focus":["cerpen","perancangan","idea kreatif","bahasa indah"],"micro_skills":["SHORT_STORY_PLANNING","PLOT_IDEA","CREATIVE_LANGUAGE","NARRATIVE_COHERENCE"]},{"code":"4.3.2","focus":["puisi","bahan rangsangan","bahasa indah"],"micro_skills":["POETRY_CREATION","STIMULUS_INTERPRETATION","POETIC_EXPRESSION","IMAGERY_LANGUAGE"]}]},
+    {"sk":"4.4","sp":[{"code":"4.4.1","focus":["prosa kepada ilustrasi","pelbagai media","kreatif"],"micro_skills":["PROSE_TO_ILLUSTRATION","VISUAL_INTERPRETATION","MEDIA_PRESENTATION"]},{"code":"4.4.2","focus":["puisi","pelbagai media","persembahan kreatif"],"micro_skills":["POETRY_MEDIA_PRESENTATION","INTERPRETIVE_PRESENTATION","CREATIVE_MEDIA_USE"]},{"code":"4.4.3","focus":["prosa dan puisi","aktiviti berbahasa","persembahan kreatif"],"micro_skills":["LITERARY_PERFORMANCE","LANGUAGE_ACTIVITY_PRESENTATION","CREATIVE_INTERPRETATION"]}]}
+  ]
+}

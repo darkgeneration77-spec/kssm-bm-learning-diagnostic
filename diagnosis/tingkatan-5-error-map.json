@@ -1,0 +1,11 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 5","version":"1.0.0"},
+  "error_map":{
+    "reading":["RD_T5_CONTEXT","RD_T5_EXPLICIT","RD_T5_IMPLICIT","RD_T5_INFERENCE","RD_T5_MAIN_IDEA","RD_T5_INFORMATION_SELECTION","RD_T5_COMPARE","RD_T5_ANALYSIS","RD_T5_EVALUATION","RD_T5_SYNTHESIS","RD_T5_MULTI_SOURCE","RD_T5_EVIDENCE","RD_T5_JUSTIFICATION","RD_T5_CRITICAL_RESPONSE"],
+    "writing":["WR_T5_TASK","WR_T5_SCOPE","WR_T5_AUDIENCE_REGISTER","WR_T5_IDEA_GENERATION","WR_T5_IDEA_SELECTION","WR_T5_CONTENT_DEPTH","WR_T5_CLAIM","WR_T5_REASON","WR_T5_EVIDENCE","WR_T5_REASONING","WR_T5_COUNTERPOINT","WR_T5_ELABORATION","WR_T5_CLAIM_EVIDENCE_LINK","WR_T5_PARAGRAPH_COHERENCE","WR_T5_GLOBAL_COHESION","WR_T5_INTRODUCTION","WR_T5_CONCLUSION","WR_T5_SYNTHESIS","WR_T5_MEANING_PRESERVATION","WR_T5_LEXICAL_PRECISION","WR_T5_LANGUAGE_RANGE","WR_T5_EDITING"],
+    "grammar":["GR_T5_WORD_FORM","GR_T5_WORD_CLASS","GR_T5_REGISTER_CONTEXT","GR_T5_PHRASE","GR_T5_DERIVED_SENTENCE","GR_T5_COMPOUND_SENTENCE","GR_T5_SENTENCE_VOICE_OR_RAGAM","GR_T5_SENTENCE_TRANSFORMATION","GR_T5_SYNTAX_CONTROL"],
+    "seni_bahasa":["SB_T5_MEANING","SB_T5_THEME","SB_T5_ISSUE","SB_T5_VALUE","SB_T5_LESSON","SB_T5_CHARACTER","SB_T5_CHARACTERISATION","SB_T5_STYLE","SB_T5_PROVERB","SB_T5_ANALYSIS","SB_T5_EVALUATION","SB_T5_JUSTIFICATION","SB_T5_CREATIVE_PRODUCTION"],
+    "oral_listening":["OL_T5_INFORMATION","OL_T5_ANALYSIS","OL_T5_EVALUATION","OL_T5_SYNTHESIS","OL_T5_ARGUMENT","OL_T5_PRESENTATION","OL_T5_DISCUSSION","OL_T5_NEGOTIATION","OL_T5_DEBATE","OL_T5_RESPONSE_TO_COUNTERPOINT"]
+  },
+  "root_cause_rules":["Use the narrowest defensible error code.","Separate knowledge, comprehension, reasoning and expression failures.","Separate idea generation from development and language accuracy.","For argumentation, separately inspect claim, reason, evidence, reasoning and counterpoint.","For synthesis, separately inspect source comprehension, selection, grouping and integration.","Check T4 and earlier prerequisites for persistent T5 failures.","Do not infer oral weaknesses from written evidence.","OCR uncertainty is not student error."]
+}

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "form": "Tingkatan 1",
+    "version": "1.0.0",
+    "purpose": "Prerequisite and cross-domain graph used by the diagnostic engine to find a likely lower-level cause before assigning remediation."
+  },
+  "edges": [
+    {"from":"WORD_MEANING","to":"CONTEXTUAL_MEANING","relation":"prerequisite"},
+    {"from":"CONTEXTUAL_MEANING","to":"SENTENCE_COMPREHENSION","relation":"supports"},
+    {"from":"SENTENCE_COMPREHENSION","to":"GLOBAL_MEANING","relation":"supports"},
+    {"from":"GLOBAL_MEANING","to":"MAIN_IDEA","relation":"prerequisite"},
+    {"from":"MAIN_IDEA","to":"INFORMATION_FILTERING","relation":"supports"},
+    {"from":"INFORMATION_FILTERING","to":"SUMMARY_IMPORTANT_IDEA_SELECTION","relation":"prerequisite"},
+    {"from":"GRAMMATICAL_SENTENCE_CONSTRUCTION","to":"SUMMARY_SENTENCE_CONSTRUCTION","relation":"supports"},
+    {"from":"GRAMMATICAL_SENTENCE_CONSTRUCTION","to":"WRITING_PARAGRAPH_DEVELOPMENT","relation":"supports"},
+    {"from":"IDEA_SELECTION","to":"IDEA_DEVELOPMENT","relation":"prerequisite"},
+    {"from":"IDEA_DEVELOPMENT","to":"ELABORATION","relation":"prerequisite"},
+    {"from":"ELABORATION","to":"WRITING_TASK_FULFILMENT","relation":"supports"},
+    {"from":"NOUN_CLASSIFICATION","to":"NOUN_CONTEXT_USE","relation":"prerequisite"},
+    {"from":"AFFIX_SELECTION","to":"DERIVED_WORD_CONTEXT_USE","relation":"prerequisite"},
+    {"from":"NOUN_PHRASE_CONSTRUCTION","to":"SUBJECT_PREDICATE","relation":"supports"},
+    {"from":"SUBJECT_PREDICATE","to":"BASIC_SENTENCE_PATTERN","relation":"prerequisite"},
+    {"from":"BASIC_SENTENCE_PATTERN","to":"GRAMMATICAL_SENTENCE_CONSTRUCTION","relation":"prerequisite"},
+    {"from":"LITERARY_ELEMENT_IDENTIFICATION","to":"LITERARY_JUSTIFICATION","relation":"prerequisite"},
+    {"from":"EVENT_SEQUENCE","to":"LITERARY_SUMMARY_OR_SYNOPSIS","relation":"supports"},
+    {"from":"LISTEN_INFORMATION","to":"ORAL_RESPONSE_RELEVANCE","relation":"supports"},
+    {"from":"QUESTION_FORMATION","to":"SOAL_JAWAB_INTERACTION","relation":"prerequisite"}
+  ],
+  "diagnostic_backtracking": {
+    "rule": "When a higher-level skill is weak, test or inspect prerequisite evidence before prescribing more high-level practice.",
+    "examples": [
+      {"observed":"SUMMARY_WEAK","check_first":["MAIN_IDEA","INFORMATION_FILTERING","GRAMMATICAL_SENTENCE_CONSTRUCTION"]},
+      {"observed":"WRITING_ELABORATION_WEAK","check_first":["IDEA_SELECTION","IDEA_DEVELOPMENT","VOCABULARY_RANGE","GRAMMATICAL_SENTENCE_CONSTRUCTION"]},
+      {"observed":"SENTENCE_PATTERN_WEAK","check_first":["NOUN_PHRASE_CONSTRUCTION","SUBJECT_PREDICATE"]},
+      {"observed":"LITERARY_JUSTIFICATION_WEAK","check_first":["LITERARY_ELEMENT_IDENTIFICATION","TEXT_OR_EVENT_EVIDENCE_SELECTION"]}
+    ]
+  }
+}

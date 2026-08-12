@@ -1,0 +1,12 @@
+{
+  "meta":{"subject":"Bahasa Melayu","assessment":"UASA Menengah Rendah","forms":["Tingkatan 1","Tingkatan 2","Tingkatan 3"],"official_reference":"KPM Format Instrumen Pentaksiran Ujian Akhir Sesi Akademik Menengah Rendah (Tingkatan 1, 2 dan 3) Tahun 2025","version":"1.0.0","design_rule":"Assessment mapping is kept separate from curriculum mastery. A paper provides evidence for selected skills; it does not define the whole KSSM curriculum."},
+  "mapping_principles":[
+    "Map each detected UASA item to one or more curriculum micro-skills after reading the actual question, not merely by section name.",
+    "Preserve item-level correctness, marks, question type and evidence confidence.",
+    "Use repeated evidence across papers to estimate mastery; never convert one UASA score directly into official PBD TP.",
+    "Written UASA evidence must not be used to infer oral pronunciation/intonation performance unless the official instrument or teacher evidence directly assesses it.",
+    "Keep current-year instrument format versioned because assessment specifications can change independently of the DSKP."
+  ],
+  "diagnostic_output_fields":["paper_year","form","section","question_number","marks_available","marks_awarded","detected_curriculum_skill","diagnostic_micro_skill","error_code","evidence_confidence","student_response_excerpt_or_reference","teacher_mark_reference"],
+  "cross_form_use":"T1-T3 UASA evidence feeds the same longitudinal student profile and may trigger prerequisite backtracking across forms."
+}

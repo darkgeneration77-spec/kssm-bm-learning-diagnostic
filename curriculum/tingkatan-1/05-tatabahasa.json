@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "curriculum": "KSSM",
+    "form": "Tingkatan 1",
+    "domain_code": "TB",
+    "domain_name": "Aspek Tatabahasa",
+    "version": "1.0.0",
+    "status": "curriculum-brain-v1",
+    "design_note": "Official DSKP standard nodes are kept separate from diagnostic micro-skills. The diagnostic grammar graph is intentionally finer-grained than the SP nodes so errors found in exercises, comprehension answers and essays can map to the same underlying grammar skill."
+  },
+  "standard_kandungan": [
+    {
+      "code": "5.1",
+      "title": "Memahami dan menggunakan perkataan daripada pelbagai golongan kata",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-TB-5.1.1",
+          "code": "5.1.1",
+          "focus": ["kata nama am", "kata nama khas", "kata nama tunggal", "kata nama yang mengalami pemajmukan", "penggunaan mengikut konteks"],
+          "diagnostic_micro_skills": ["COMMON_NOUN", "PROPER_NOUN", "SINGULAR_NOUN", "COMPOUND_NOUN", "NOUN_CLASSIFICATION", "NOUN_CONTEXT_USE"],
+          "common_error_tags": ["NOUN_TYPE_CONFUSION", "COMMON_PROPER_NOUN_CONFUSION", "COMPOUND_NOUN_ERROR", "NOUN_CONTEXT_MISUSE"]
+        },
+        {
+          "skill_id": "BM-T1-TB-5.1.2",
+          "code": "5.1.2",
+          "focus": ["kata adjektif", "penggunaan kata adjektif mengikut konteks"],
+          "diagnostic_micro_skills": ["ADJECTIVE_RECOGNITION", "ADJECTIVE_CLASSIFICATION", "ADJECTIVE_CONTEXT_USE", "ADJECTIVE_SELECTION"],
+          "common_error_tags": ["ADJECTIVE_NOT_RECOGNISED", "ADJECTIVE_WRONG_CONTEXT", "ADJECTIVE_WORD_CLASS_CONFUSION"]
+        },
+        {
+          "skill_id": "BM-T1-TB-5.1.3",
+          "code": "5.1.3",
+          "focus": ["kata seru", "kata tanya", "kata perintah", "kata pembenar", "kata pangkal ayat", "penggunaan mengikut konteks"],
+          "diagnostic_micro_skills": ["INTERJECTION", "QUESTION_WORD", "COMMAND_WORD", "AFFIRMATIVE_WORD", "SENTENCE_INITIAL_PARTICLE", "FUNCTION_WORD_CONTEXT_USE"],
+          "common_error_tags": ["FUNCTION_WORD_TYPE_CONFUSION", "QUESTION_WORD_MISUSE", "COMMAND_WORD_MISUSE", "INTERJECTION_MISUSE", "CONTEXT_INAPPROPRIATE_FUNCTION_WORD"]
+        },
+        {
+          "skill_id": "BM-T1-TB-5.1.4",
+          "code": "5.1.4",
+          "focus": ["kata kerja tak transitif", "penggunaan kata kerja tak transitif mengikut konteks"],
+          "diagnostic_micro_skills": ["INTRANSITIVE_VERB_RECOGNITION", "INTRANSITIVE_VERB_USE", "VERB_COMPLEMENT_AWARENESS", "VERB_CONTEXT_USE"],
+          "common_error_tags": ["TRANSITIVITY_CONFUSION", "INTRANSITIVE_VERB_MISUSE", "UNNECESSARY_OBJECT", "VERB_CONTEXT_MISUSE"]
+        }
+      ]
+    },
+    {
+      "code": "5.2",
+      "title": "Memahami dan menggunakan kata ganda",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-TB-5.2.1",
+          "code": "5.2.1",
+          "focus": ["kata ganda penuh", "kata ganda penuh berimbuhan", "penggunaan mengikut konteks"],
+          "diagnostic_micro_skills": ["FULL_REDUPLICATION", "AFFIXED_FULL_REDUPLICATION", "REDUPLICATION_FORM", "REDUPLICATION_MEANING", "REDUPLICATION_CONTEXT_USE"],
+          "common_error_tags": ["REDUPLICATION_FORM_ERROR", "AFFIXED_REDUPLICATION_ERROR", "DOUBLE_PLURAL_MARKING", "REDUPLICATION_CONTEXT_MISUSE"]
+        }
+      ]
+    },
+    {
+      "code": "5.3",
+      "title": "Memahami dan menggunakan kata terbitan",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-TB-5.3.1",
+          "code": "5.3.1",
+          "focus": ["awalan", "akhiran", "apitan", "sisipan", "kata terbitan", "penggunaan mengikut konteks"],
+          "diagnostic_micro_skills": ["PREFIX", "SUFFIX", "CIRCUMFIX", "INFIX", "DERIVED_WORD_RECOGNITION", "AFFIX_SELECTION", "AFFIX_MEANING_CHANGE", "DERIVED_WORD_CONTEXT_USE"],
+          "common_error_tags": ["PREFIX_ERROR", "SUFFIX_ERROR", "CIRCUMFIX_ERROR", "INFIX_ERROR", "AFFIX_SELECTION_ERROR", "AFFIX_MEANING_ERROR", "DERIVED_WORD_CONTEXT_MISUSE"]
+        }
+      ]
+    },
+    {
+      "code": "5.4",
+      "title": "Memahami dan menggunakan frasa",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-TB-5.4.1",
+          "code": "5.4.1",
+          "focus": ["frasa nama", "penggunaan frasa nama mengikut konteks"],
+          "diagnostic_micro_skills": ["NOUN_PHRASE_RECOGNITION", "NOUN_PHRASE_HEAD", "NOUN_PHRASE_MODIFIER", "NOUN_PHRASE_CONSTRUCTION", "NOUN_PHRASE_CONTEXT_USE"],
+          "common_error_tags": ["NOUN_PHRASE_NOT_RECOGNISED", "HEAD_MODIFIER_CONFUSION", "NOUN_PHRASE_STRUCTURE_ERROR", "NOUN_PHRASE_CONTEXT_MISUSE"]
+        }
+      ]
+    },
+    {
+      "code": "5.5",
+      "title": "Memahami dan membina pelbagai ayat",
+      "standard_pembelajaran": [
+        {
+          "skill_id": "BM-T1-TB-5.5.1",
+          "code": "5.5.1",
+          "focus": ["ayat berdasarkan pola", "pola ayat dasar", "pembinaan ayat yang betul"],
+          "diagnostic_micro_skills": ["SUBJECT_PREDICATE", "BASIC_SENTENCE_PATTERN", "FN_FN_PATTERN", "FN_FK_PATTERN", "FN_FA_PATTERN", "FN_FS_PATTERN", "GRAMMATICAL_SENTENCE_CONSTRUCTION"],
+          "common_error_tags": ["SUBJECT_PREDICATE_CONFUSION", "SENTENCE_PATTERN_CONFUSION", "INCOMPLETE_SENTENCE", "UNGRAMMATICAL_SENTENCE", "PREDICATE_TYPE_ERROR"]
+        },
+        {
+          "skill_id": "BM-T1-TB-5.5.2",
+          "code": "5.5.2",
+          "focus": ["ayat tunggal", "jenis ayat", "pembinaan ayat mengikut konteks"],
+          "diagnostic_micro_skills": ["SIMPLE_SENTENCE", "STATEMENT_SENTENCE", "QUESTION_SENTENCE", "COMMAND_SENTENCE", "EXCLAMATORY_SENTENCE", "SENTENCE_TYPE_SELECTION", "CONTEXTUAL_SENTENCE_CONSTRUCTION"],
+          "common_error_tags": ["SENTENCE_TYPE_CONFUSION", "QUESTION_FORM_ERROR", "COMMAND_FORM_ERROR", "EXCLAMATORY_FORM_ERROR", "SIMPLE_SENTENCE_STRUCTURE_ERROR", "CONTEXT_INAPPROPRIATE_SENTENCE_TYPE"]
+        }
+      ]
+    }
+  ],
+  "diagnostic_grammar_graph": {
+    "morfologi": {
+      "golongan_kata": {
+        "kata_nama": ["kata nama am", "kata nama khas", "kata nama tunggal", "kata nama majmuk"],
+        "kata_adjektif": ["recognition", "selection", "context use"],
+        "kata_tugas": ["kata seru", "kata tanya", "kata perintah", "kata pembenar", "kata pangkal ayat"],
+        "kata_kerja": ["kata kerja tak transitif"]
+      },
+      "pembentukan_kata": {
+        "kata_ganda": ["kata ganda penuh", "kata ganda penuh berimbuhan"],
+        "kata_terbitan": ["awalan", "akhiran", "apitan", "sisipan"]
+      }
+    },
+    "sintaksis": {
+      "frasa": ["frasa nama", "inti", "penerang", "pembinaan frasa"],
+      "ayat": {
+        "asas": ["subjek", "predikat"],
+        "pola_ayat": ["FN+FN", "FN+FK", "FN+FA", "FN+FS"],
+        "ayat_tunggal": ["struktur", "kelengkapan", "gramatis"],
+        "jenis_ayat": ["ayat penyata", "ayat tanya", "ayat perintah", "ayat seruan"]
+      }
+    }
+  },
+  "cross_domain_evidence": {
+    "principle": "Grammar evidence may be collected not only from explicit Tatabahasa exercises but also from Menulis and written Pemahaman responses when the error is observable and attribution is sufficiently clear.",
+    "examples": [
+      "Repeated affix errors in essays may update the relevant imbuhan diagnostic node.",
+      "Repeated incomplete sentence structures in comprehension responses may support an ayat-structure weakness.",
+      "A single typo should not automatically become a grammar weakness.",
+      "Where handwriting/OCR is uncertain, mark evidence as uncertain rather than diagnosing the learner."
+    ]
+  },
+  "diagnosis_rules": {
+    "single_error": "record as evidence only",
+    "repeated_same_micro_skill": "raise weakness confidence",
+    "cross_task_repetition": "stronger evidence than repeated errors inside one exercise",
+    "cross_domain_repetition": "may support persistent grammar weakness when the same rule is violated in grammar exercises and authentic writing",
+    "careless_vs_knowledge": "do not classify as knowledge weakness solely from one isolated error when surrounding evidence shows correct use",
+    "uncertain_recognition": "never convert uncertain OCR/marking recognition into a confirmed weakness"
+  },
+  "remediation_framework": {
+    "sequence": ["recognise", "classify", "explain function or rule", "choose correct form", "correct error", "construct in context", "apply in authentic writing", "retest"],
+    "mastery_gate": "Do not mark a grammar micro-skill mastered solely because the learner corrected one previously wrong item. Require later independent evidence."
+  }
+}

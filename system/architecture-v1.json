@@ -1,0 +1,33 @@
+{
+  "meta":{"project":"KSSM BM Learning Diagnostic","version":"1.0.0","scope":"Physical marked workbook/test upload to longitudinal diagnosis and remediation"},
+  "pipeline":[
+    {"stage":1,"id":"STUDENT_CONTEXT","name":"Student and assessment context","inputs":["student_id","current_form","school_year","assessment_type","source_type","date"]},
+    {"stage":2,"id":"UPLOAD","name":"Upload marked physical work","inputs":["photo","multi-page images","PDF"],"outputs":["document_id","page_assets"]},
+    {"stage":3,"id":"DOCUMENT_QUALITY","name":"Quality validation","checks":["blur","cropping","rotation","lighting","missing_page","duplicate_page"],"rule":"Low-quality pages must be flagged before academic diagnosis."},
+    {"stage":4,"id":"PAGE_SEGMENTATION","name":"Question and response segmentation","outputs":["question_regions","student_response_regions","teacher_mark_regions","score_regions","teacher_comment_regions"]},
+    {"stage":5,"id":"TRANSCRIPTION","name":"Content extraction","outputs":["question_text","student_answer","teacher_marks","awarded_score","max_score","teacher_comments"],"rule":"Store extracted text with confidence and source coordinates; never overwrite original image evidence."},
+    {"stage":6,"id":"MARK_INTERPRETATION","name":"Interpret teacher marking","outputs":["correct","incorrect","partial","unmarked","uncertain"],"rule":"Teacher mark has priority for correctness when clearly readable. AI must not silently override it."},
+    {"stage":7,"id":"QUESTION_CLASSIFICATION","name":"Identify assessment and curriculum target","outputs":["assessment_component","question_type","curriculum_nodes","micro_skills","expected_response_features"]},
+    {"stage":8,"id":"ERROR_ATTRIBUTION","name":"Attribute observed error","outputs":["primary_error_code","secondary_error_codes","root_cause_candidates","attribution_confidence"],"rule":"A wrong answer is evidence, not automatically a confirmed weakness."},
+    {"stage":9,"id":"LONGITUDINAL_ENGINE","name":"Update student skill profile","uses":["historical evidence","T1-T5 prerequisite graph","recency","evidence diversity","task independence"],"outputs":["mastery_updates","weakness_state_updates","trend","confidence"]},
+    {"stage":10,"id":"REMEDIATION","name":"Generate targeted next action","outputs":["root_gap","remediation_sequence","practice_target","retest_target","teacher_note"]},
+    {"stage":11,"id":"DASHBOARD","name":"Present diagnosis","views":["student","teacher","assessment","skill_history","weakness_detail","remediation_queue"]}
+  ],
+  "human_review_gates":[
+    "uncertain OCR/transcription",
+    "ambiguous teacher mark",
+    "question cannot be mapped confidently",
+    "essay root-cause attribution with insufficient evidence",
+    "oral skill inference attempted from written evidence",
+    "official TP confirmation"
+  ],
+  "non_negotiable_rules":[
+    "Preserve original upload as evidence.",
+    "Never treat OCR uncertainty as learner error.",
+    "Never infer weak prerequisite when evidence is merely absent; use UNKNOWN.",
+    "Never diagnose from total paper score alone.",
+    "Store question-level evidence so every diagnosis is auditable.",
+    "Allow teacher correction of transcription, mapping and diagnosis.",
+    "Recalculate downstream mastery when teacher corrects evidence."
+  ]
+}

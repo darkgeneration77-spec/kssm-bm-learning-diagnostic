@@ -1,0 +1,24 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 4","domain_name":"Aspek Tatabahasa","version":"1.0.0","status":"curriculum-brain-v1","design_note":"T4 grammar consolidates morphology and expands syntax. Evidence may come from explicit grammar exercises and authentic writing when attribution is clear."},
+  "standard_kandungan":[
+    {"code":"5.1","title":"Memahami dan menggunakan bentuk kata yang sesuai dalam pelbagai bidang","standard_pembelajaran":[
+      {"skill_id":"BM-T4-TB-5.1.1","code":"5.1.1","official_focus":"Mengenal pasti dan menggunakan bentuk kata tunggal dan kata majmuk dengan betul mengikut konteks.","micro_skills":["SINGLE_WORD_FORM","COMPOUND_WORD_FORM","COMPOUND_WORD_RECOGNITION","CONTEXT_USE"]},
+      {"skill_id":"BM-T4-TB-5.1.2","code":"5.1.2","official_focus":"Mengenal pasti dan menggunakan pelbagai kata terbitan dengan betul mengikut konteks.","micro_skills":["DERIVED_WORD","PREFIX","SUFFIX","CIRCUMFIX","INFIX","ROOT_AFFIX_RELATION","DERIVED_MEANING","CONTEXT_USE"]},
+      {"skill_id":"BM-T4-TB-5.1.3","code":"5.1.3","official_focus":"Mengenal pasti dan menggunakan bentuk kata ganda dan akronim dengan betul mengikut konteks.","micro_skills":["REDUPLICATION","ACRONYM","FORM_RECOGNITION","CONTEXT_USE"]}
+    ]},
+    {"code":"5.2","title":"Memahami dan menggunakan golongan kata yang sesuai dalam pelbagai bidang","standard_pembelajaran":[
+      {"skill_id":"BM-T4-TB-5.2.1","code":"5.2.1","official_focus":"Mengenal pasti dan menggunakan golongan kata nama dengan betul mengikut konteks.","micro_skills":["NOUN_CLASS","NOUN_SUBTYPE","NOUN_CONTEXT_USE"]},
+      {"skill_id":"BM-T4-TB-5.2.2","code":"5.2.2","official_focus":"Mengenal pasti dan menggunakan golongan kata kerja dengan betul mengikut konteks.","micro_skills":["VERB_CLASS","TRANSITIVITY","ACTIVE_PASSIVE_AWARENESS","VERB_CONTEXT_USE"]},
+      {"skill_id":"BM-T4-TB-5.2.3","code":"5.2.3","official_focus":"Mengenal pasti dan menggunakan golongan kata adjektif dengan betul mengikut konteks.","micro_skills":["ADJECTIVE_CLASS","ADJECTIVE_CONTEXT_USE","ADJECTIVE_PHRASE_SUPPORT"]},
+      {"skill_id":"BM-T4-TB-5.2.4","code":"5.2.4","official_focus":"Mengenal pasti dan menggunakan golongan kata tugas dengan betul mengikut konteks.","micro_skills":["FUNCTION_WORD_CLASS","FUNCTION_WORD_FUNCTION","CONTEXT_SELECTION"]}
+    ]},
+    {"code":"5.3","title":"Memahami dan menggunakan ayat yang sesuai dalam pelbagai bidang","standard_pembelajaran":[
+      {"skill_id":"BM-T4-TB-5.3.1","code":"5.3.1","official_focus":"Mengenal pasti dan menggunakan frasa nama, frasa kerja, frasa adjektif dan frasa sendi nama dengan betul mengikut konteks.","micro_skills":["NOUN_PHRASE","VERB_PHRASE","ADJECTIVE_PHRASE","PREPOSITIONAL_PHRASE","PHRASE_HEAD","PHRASE_FUNCTION","CONTEXT_USE"]},
+      {"skill_id":"BM-T4-TB-5.3.2","code":"5.3.2","official_focus":"Mengenal pasti dan menggunakan ayat dasar yang betul.","micro_skills":["SUBJECT","PREDICATE","BASIC_SENTENCE","BASIC_SENTENCE_PATTERN","GRAMMATICALITY"]},
+      {"skill_id":"BM-T4-TB-5.3.3","code":"5.3.3","official_focus":"Mengenal pasti dan menggunakan ayat tunggal susunan biasa dan susunan songsang, dan ayat majmuk yang betul mengikut konteks.","micro_skills":["SIMPLE_SENTENCE","NORMAL_ORDER","INVERTED_ORDER","COMPOUND_SENTENCE","SENTENCE_TRANSFORMATION","CONTEXT_USE"]},
+      {"skill_id":"BM-T4-TB-5.3.4","code":"5.3.4","official_focus":"Mengenal pasti dan menggunakan ayat penyata, ayat tanya, ayat perintah dan ayat seruan yang betul mengikut konteks.","micro_skills":["STATEMENT_SENTENCE","QUESTION_SENTENCE","COMMAND_SENTENCE","EXCLAMATORY_SENTENCE","COMMUNICATIVE_FUNCTION","CONTEXT_USE"]}
+    ]}
+  ],
+  "grammar_graph":{"morphology":["kata tunggal","kata majmuk","kata terbitan","kata ganda","akronim","kata nama","kata kerja","kata adjektif","kata tugas"],"syntax":["frasa nama","frasa kerja","frasa adjektif","frasa sendi nama","subjek","predikat","ayat dasar","ayat tunggal","susunan biasa","susunan songsang","ayat majmuk","ayat penyata","ayat tanya","ayat perintah","ayat seruan"]},
+  "cross_domain_rules":["Repeated morphology or syntax errors in essays may update the matching grammar node.","Do not classify spelling-only errors as morphology unless the word-formation rule is actually implicated.","When sentence transformation is wrong, distinguish structural knowledge from meaning-preservation failure.","A correct answer copied from a correction does not count as independent mastery evidence."]
+}

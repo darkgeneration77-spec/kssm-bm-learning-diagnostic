@@ -1,0 +1,19 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","from":"Tingkatan 1","to":"Tingkatan 2","version":"1.0.0","purpose":"Track progression so a Tingkatan 2 weakness can be backtracked to a relevant Tingkatan 1 prerequisite."},
+  "progression_edges":[
+    {"t1":"BM-T1-MB-1.1.1","t2":"BM-T2-MB-1.1.1","progression":"T1 word/phrase pronunciation recognition expands to words, phrases, terms and expressions."},
+    {"t1":"BM-T1-MB-1.2.1","t2":"BM-T2-MB-1.2.1","progression":"Contextual lexical listening expands and is expected with broader lexical categories."},
+    {"t1":"BM-T1-MB-1.2.2","t2":"BM-T2-MB-1.2.2","progression":"T1 simple/compound sentence comprehension supports more focused compound-sentence listening and contextual use."},
+    {"t1":"BM-T1-MB-1.3.1","t2":"BM-T2-MB-1.3.1","progression":"Information extraction from discourse continues with stronger response accuracy expectations."},
+    {"t1":"BM-T1-MB-1.4.3","t2":"BM-T2-MB-1.4.3","progression":"Experience narration develops toward retelling heard/seen events across formal and informal contexts."},
+    {"t1":"BM-T1-MB-1.5.1","t2":"BM-T2-MB-1.5.1","progression":"Focused questions develop toward open-ended questions used to elicit opinions."},
+    {"t1":"BM-T1-MB-1.5.2","t2":"BM-T2-MB-1.5.2","progression":"Relevant answers develop toward proposing multiple problem solutions."},
+    {"t1":"BM-T1-MB-1.5.3","t2":"BM-T2-MB-1.5.3","progression":"Basic question-answer interaction develops into open-ended questioning in discussion."},
+    {"t1":"BM-T1-MB-1.6.1","t2":"BM-T2-MB-1.6.1","progression":"Accurate content/fact delivery develops into filtering information before accurate delivery."},
+    {"t1":"BM-T1-MB-1.7.1","t2":"BM-T2-MB-1.7.1","progression":"Rational exchange of views develops toward giving and obtaining clarification."},
+    {"t1":"BM-T1-MB-1.7.2","t2":"BM-T2-MB-1.7.2","progression":"Negotiation for agreement continues with stronger rational and grammatical expectations."},
+    {"t1":"BM-T1-MB-1.8.1","t2":"BM-T2-MB-1.8.1","progression":"Clear critical explanation develops toward more substantive, critical and precise elaboration."},
+    {"t1":"BM-T1-MB-1.8.2","t2":"BM-T2-MB-1.8.2","progression":"Event commentary/sequencing supports T2 commentary that extracts explicit and implicit information from graphics."}
+  ],
+  "backtrack_policy":"When a T2 skill is weak, inspect its T1 predecessor and shared micro-skills. Do not automatically send the learner back a full year; remediate only the prerequisite node that evidence shows is weak."
+}

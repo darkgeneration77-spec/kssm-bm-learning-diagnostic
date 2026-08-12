@@ -1,0 +1,16 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","form":"Tingkatan 2","domain_code":"TB","domain_name":"Aspek Tatabahasa","version":"1.0.0","status":"curriculum-brain-v1"},
+  "standard_kandungan":[
+    {"code":"5.1","title":"Memahami dan menggunakan perkataan daripada pelbagai golongan kata dalam pelbagai ayat","standard_pembelajaran":[
+      {"skill_id":"BM-T2-TB-5.1.1","code":"5.1.1","focus":["kata ganti nama","akronim","penggunaan mengikut konteks"],"diagnostic_micro_skills":["PRONOUN_RECOGNITION","PRONOUN_SELECTION","ACRONYM_RECOGNITION","ACRONYM_USE","CONTEXTUAL_WORD_CLASS_USE"]},
+      {"skill_id":"BM-T2-TB-5.1.2","code":"5.1.2","focus":["kata adjektif jarak","kata adjektif pancaindera","kata adjektif ukuran","kata adjektif sifatan"],"diagnostic_micro_skills":["ADJECTIVE_DISTANCE","ADJECTIVE_SENSORY","ADJECTIVE_SIZE","ADJECTIVE_QUALITY","ADJECTIVE_CONTEXT_USE"]},
+      {"skill_id":"BM-T2-TB-5.1.3","code":"5.1.3","focus":["kata bantu","kata penguat","kata penegas","kata nafi","kata pemeri","kata arah","kata bilangan","kata penekanan","kata pembenda"],"diagnostic_micro_skills":["AUXILIARY_WORD","INTENSIFIER","EMPHATIC_PARTICLE","NEGATION_WORD","COPULA","DIRECTION_WORD","NUMERAL","POSTPARTICLE_EMPHASIS","NOMINALISING_POSTPARTICLE","FUNCTION_WORD_CONTEXT_USE"]},
+      {"skill_id":"BM-T2-TB-5.1.4","code":"5.1.4","focus":["kata kerja transitif","penggunaan mengikut konteks"],"diagnostic_micro_skills":["TRANSITIVE_VERB_RECOGNITION","OBJECT_REQUIREMENT","TRANSITIVE_VERB_CONTEXT_USE"]}
+    ]},
+    {"code":"5.2","title":"Memahami dan menggunakan kata ganda dalam pelbagai ayat","standard_pembelajaran":[{"skill_id":"BM-T2-TB-5.2.1","code":"5.2.1","focus":["kata ganda separa tunggal","kata ganda separa berimbuhan"],"diagnostic_micro_skills":["PARTIAL_REDUPLICATION","AFFIXED_PARTIAL_REDUPLICATION","REDUPLICATION_FORM","REDUPLICATION_CONTEXT_USE"]}]},
+    {"code":"5.3","title":"Memahami dan menggunakan kata terbitan dalam pelbagai ayat","standard_pembelajaran":[{"skill_id":"BM-T2-TB-5.3.1","code":"5.3.1","focus":["apitan kata nama","penggunaan mengikut konteks"],"diagnostic_micro_skills":["NOUN_CIRCUMFIX","ROOT_TO_NOUN_DERIVATION","AFFIX_SELECTION","DERIVED_NOUN_CONTEXT_USE"]}]},
+    {"code":"5.4","title":"Memahami dan menggunakan frasa dalam pelbagai ayat","standard_pembelajaran":[{"skill_id":"BM-T2-TB-5.4.1","code":"5.4.1","focus":["frasa adjektif","penggunaan mengikut konteks"],"diagnostic_micro_skills":["ADJECTIVE_PHRASE_RECOGNITION","ADJECTIVE_PHRASE_HEAD","ADJECTIVE_PHRASE_CONSTRUCTION","ADJECTIVE_PHRASE_CONTEXT_USE"]}]},
+    {"code":"5.5","title":"Memahami dan membina pelbagai ayat","standard_pembelajaran":[{"skill_id":"BM-T2-TB-5.5.1","code":"5.5.1","focus":["ayat tunggal","jenis ayat","penggunaan mengikut konteks"],"diagnostic_micro_skills":["SIMPLE_SENTENCE","STATEMENT_SENTENCE","QUESTION_SENTENCE","COMMAND_SENTENCE","EXCLAMATORY_SENTENCE","CONTEXTUAL_SENTENCE_USE"]}]}
+  ],
+  "progression_note":"T2 grammar shifts from T1 noun/basic intransitive foundations to pronouns and acronyms, specific adjective classes, broader function-word categories, transitive verbs, partial reduplication, noun circumfixes and adjective phrases."
+}

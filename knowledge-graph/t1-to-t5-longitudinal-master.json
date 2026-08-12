@@ -1,0 +1,21 @@
+{
+  "meta":{"subject":"Bahasa Melayu","curriculum":"KSSM","forms":[1,2,3,4,5],"version":"1.0.0","purpose":"Master longitudinal graph for backtracking a current error to the earliest demonstrated prerequisite gap."},
+  "progression_tracks":{
+    "reading_comprehension":["T1 contextual meaning/global meaning","T2 explicit and implicit meaning","T3 analysis of information and graphical/textual material","T4 inference-analysis-evaluation-synthesis","T5 multi-source synthesis and critical response"],
+    "writing_development":["T1 idea selection/basic organisation","T2 topic sentence-huraian-example-penegas","T3 structured introduction-body-conclusion and complete discourse","T4 claim-reason-evidence, depth and cohesion","T5 reasoning-counterpoint-global cohesion and mature register"],
+    "summary_synthesis":["T1 important idea selection","T2 ringkasan and rumusan","T3 information processing and transformation","T4 synthesis and meaning preservation","T5 multi-source integration and concise synthesis"],
+    "grammar_morphology":["T1 foundational word classes/reduplication/affix","T2 expanded word classes and specific formations","T3 broader morphology and analysis","T4 systematic word forms/classes","T5 contextual/register-sensitive control"],
+    "grammar_syntax":["T1 noun phrase-subject-predicate-basic patterns","T2 adjective phrase/simple sentence/types","T3 broader phrase/sentence structure and transformation","T4 phrase types-basic/simple/compound/order","T5 derived/compound/ragam/transformation control"],
+    "literature":["T1 identify basic literary elements","T2 character/value/lesson with evidence","T3 analysis and justified response","T4 deeper prose/poetry analysis and creative production","T5 evaluation, justification and mature literary response"],
+    "argumentation":["T1 explain/respond","T2 divergent questions/opinion elicitation","T3 reasoned opinion and critique","T4 claim-reason-evidence and debate","T5 reasoning-counterpoint-rebuttal and synthesis"]
+  },
+  "engine_rules":[
+    "Current-form failure triggers prerequisite inspection, not automatic downgrade.",
+    "Stop backtracking at the earliest prerequisite that has strong evidence of mastery.",
+    "If a prerequisite lacks evidence, classify it as unknown rather than weak.",
+    "Repair the earliest demonstrated weak node, then retest upward through the progression chain.",
+    "Keep curriculum mastery separate from exam-format performance.",
+    "Use repeated cross-date evidence to distinguish persistent weakness from temporary performance variation."
+  ],
+  "student_profile_output":{"current_strengths":[],"current_weaknesses":[],"persistent_weaknesses":[],"prerequisite_gaps":[],"unknown_prerequisites":[],"improving_skills":[],"resolved_monitoring":[],"recommended_next_skills":[]}
+}

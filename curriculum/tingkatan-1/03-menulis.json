@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "subject": "Bahasa Melayu",
+    "curriculum": "KSSM",
+    "form": "Tingkatan 1",
+    "domain_code": "MN",
+    "domain_name": "Kemahiran Menulis",
+    "version": "1.0.0",
+    "status": "curriculum-brain-v1",
+    "design_note": "Official DSKP structure is kept separate from AI diagnostic metadata. Written evidence can support writing diagnostics; formal TP remains teacher-confirmed."
+  },
+  "standard_kandungan": [
+    {"code":"3.1","title":"Menulis untuk menerangkan makna kata dan istilah; maksud rangkai kata, ungkapan dan ayat","standard_pembelajaran":[
+      {"skill_id":"BM-T1-MN-3.1.1","code":"3.1.1","focus":["makna kata","konteks"],"diagnostic_micro_skills":["WORD_MEANING","CONTEXTUAL_WORD_MEANING","PRECISE_DEFINITION"],"common_error_tags":["WORD_MEANING_WRONG","CONTEXT_IGNORED","MEANING_TOO_GENERAL"],"remediation_path":["kenal kata sasaran","rujuk konteks ayat","bezakan beberapa makna","pilih makna tepat","gunakan dalam ayat baharu"]}
+    ]},
+    {"code":"3.2","title":"Menulis untuk mengemukakan maklumat dan pandangan tentang sesuatu perkara","standard_pembelajaran":[
+      {"skill_id":"BM-T1-MN-3.2.1","code":"3.2.1","focus":["menyatakan situasi daripada bahan dibaca","didengar","ditonton","ayat betul","ayat tepat","ayat gramatis"],"diagnostic_micro_skills":["SITUATION_COMPREHENSION","RELEVANT_INFORMATION","WRITTEN_EXPRESSION","SENTENCE_ACCURACY","GRAMMATICAL_SENTENCE"],"common_error_tags":["SITUATION_MISUNDERSTOOD","IRRELEVANT_INFORMATION","INACCURATE_STATEMENT","UNGRAMMATICAL_SENTENCE"],"remediation_path":["kenal pasti situasi","catat fakta penting","bina ayat mudah tepat","semak subjek-predikat","semak tatabahasa"]}
+    ]},
+    {"code":"3.3","title":"Menulis untuk melengkapkan maklumat dalam pelbagai bahan","standard_pembelajaran":[
+      {"skill_id":"BM-T1-MN-3.3.1","code":"3.3.1","focus":["maklumat diri","melengkapkan ayat","pelbagai bahan","ketepatan maklumat"],"diagnostic_micro_skills":["PERSONAL_INFORMATION","FORM_COMPLETION","SENTENCE_COMPLETION","INFORMATION_MATCHING","ACCURACY"],"common_error_tags":["MISSING_INFORMATION","WRONG_FIELD_INFORMATION","SENTENCE_COMPLETION_ERROR","INFORMATION_MISMATCH"]}
+    ]},
+    {"code":"3.4","title":"Menulis untuk menghasilkan prosa secara terancang","standard_pembelajaran":[
+      {"skill_id":"BM-T1-MN-3.4.1","code":"3.4.1","focus":["kerangka penulisan","isi sesuai","susunan isi","perancangan","bahasa tepat"],"diagnostic_micro_skills":["OUTLINE_BUILDING","RELEVANT_IDEA_SELECTION","IDEA_ORDERING","PLANNING","LANGUAGE_PRECISION"],"common_error_tags":["NO_OUTLINE","IRRELEVANT_IDEA","IDEA_ORDER_WEAK","CONTENT_PLAN_INCOMPLETE"]},
+      {"skill_id":"BM-T1-MN-3.4.2","code":"3.4.2","focus":["perenggan pendahuluan","ayat tema","ayat rangsangan","ayat arahan","susunan","bahasa menarik"],"diagnostic_micro_skills":["INTRODUCTION_PARAGRAPH","THEME_SENTENCE","STIMULUS_SENTENCE","DIRECTION_SENTENCE","INTRO_COHERENCE","LANGUAGE_QUALITY"],"common_error_tags":["INTRO_NO_THEME","INTRO_NO_DIRECTION","INTRO_DISORGANISED","INTRO_LANGUAGE_WEAK"]},
+      {"skill_id":"BM-T1-MN-3.4.3","code":"3.4.3","focus":["perenggan isi","kesimpulan","kekemasan","ejaan","bahasa tepat"],"diagnostic_micro_skills":["BODY_PARAGRAPH","CONTENT_RELEVANCE","CONTENT_ELABORATION","CONCLUSION","SPELLING","LANGUAGE_PRECISION"],"common_error_tags":["BODY_IDEA_WEAK","ELABORATION_INSUFFICIENT","CONCLUSION_WEAK","SPELLING_ERROR","IMPRECISE_LANGUAGE"]},
+      {"skill_id":"BM-T1-MN-3.4.4","code":"3.4.4","focus":["karangan bahan rangsangan","karangan cerita","ejaan","bahasa tepat","bahasa indah","bahasa menarik"],"diagnostic_micro_skills":["STIMULUS_INTERPRETATION","STORY_WRITING","IDEA_DEVELOPMENT","ORGANISATION","COHERENCE","SPELLING","GRAMMAR","VOCABULARY_RANGE","LANGUAGE_EFFECT"],"common_error_tags":["STIMULUS_MISREAD","IDEA_UNDERDEVELOPED","POOR_ORGANISATION","COHERENCE_WEAK","SPELLING_ERROR","GRAMMAR_ERROR","VOCABULARY_LIMITED","LANGUAGE_FLAT"],"remediation_path":["fahami tugasan","ekstrak isi daripada rangsangan","bina kerangka","kembangkan isi","susun perenggan","semak bahasa dan ejaan"]}
+    ]},
+    {"code":"3.5","title":"Menulis untuk meringkaskan dan merumus pelbagai bahan prosa","standard_pembelajaran":[
+      {"skill_id":"BM-T1-MN-3.5.1","code":"3.5.1","focus":["isi penting","ringkasan","ketepatan","ayat gramatis"],"diagnostic_micro_skills":["KEY_POINT_IDENTIFICATION","RELEVANT_CONTENT_SELECTION","REMOVE_MINOR_DETAILS","MEANING_PRESERVATION","SUMMARY_CONSTRUCTION","GRAMMATICAL_SENTENCE"],"common_error_tags":["KEY_POINT_MISSED","MINOR_DETAIL_INCLUDED","IRRELEVANT_CONTENT","MEANING_DISTORTED","SUMMARY_UNGRAMMATICAL"],"remediation_path":["tanda idea utama","asing isi penting dan sampingan","buang contoh berlebihan","susun isi","tulis semula dengan ayat gramatis","semak maksud asal"]}
+    ]},
+    {"code":"3.6","title":"Menulis untuk mengolah maklumat bagi menghasilkan pelbagai bentuk penulisan dan grafik","standard_pembelajaran":[
+      {"skill_id":"BM-T1-MN-3.6.1","code":"3.6.1","focus":["grafik kepada prosa","grafik kepada puisi","grafik kepada ilustrasi","tafsiran tepat","bahasa betul"],"diagnostic_micro_skills":["GRAPHIC_INTERPRETATION","INFORMATION_EXTRACTION","GRAPHIC_TO_PROSE","GRAPHIC_TO_POETRY","GRAPHIC_TO_ILLUSTRATION","INTERPRETATION_ACCURACY","LANGUAGE_ACCURACY"],"common_error_tags":["GRAPHIC_MISINTERPRETED","DATA_MISSED","UNSUPPORTED_INTERPRETATION","TRANSFORMATION_INCOMPLETE"]},
+      {"skill_id":"BM-T1-MN-3.6.2","code":"3.6.2","focus":["grafik kepada perenggan","prosa kepada ilustrasi","puisi kepada ilustrasi","ayat gramatis"],"diagnostic_micro_skills":["GRAPHIC_TO_PARAGRAPH","PROSE_TO_ILLUSTRATION","POETRY_TO_ILLUSTRATION","INFORMATION_PRESERVATION","GRAMMATICAL_SENTENCE"],"common_error_tags":["TRANSFORMATION_MEANING_LOST","KEY_INFORMATION_OMITTED","PARAGRAPH_UNGRAMMATICAL","ILLUSTRATION_MISMATCH"]}
+    ]},
+    {"code":"3.7","title":"Mengedit dan memurnikan pelbagai teks","standard_pembelajaran":[
+      {"skill_id":"BM-T1-MN-3.7.1","code":"3.7.1","focus":["ejaan","tanda baca","kesalahan nahu mudah","mengekalkan maksud asal"],"diagnostic_micro_skills":["SPELLING_EDIT","PUNCTUATION_EDIT","BASIC_GRAMMAR_EDIT","ERROR_DETECTION","ERROR_CORRECTION","MEANING_PRESERVATION"],"common_error_tags":["SPELLING_ERROR_UNDETECTED","PUNCTUATION_ERROR_UNDETECTED","GRAMMAR_ERROR_UNDETECTED","INCORRECT_CORRECTION","ORIGINAL_MEANING_CHANGED"],"remediation_path":["kesan satu jenis kesalahan","betulkan ejaan","betulkan tanda baca","betulkan nahu mudah","banding maksud sebelum dan selepas suntingan"]}
+    ]}
+  ],
+  "cross_cutting_diagnostic_dimensions": {
+    "content":["TASK_UNDERSTANDING","IDEA_RELEVANCE","IDEA_DEVELOPMENT","DETAIL_SELECTION"],
+    "organisation":["OUTLINE","PARAGRAPH_STRUCTURE","IDEA_SEQUENCE","COHERENCE"],
+    "language":["GRAMMAR","SPELLING","PUNCTUATION","VOCABULARY_RANGE","LANGUAGE_PRECISION"],
+    "transformation":["SOURCE_INTERPRETATION","INFORMATION_PRESERVATION","FORMAT_TRANSFORMATION"],
+    "editing":["ERROR_DETECTION","ERROR_CORRECTION","MEANING_PRESERVATION"]
+  },
+  "evidence_rules": {
+    "corrected_written_work":"strong_direct_evidence",
+    "teacher_annotations":"supporting_evidence_if_legible",
+    "score_only_without_script":"weak_evidence_do_not_overdiagnose",
+    "single_essay":"diagnose_observed_patterns_but_do_not_confirm_persistent_weakness",
+    "repeated_pattern_across_tasks":"eligible_for_persistent_weakness_flag"
+  },
+  "mastery_model": {
+    "ai_mastery_score":"0-100",
+    "trend":["improving","stable","declining","insufficient_evidence"],
+    "confidence":["low","medium","high"],
+    "moe_tp_evidence":"supporting evidence only",
+    "teacher_confirmed_tp":"separate teacher-controlled field"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "meta":{"subject":"Bahasa Melayu","form":"Tingkatan 2","version":"1.0.0"},
+  "error_map":{
+    "reading":["RD_T2_MECHANICAL_READING","RD_T2_EXPLICIT_MEANING","RD_T2_IMPLICIT_MEANING","RD_T2_INSTRUCTION","RD_T2_MESSAGE","RD_T2_GLOBAL_MEANING","RD_T2_MAIN_IDEA","RD_T2_SUPPORTING_IDEA","RD_T2_SCAN_INFO"],
+    "writing":["WR_T2_TASK","WR_T2_IDEA","WR_T2_TOPIC_SENTENCE","WR_T2_ELABORATION","WR_T2_EXAMPLE","WR_T2_CONCLUDING_SENTENCE","WR_T2_ORGANISATION","WR_T2_RINGKASAN","WR_T2_RUMUSAN","WR_T2_TRANSFORMATION","WR_T2_EDITING"],
+    "grammar":["GR_T2_PRONOUN","GR_T2_ACRONYM","GR_T2_ADJECTIVE","GR_T2_FUNCTION_WORD","GR_T2_TRANSITIVE_VERB","GR_T2_PARTIAL_REDUPLICATION","GR_T2_NOUN_AFFIX","GR_T2_ADJECTIVE_PHRASE","GR_T2_SIMPLE_SENTENCE","GR_T2_SENTENCE_TYPE"],
+    "seni_bahasa":["SB_T2_SYNOPSIS","SB_T2_THEME","SB_T2_ISSUE","SB_T2_VALUE","SB_T2_LESSON","SB_T2_CHARACTER","SB_T2_CHARACTERISATION","SB_T2_JUSTIFICATION","SB_T2_CREATIVE_FORM"],
+    "oral_listening":["OL_T2_CONTEXT_MEANING","OL_T2_FILTER_INFORMATION","OL_T2_DIVERGENT_QUESTION","OL_T2_OPINION_ELICITATION","OL_T2_DISCUSSION","OL_T2_NEGOTIATION","OL_T2_EXPLICIT_IMPLICIT_VISUAL_INFO"]
+  },
+  "root_cause_rules":[
+    "Use the narrowest defensible error code.",
+    "Check Tingkatan 1 prerequisite evidence when a Tingkatan 2 higher-level skill fails repeatedly.",
+    "Distinguish content identification from justification.",
+    "Distinguish inability to elaborate from inability to generate a relevant idea.",
+    "Do not infer oral weaknesses from written evidence alone.",
+    "Do not convert uncertain OCR into learner error.",
+    "Cross-task and cross-date repetition raises confidence."
+  ]
+}
